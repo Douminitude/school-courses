@@ -1,0 +1,71 @@
+Avatar Neil Frederick Stewart	08:18 Neil Frederick:
+Ok, pour le Buddy System, avant la présentation principale, je veux m'assurer que vous comprenez le contexte.
+Vous vous mettez à la place de la personne qui implante un système pour allouer la mémoire aux usagers.
+Alors il y a des usagers qui viennent, ils ont besoin d'un bloc de mémoire, le système doit fournir un bloc de taille assez élevée pour permettre l'usager de faire ce qu'i veut.
+
+Avatar Olivier Ethier	08:20 Olivier:
+Pouvez-vous définir Disp(j) svp?
+
+Avatar Neil Frederick Stewart	08:20 Neil Frederick:
+Oui, nous allons voir cela en détail, mais cela ne dérange pas de voir à l'avance aussi.
+Le système dont je viens de vous parler doit garder trace de blocs qui sont disponibles, des blocs qu'il peut allouer aux usagers pour satisfaire leurs requêtes.
+Dans le Buddy System, les blocs vont être toujours de taille 2 exposant quelque chose, 8, 16, 32 etc etc
+Disp(j) est une liste des blocs disponibles de taille 2^j. ok?
+
+Avatar Olivier Ethier	08:22 Olivier:
+d'accord, merci!
+
+Avatar Neil Frederick Stewart	08:23 Neil Frederick:
+Ok, mais on va voir que c'est très astucieux la façon de garder ces listes ...
+Et la façon de fusionner deux blocs adjacents (des "buddy" , des copains).
+
+Photo de Julien Thibeault	08:24 Julien:
+Disponible et libre sont-ils utilisés de façon équivalente dans votre explication?
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+Deux blocs disponibles de taille 2 exposant j vont être fusionnés pour avoir un bloc de taille 2 exposant j+1. Oui Julien, disponible et libre sont équivalents.
+Vous voyez pourquoi on veut fusionner des blocs. Sinon, à la longue vous pourriez avoir beaucoup de petits blocs disponibles ou libres, et pourtant incapable d'allouer un bloc de plus grande taille. Cela s'appelle la "fragmentation".
+
+Avatar Maxime Lechasseur	08:28 Maxime:
+comment on détermine la grandeur du bloc à allouer à l'usager?
+
+Avatar Mahsa Najimoghadam	08:28 Mahsa:
+Peut-il être fusionné ?
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+Est-ce clair? Peut-être une centaine de blocs de taille 50 sont libres, mais éparpillés partout dans le bloc principal, et donc le système n'est pas capable de rendre un bloc de plus grande taille. Maxime, l'usager spécifie cela dans sa requête.
+
+Avatar Maxime Lechasseur	08:29 Maxime:
+ha parfait! Oui c'est très clair pour moi!
+
+Avatar Neil Frederick Stewart	08:29 Neil Frederick:
+Nous allons voir tout cela en détail, mais mieux vaut comprendre l'idée générale avant la présentation. L'usage vient il dit j'ai besoin d'un bloc de n=5 cellules.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:30 Marthy Stivaliz:
+le buddy system seulement fusionne de blocs adjacents?
+
+Avatar Neil Frederick Stewart	08:30 Neil Frederick:
+Parfois on dit "n=5 mots" mais il faut voir que les cellules ou mots alloués peuvent être des blocs de 1,000 octet, ça m'est égal.
+Très bien Maxime. Oui, Marthy, seulement des blocs adjacents. En fait, même pas TOUS les blocs adjacents. Nous allons voir que le système peut fusionner uniquement des blocs adjacents qui sont des "buddy", des copains.
+Cela veut dire qu'il y aura parfois un peu de "fragmentation", c'est à dire des blocs adjacents de 8 cellules qui ne peuvent pas être fusionnés, incapable donc de fournir un bloc de taille 16.
+Mais le fait de faire cela permet une très grande vitesse d'accès aux blocs. Voici une définition intuitive de "buddy":
+
+Avatar David Whipps	08:34 David:
+Et comment est-ce-que on sait si des cellules sont "buddy?" (sont capable d'etre fusionnes)
+
+Avatar Neil Frederick Stewart	08:34 Neil Frederick:
+Les blocs doivent être alignés sur les frontières de mémoire 2 exposant j. Cela veut dire quoi?
+Supposons 8 blocs de mémoire de taille 2 cellules.
+cellule 1 et cellule 2 font un bloc. Son buddy c'est le bloc des deux cellules 3 et 4.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:36 Marthy Stivaliz:
+je n'ai pas compris la definition de buddy
+
+Avatar Michael Roussel	08:37 Michael:
+C'est le fait que deux blocs sont adjacents
+
+Avatar Neil Frederick Stewart	08:37 Neil Frederick:
+Regardons la présentation, cela sera expliqué en grand détail. Il s'agit de l'enregistrement du 7 juillet S17s2-20:09. Après encore un Chat. NFS
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:37 Rafael De Jesus:
+c'est à dire que les cellules doivent être adjacentes

@@ -1,0 +1,39 @@
+Avatar Neil Frederick Stewart	08:20 Neil Frederick:
+Plusieurs petites choses: L'idée de min N avec d fixe, plutôt que de maximiser d avec N fixe, devient claire si vous regardez la vidéo entre 40 et 70 seconds.
+1/2 est remplacé par 2, cela montre l'idée intuitive.
+Deuxième chose: ce que je dis à 6:15 est correct, mais j'indique la mauvaise chose avec la souris! Assurez-vous de comprendre mon erreur: ce n'est pas le fait qu'il y a deux arbres dans l'ensemble, c'est le fait que c'est deux arbres ont deux noeuds!
+Troisième chose: les détails à 7:15 seront faits dans la TP
+Enfin, 14:42. La hauteur de T_G doit être d-2. Intuitivement, c'est très clair. Mais comment faire la preuve? J'ai posé la question sur l'Intra en E20
+Questions?
+
+Avatar Catherine Larivière	08:23 Catherine:
+d'où vient le phi^(d+3)/sqrt(5)
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+Mais c'était la partie principale de l'exposé.
+Nous avons commencé par établir une récurrence sur G.
+Une récurrence linéaire, homogène de degré 2.
+On a remarque que la récurrence pour G était très étroitement reliée à la récurrence de Fibonnacci
+Nous savons résoudre la récurrence de Fibonnaci.
+On a pu trouver donc une solution pour G.
+Parce G est une borne inférieure (nous avons choisi les "pires" arbres à chaque étape) nous avons l'inégalité que vous mentionnez.
+Catherine, il faut revoir la preuve depuis le début. N'hésitez pas de reposer des questions à chaque étape.
+
+Avatar Michael Roussel	08:28 Michael:
+Qu'est-ce que G exactement %
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:29 Marthy Stivaliz:
+professeur Neil, vous avais mentionne que vous avez donne un squelette pour l'intra. Je le vois pas. il se trouve où?
+
+Avatar Neil Frederick Stewart	08:29 Neil Frederick:
+L'examen Intra E20 est disponible sur le site depuis un certain temps.
+
+Avatar Catherine Larivière	08:30 Catherine:
+je comprends pas du tout comment on trouve le phi
+on fait la preuve à partir de ce qu'on veut démontrer??
+
+Avatar Neil Frederick Stewart	08:30 Neil Frederick:
+Visionnons le segment 2. Catherine, je reviens à votre question.
+
+Avatar Catherine Larivière	08:30 Catherine:
+j'ai réécouter le vidéo plusieurs fois

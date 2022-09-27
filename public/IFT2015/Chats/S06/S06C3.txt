@@ -1,0 +1,176 @@
+Avatar Neil Frederick Stewart	09:31 Neil Frederick:
+J'ai fait référence aux "questions posées dans les chats". N'oubliez pas que je faisais référence aux chats de E20!
+J'ai pensé que plusieurs des questions E20 étaient pertinentes.
+
+Avatar Maxime Lechasseur	09:31 Maxime:
+je ne me rappelle plus de la difference entre full ou complete
+je croyais avant que cetait simplement la traduction
+
+Avatar Mathieu Coupal	09:32 Mathieu:
+Est-ce que c'est possible de transformé un arbre full pour faire en sorte qu'il soit complete?
+
+Avatar Neil Frederick Stewart	09:32 Neil Frederick:
+Maxime, il faut donc revoir les présentations, ou je dis que je ne voulais pas traduire "Full" et "Complete" par "complet.
+Non, Mathieu, c'est des propiétés d'arbres fixes.
+
+Avatar Maxime Lechasseur	09:33 Maxime:
+haaaa d'accord! la semaine passé c'est bien ca?
+
+Avatar Neil Frederick Stewart	09:33 Neil Frederick:
+Si chaque noeud a 0 ou 2 enfants, c'est FULL
+Si tous les noeuds sont présents, sauf PEUT-ÊTRE dans la dernière rangée, c'est COMPLETE
+Oui, Maxime, je fais l'hypothèse que vous n'avez pas déjà oublié ce que nous avons fait la semaine dernière! clin d’œil
+
+Avatar Michael Roussel	09:34 Michael:
+Quelle est la différence claire entre un TAD et une méthode ? Je confonds beaucoup les deux (par exemple entre le TAD table et la linked list)
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:34 Rafael De Jesus:
+Un arbre COMPLETE pout n'être pas Full : ce n'est pas obligatoire d'avoir toujours 0 ou 2 enfants, on pourrait avoir des noeuds avec seulement un enfant... donc il n'est pas full
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+C'est ça Rafael
+
+Avatar Maxime Lechasseur	09:35 Maxime:
+et si l'arbre a une seule feuille c'est complete?
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Michael, TAD est le PROBLÈME. C'est les opérations qui doivent être réalisées. Quelle structure utiliser pour faire cela? Quelle MÉTHODE?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:36 Rafael De Jesus:
+et on pourrait avoir des arbres full, ajoutant des enfants à droit, pas à gauche, donc ce ne serait pas complete
+
+Avatar Michael Roussel	09:36 Michael:
+Donc le TAD n'est définit que par une liste d'opérations qu'on cherche à effectuer ?
+
+Avatar Neil Frederick Stewart	09:36 Neil Frederick:
+Maxime, la réponse est "peut-être"! Si vous avez la racine avec un enfant gauche, c'est Complete. Si vous avez la racine avec enfant droit, ce n'est pas complete
+Oui Michael.
+J'insiste toujours sur les idées derrières. Pourquoi?
+La preuve de la méthode de Floyd par exemple.
+L'idée n'est pas seulement de savoir comment fonctionne Floyd.
+
+Avatar Abderrahmane Manseur	09:38 Abderrahmane:
+ca nous permet de savoir quel est la meilleur méthode
+
+Avatar Neil Frederick Stewart	09:38 Neil Frederick:
+Nous voulons comprendre aussi pourquoi ça fonctionne
+Je trouve la preuve intéressant, mais pas seulement à cause de l'astuce de sommations horizontales et verticales.
+
+Avatar Maxime Lechasseur	09:39 Maxime:
+vous voulez dire si il y a un enfant a gauche et a droite ca c'est full mais si il y a simplement la racine et a droite un un seul enfant ca c'est full. c'est bien ça?
+
+Avatar Neil Frederick Stewart	09:41 Neil Frederick:
+La racine et à droite un seul enfant ne serait ni FULL, ni COMPLETE Maxime. Regardez les définitions.
+Mais revenons à mon idée intéressante, dans le contexte de Floyd.
+*****
+Avatar Rafael De Jesus Carrascal Cantillo	09:41 Rafael De Jesus:
+c'est comme quand on a le problème de trier... on peut avoir des métodes différentes pour le faire (naïve, tri-rapide, etc) ?)
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+Pensez de la forme générale d'un arbre parfaitement balancé, j'ai toujours dessiné un triangle.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:42 Rafael De Jesus:
+... avec le même TAD
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+Qu'est-ce que vous voyez? Une collection de noeuds. En rangées. Mais tiens, combien de noeuds dans la dernière rangée?
+What do you see when you look at perfectly balanced tree. I've always drawn a triangle.
+But, hmm, how many of the nodes are in the last row?
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:43 Marthy Stivaliz:
+4
+
+Avatar Catherine Larivière	09:44 Catherine:
+8
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:44 Rafael De Jesus:
+C'est un arbre FULL et COMPLETE (le "triangle")
+
+Avatar Abderrahmane Manseur	09:44 Abderrahmane:
+ca depend de la hauteur
+
+Avatar Neil Frederick Stewart	09:44 Neil Frederick:
+Marthy, pour un arbre de taille N général
+
+Avatar Abderrahmane Manseur	09:44 Abderrahmane:
+2^n
+
+Avatar Neil Frederick Stewart	09:44 Neil Frederick:
+1/20th of the nodes? 1/200th of the nodes? How many in the last row?
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:45 Marthy Stivaliz:
+ahh la formule.. de 2(n_internes)?
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Abderrahmane, quelle fraction?
+
+Avatar Catherine Larivière	09:45 Catherine:
+je ne comprends pas pourquoi on cherche une fraction, et pas un entier
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:46 Rafael De Jesus:
+2^h
+
+Avatar Neil Frederick Stewart	09:46 Neil Frederick:
+1 dans la première rangée, 2 dans la deuxième , 4 dans la troisième, Catherine parce que je veux vous montrer quelque chose! Quelle fraction de noeuds est dans la dernière rangée?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:46 Rafael De Jesus:
+c'est 2^hauteur
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+Rafael, je cherche une fraction!
+
+Avatar Catherine Larivière	09:47 Catherine:
+2^hauteur c'est pas une fraction
+
+Avatar Mathieu Coupal	09:47 Mathieu:
+1/2 + 1
+
+Avatar Man Ping Li	09:47 Man Ping:
+lg n
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+1, 2, 4, 8, 16, 32. Quelle fraction, à peu près dans la dernière rangée?
+
+Avatar Mathieu Coupal	09:47 Mathieu:
+c'est la moitié des noeuds qui sont des feuilles
+la moitier -1
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+1, 2, 4, 8, 16, 32 What fraction, apr. OUI MATHIEU!
+What fraction in the last row? About one half!
+
+Avatar Abderrahmane Manseur	09:48 Abderrahmane:
+la moitié des noeuds interne?
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+La moitié de noeuds, point sur la ligne.
+Half the nodes are in the last row!
+
+Avatar Michael Roussel	09:49 Michael:
+Mais en quoi ce résultat est utile ?
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Et ensuite, il y a un autre quart dans l'avant dernière ligne
+Bonne question Michael.
+Une chose, si je me trouve dans un contexte qu'il n'y a rien à faire dans la dernière ligne ...
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:50 Rafael De Jesus:
+alors, c'est le nombre de feuilles... plancher de N/2
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+Dans la méthode de Floyd, par exemple, ...
+
+Avatar Michael Roussel	09:50 Michael:
+Alors j'ai la moitié moins d'opérations à faire
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+et si en plus il y a peu à faire dans l'avant dernière ligne, comme dans l'algorithme de Floyd, ...
+Les choses risquent d'être moins chères que j'avais prévu.
+If I find myself in a situation where there's nothing to do in the last row, as in the case of Floyd, and very little to do in the second last line, and so on, as in the algo of Floyd ....
+
+Avatar Abderrahmane Manseur	09:51 Abderrahmane:
+en quoi c un risque
+
+Avatar Neil Frederick Stewart	09:52 Neil Frederick:
+Then thinks might turn out to be a lot less expensive than I expected.
+Pensez-un peu à cela. Bon TP. NFS

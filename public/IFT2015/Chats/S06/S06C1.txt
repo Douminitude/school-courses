@@ -1,0 +1,71 @@
+Catherine Larivière	08:20 Catherine:
+dans le devoir 1, la partie pratique dans l'énoncé est vide, pourquoi?
+
+Mathieu Coupal	08:20 Mathieu:
+quand vous parler d'Arbre cousus avec des ficelles, est-ce que c'est semblable à une liste chainer?
+
+Marthy Stivaliz Garcia Alvarado	08:21 Marthy Stivaliz:
+j'ai une question sur le devoir. Est-ce que nous pouvons avoir les énoncés pour les exercises de weiss. J'ai remarque que ma version ne suivre pas la meme numeration de chapitres que la votre
+
+Neil Frederick Stewart	08:21 Neil Frederick:
+La partie pratique ne devrait pas être vide, j'ai peut-être fait une erreur. Je regarderai après le cours.
+
+Neil Frederick Stewart	08:22 Neil Frederick:
+Mathieu, un peu, mais c'est des pointeurs supplémentaires.
+
+Gabriel Ste-Marie	08:22 Gabriel:
+J'aimerais aussi avoir les énoncés pour Weiss. Je pense avoir la bonne version (3e ed.), mais j'aimerais tout de meme avoir la confirmation que je réponds bien aux bonnes questions
+
+Neil Frederick Stewart	08:23 Neil Frederick:
+Hmm, normalement c'est pour cela que nous avons un livre obligatoire! J'y verrai ...
+
+Neil Frederick Stewart	08:23 Neil Frederick:
+Pourquoi j'insiste tellement sur l'idée de liens entre des choses qui semble différent?
+
+Rafael De Jesus Carrascal Cantillo	08:24 Rafael De Jesus:
+Bonjour, la date de remise pour le devoir 1 est le 29 mai (00:00) ou le 2 juin ?
+
+Neil Frederick Stewart	08:24 Neil Frederick:
+Aujourd'hui, par exemple, la liste pure et l'arbre qui correspond ...
+
+Neil Frederick Stewart	08:24 Neil Frederick:
+(dans le contexte de la rep "puînée"
+
+Neil Frederick Stewart	08:25 Neil Frederick:
+C'est parce que cela peut vous être utile! Chaque fois que vous inventer une astuce pour parcourir une liste pure, par exemple, ...
+
+Neil Frederick Stewart	08:25 Neil Frederick:
+cela vous donne une astuce pour parcourir des arbres.
+
+Catherine Larivière	08:25 Catherine:
+qu'est-ce que vous voulez dire par liste pure? une liste chainée, ou une liste non chainé?
+
+Neil Frederick Stewart	08:25 Neil Frederick:
+C'est le principe général qui est important.
+
+Neil Frederick Stewart	08:26 Neil Frederick:
+Catherine, quand je vous ai parlé de listes généralisées ...
+
+Neil Frederick Stewart	08:26 Neil Frederick:
+Je vous ai donné 4 catégories. La deuxième était ...
+
+Neil Frederick Stewart	08:26 Neil Frederick:
+les listes pures. La première était les listes linéaires. Revoyez cela.
+
+Neil Frederick Stewart	08:27 Neil Frederick:
+C'est le principe derrière qui est toujours important. Nous allons voir un autre ...
+
+Neil Frederick Stewart	08:27 Neil Frederick:
+exemple dans la discussion plus tard aujourd'hui.
+
+Neil Frederick Stewart	08:28 Neil Frederick:
+So I'm trying to justify my harping on the "the general principle behind such and such a thing".
+
+Neil Frederick Stewart	08:28 Neil Frederick:
+Why do I do that? Because it's important. The idea is not (just) to learn the details of an article, but the idea behind it.
+
+Neil Frederick Stewart	08:29 Neil Frederick:
+For example, "listes pures" and "trees". If you discover something useful about scanning pure lists, you can probably translate the idea to scanning trees. And vice versa. Do you see what I'm getting at?
+
+Neil Frederick Stewart	08:30 Neil Frederick:
+Regardons donc le segment 2. Le problème était avec ma souris, entre parenthèses, rien à voir avec le whiteboard de Zoom. La qualité des enregistrements est mauvaise.

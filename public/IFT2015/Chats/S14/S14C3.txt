@@ -1,0 +1,79 @@
+Avatar Neil Frederick Stewart	09:32 Neil Frederick:
+Ok, vous voyez d'où vient les règles bizarre des arbres-B. Pourquoi on doit insister pour avoir au moins plafond de M sur 2, mais on ne peut pas insister sur M partout. Cela étant compris, nous pouvons OUBLIER ce critère, et regarder quand même ce qui se passe en mémoire interne avec M=3. Pourquoi pas?
+En regardant M=3, on constate que nous avons trouvé une structure intéressante, intéressante pour d'autres raisons.
+À savoir, cela donne une structure un peu analogue à AVL.
+Et on constate qu'on peut établir des algorithmes pour insérer, retirer.
+Tout fonction convenablement.
+Tout fonctionne ...
+En E20 il y avait de la confusion sur ce changement de contexte, alors j'avais préparé une vidéo supplémentaire
+J'ai mis la vidéo sur le site, vous pouvez regardez si vous voulez.
+Cela répète les mêmes choses. Je répondais à des questions des étudiants en E20.
+Avez-vous des questions?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:36 Rafael De Jesus:
+oui... sur les skiplists, comment faire la recherche quand les pointeurs (NIV_MAX) ont été créés de façon aleatoire ?... dans ce cas on devrait recommencer chaque fois la recherche dans la liste du niveau inférieur quan on ne trouve pas la clef ?
+
+Photo de Julien Thibeault	09:36 Julien:
+dans l'algorithme de supression, on n'a pas discuté de ce qui déclanche le rebalancement de l'autre sous-arbre.
+
+Avatar Neil Frederick Stewart	09:37 Neil Frederick:
+Rafael, oui, pour les détails de la recherche même, regardez dans Weiss.
+L'idée générale est claire:
+
+Photo de Julien Thibeault	09:37 Julien:
+@Rafael début de la vidéo supplémentaire
+
+Avatar David Whipps	09:37 David:
+Est-ce que ce les Arbres 2-3 sont semblable aux arbres AVL a cause que les noeuds (non-leaf) ont, au maximum M-1 clefs?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:37 Rafael De Jesus:
+merci, Julien, je l'ai déjà vu, mais il parle des cas regulier, pas aleatoires
+
+Avatar Neil Frederick Stewart	09:38 Neil Frederick:
+Commencez par décider si l'élément est plus loin que le milieu. Après, descendez d'un niveau. Il faut faire ce processus pour chaque recherche.
+Julien, il n'y a pas de rebalancement à faire! Il faut comprendre cela!
+
+Photo de Julien Thibeault	09:39 Julien:
+réduction de hauteur je devrais dire
+
+Avatar Neil Frederick Stewart	09:39 Neil Frederick:
+Si vous regardez les opérations d'insertion, ou de retrait, la structure garde toujours sa forme de profondeurs égales!
+Même si la hauteur de l'arbre change, elle garde toujours sa forme de profondeurs égales!
+
+Photo de Julien Thibeault	09:40 Julien:
+à la fin de la vidéo, le G remonte au premier noeud de l'arbre.
+
+Avatar Neil Frederick Stewart	09:40 Neil Frederick:
+Oui Julien, la hauteur change. Ce qui ne change pas est la chose suivante:
+Le nombre de liens entre la racine et la feuille au plus bas niveau est le même pour chaque feuille. Voyez-vous?
+David, je ne vous ai pas oublié, je veux m'assurer que Julien a compris.
+
+Photo de Julien Thibeault	09:42 Julien:
+je cherche seulement à comprendre ce qui déclanche la correction de l'arbre gauche, la réduction de hauteur.
+comment l'algorithme traite cela
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:43 Rafael De Jesus:
+je trouve que la hauteur change est quand on ne peut pas trouver de sibling ou parent où voler, alors on va jusqu'à la racine... et la correction affecte tout l'arbre (gauche et droit)
+
+Avatar Neil Frederick Stewart	09:44 Neil Frederick:
+Il faut revoir l'exemple. Dessinez cela sur papier, et regardez ce qui se passe. Vous essayer de voler un clef à gauche, ça marche pas. Alors vous volez du parent, ça fait disparaître le parent, et la hauteur de l'arbre vient de diminuer. Comme dit Rafael, la correction affecte tout l'arbre, gauche et droit.
+
+Photo de Julien Thibeault	09:45 Julien:
+oui je comprends merci.
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+David, si je mentionne AVL, c'est juste ceci:
+In fact, AVL et 2-3 trees come from complete different motivations, as I've explained.
+But looking at them, after the fact, we can compare them.
+We notice that AVL gets the slack it needs to do updates by permitting small differences in the height of the subtrees.
+2-3 trees get the slack they need in a different way. They keep the height of the subtrees constant, but ...
+... but they permit a bit of play in the number of keys in each node.
+Je crois avoir déjà dit cela en français. Les arbres AVL et 2-3 viennent de sources complètement différentes.
+
+Avatar David Whipps	09:48 David:
+Merci
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+Mais après coup on peut les comparer: il s'agit de 2 façons différentes d'avoir un peu de jeu, pour permettre les mises-à-jour.
+Si vous regardez la vidéo supplémentaire de E20, vous allez voir les mêmes remarques répétées. J'ai insisté sur le changement de contexte parce que j'ai réalisé que je n'avais pas assez bien expliqué dans la vidéo même.
+Ok, à mercredi alors.

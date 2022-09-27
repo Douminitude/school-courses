@@ -1,0 +1,29 @@
+Avatar Neil Frederick Stewart	08:21 Neil Frederick:
+Le fond est correct. Mais plusieurs petites erreurs verbales et écrites. Par exemple, 3:40 "pas plus que une couleur". L'erreur est corrigée plut loin, mais ... triste
+Aussi: 8:00 Ça ne serait PAS commode. À 10:13 "Arbres ROUGE-NOIR" (corrigée sur le site).
+Et dans la preuve (black height etc) c'est le nombre de noeuds dans tous le sous-arbre, y compris la racine du sous-arbre.
+N'hésitez pas de poser des questions. S'il vous semble que j'aurais dû avoir dit "oncle rouge" plutôt que "oncle noir" dans la présentation suivante, posez-moi la question de je confirmerai.
+
+Avatar David Whipps	08:24 David:
+Ca serai tres util de motiver la discussion par un example concret.
+
+Avatar Neil Frederick Stewart	08:24 Neil Frederick:
+Est-ce que l'idée de base des arbres rouge-noire est comprise?
+
+Avatar David Whipps	08:24 David:
+Ce n'est pas tout a fait claire pourquoi ils sont si utile
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+On se permet d'insérer une couche max de noeuds entre chaque niveau de noeuds noirs. David:
+Si on regarde de loin, c'est des arbres un peu comme les arbres AVL.
+La borne sur la hauteur maximale est un peu moins satisfaisante que AVL.
+Par contre, nous allons regarder deux versions de. l'arbre rouge-noir.
+Normalement, pour AVL, et rouge-noir "bottom up", ce que vous faites est le suivant:
+Vous descendez dans l'arbre pour chercher ou mettre la nouvelle clef, ou pour chercher la clef à retirer. Après:
+Après cela, vous remontez dans l'arbre pour corriger les facteurs de balancement (AVL) ou pour corriger le problème de >2 noeuds rouge.
+L'avantage de rouge-noir (Top-down) est qu'il ne sera pas nécessaire de remonter dans l'arbre.
+Vous ne comprenez pas encore, parce que nous n'avons pas regardé encore, mais vous voyez quand même de quoi je parle, n'est-ce- pas? Alors regardons cela.
+Je commence avec rouge-noir "bottom up"
+
+Avatar David Whipps	08:30 David:
+En fait, l'insertion est plus efficace q'un arbre AVL.

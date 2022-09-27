@@ -1,0 +1,49 @@
+Avatar Neil Frederick Stewart	08:52 Neil Frederick:
+La première remarque. Ce n'est pas vous, c'est les démonstrateurs qui vont parler de l'approximation de H_N par log, dans le tp de mercredi.
+La références au Devoir 2 est de E20. Par contre, dans le Devoir 2 vous allez regardez l D(1)=0.
+Je trouve que ma présentation est incomplet à ce sujet. Je fais mon autocritique au début du Devoir 2 ...
+Mais je laisse à vous le soin de compléter le petit oubli.
+Mieux vaut faire travailler les étudiants!
+
+Avatar Mahsa Najimoghadam	08:54 Mahsa:
+N-1?
+
+Avatar Neil Frederick Stewart	08:55 Neil Frederick:
+Troisième commentaire: à 1:12 de la vidéo, je dis que la constante ne m'intéresse plus que cela. Cette année cela m'intéresse, si vous me comprenez.
+Third comment: at 1:12 I said that the constant doesn't interest me much. This year it does. If you get my drift.
+Quelle était la question que nous avons laissé ouverte du premier chat?
+Nous commençons ici par regarder la valeur espérée de I.
+Mais pourquoi nous nous intéressons à I?
+
+Avatar Mathieu Coupal	08:57 Mathieu:
+On parlait de la constante justement
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+C'est parce que, dans une deuxième étape, nous allons vouloir faire la moyenne sur tous les NOEUDS.
+Si je vous donne un arbre quelconque, et je vous demande de faire la pondération du nombre de comparaisons sur chaque noeud dans l'arbre, qu'est-ce que vous faites?
+
+Avatar Mathieu Coupal	08:58 Mathieu:
+C'est la longueur I
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Oui, Mathieu! Mais diviser par N, n'est-ce pas?
+
+Avatar Mathieu Coupal	08:59 Mathieu:
+pour avoir la moyenne oui
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Aussi, il y a un autre petit oubli dans votre suggestion, qqchose qui est mentionné soit dans le Devoir 2, soit à l'Intra, soit dans les deux.
+Très bien Mathieu
+ok, on va faire une pause de 10 minutes, on peut y revenir dans le Chat 3. Trois parties dans le segment 3. triste
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:00 Rafael De Jesus:
+alors, c'est la moyenne de comparaissons à faire
+
+Avatar Neil Frederick Stewart	09:01 Neil Frederick:
+Oui Rafael
+
+Avatar Mathieu Coupal	09:01 Mathieu:
+c'est le nombre de comparaison qu'on peut s'attendre à faire en moyenne
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:01 Rafael De Jesus:
+oui!

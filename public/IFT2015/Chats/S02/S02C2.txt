@@ -1,0 +1,32 @@
+Avatar Isabelle Viarouge	08:58 Isabelle:
+Pour la méthode tableau, au pire des cas, on doit lire N lignes N fois au pire des cas, donc O(N^2), non?
+
+Avatar Neil Frederick Stewart	08:58 Neil Frederick:
+No, no, je suis là!
+
+Avatar Calin Popa	08:58 Calin:
+quand on a fait le probleme des carrefour la methode martice se fait en O(n exp 2) et la methode liste chainée en O de n??
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+J'ai fait un Chat trop long!
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Je vais répondre à la question de Calin, puis une pause très courte.
+
+Avatar Kha Pham	09:00 Kha:
+je n'ai pas compris quand vous parlez de liste plus general et moin general.
+
+Avatar Neil Frederick Stewart	09:00 Neil Frederick:
+Calin, problème de carrefours. Le coût, mémoire ou temps de calcul, est de l'ordre de N^2 avec la matrice. De l'ordre de N avec la liste chaînée.
+
+Avatar Mahsa Najimoghadam	09:00 Mahsa:
+Il est possible d'expliquer plus 2^{K-M}?
+
+Avatar Calin Popa	09:00 Calin:
+parfait merci
+
+Avatar Neil Frederick Stewart	09:01 Neil Frederick:
+Je vais une courte pause, et je commence à visionner le segment 3 à 9:03. Mahsa, répétez votre question après le segment 3.
+
+Avatar Christopher Almeida Neves	09:01 Christopher:
+C'est quoi la notation "cf" qui est utilisé apres l'example 1 dans "3 k n (cf N^2)"

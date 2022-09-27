@@ -1,0 +1,32 @@
+Avatar Neil Frederick Stewart	08:20 Neil Frederick:
+Vous comprenez comment et pourquoi nous réduisons le compteur dans chaque noeud dans le tri topologique? Vous comprenez POURQUOI nous cherchons le flux d'équilibre dans un réseau routier? Ah oui, entre parenthèses, bonjour!
+Bonjour, est-ce que vous comprenez comment et pourquoi nous réduisons les compteurs dans l'algorithme de tri topologique?
+Et POURQUOI nous cherchons le flux d'équilibre dans un réseau routier?
+Ok, je voulais juste me rassurer, parce que j'avais un peu peur que je n'avais pas bien expliqué.
+D'autres questions? Matières simples et un peu générales jusqu'ici.
+Dans le segment 2 il y une erreur bête, le graphe pour le problème de ...
+... problème de "arbre sous-tendant minimal" est NON-orienté.
+Ça sera le problème intéressant de notre point de vue.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:25 Marthy Stivaliz:
+sous-tendant minimal= longueur minimal?
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+L'algo de base est N carré. Mais nous avons une idée brillante:
+Pourquoi pas ajouter une que de priorité pour avoir un algorithme N log N?
+Nous faisons cela, et nous constatons que cette idée nous donne bel et bien une amélioration, MAIS ...
+Mais seulement pour les graphes creux. Pour les graphes denses, cela n'aide pas. En fait ...
+En fait, pour les graphes denses cela donne un algorithme moins bon.
+En tout cas, arbre s t avec queue de priorité est une exemple intéressant pour des gens comme vous ...
+
+Avatar Gabriel Ste-Marie	08:28 Gabriel:
+Comment la queue de priorité est-elle implémentée dans cette version de l'algorithme?
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+qui s'intéressent beaucoup aux structures de données! sourire
+Gabriel, cela ne s'explique pas en 20 mots. Ça s'en vient très bientôt.
+Ok, regardons donc le deuxième segment.
+En deux parties.
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:30 Rafael De Jesus:
+oui, c'est un bon truc pour trouver facilement les éléments avec compteur 0

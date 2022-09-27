@@ -1,0 +1,1702 @@
+{
+  "weeks": [
+    {
+      "cours": "IFT2015",
+      "semaine": "TO DO",
+      "subject": "Sur le site",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 3,
+          "taskName": "Ouvrir le site sans ouvrir VS Code?",
+          "taskDone": false
+        },
+        {
+          "id": 4,
+          "taskName": "Material design",
+          "taskDone": false
+        },
+        {
+          "id": 88913,
+          "taskName": "Hauteur week",
+          "taskDone": false
+        },
+        {
+          "id": 37668,
+          "taskName": "Delete task",
+          "taskDone": false
+        },
+        {
+          "id": 78963,
+          "taskName": "To do home",
+          "taskDone": false
+        },
+        {
+          "id": 52851,
+          "taskName": "Vérifier le lag du folding",
+          "taskDone": false
+        },
+        {
+          "id": 78845,
+          "taskName": "Améliorer l'upload de documents",
+          "taskDone": false
+        },
+        {
+          "id": 76058,
+          "taskName": "Ajouter lien vers Home",
+          "taskDone": false
+        }
+      ],
+      "id": 54094
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 1: 03 mai 2021",
+      "subject": "Introduction",
+      "docs": [
+        {
+          "fileNameBack": "PlanDeCours_IFT2105.pdf",
+          "fileNameFront": "Plan de cours"
+        }
+      ],
+      "fileNames": "Plan de cours",
+      "folded": true,
+      "tasks": [],
+      "id": 54092
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 1: 05 mai 2021 - Techniques de preuve",
+      "subject": "Révision des techniques de preuve",
+      "docs": [
+        {
+          "fileNameBack": "s1.pdf",
+          "fileNameFront": "Techniques de preuve"
+        }
+      ],
+      "fileNames": "Techniques de preuve",
+      "folded": true,
+      "id": 54093
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 01: 03 mai 2021 - Séance 01",
+      "subject": "Introduction",
+      "docs": [
+        {
+          "fileNameBack": "PlanDeCours_IFT2015.pdf",
+          "fileNameFront": "Plan de cours"
+        }
+      ],
+      "fileNames": "Plan de cours",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 13088,
+          "taskName": "Réécouter toutes les vidéos",
+          "taskDone": true
+        },
+        {
+          "id": 11715,
+          "taskName": "Lecture 1.1",
+          "taskDone": true
+        },
+        {
+          "id": 49027,
+          "taskName": "Lecture 1.2",
+          "taskDone": true
+        },
+        {
+          "id": 91744,
+          "taskName": "Lecture 1.3",
+          "taskDone": true
+        }
+      ],
+      "id": 54103
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 1: 03 mai  2021",
+      "subject": "Introduction",
+      "docs": [
+        {
+          "fileNameBack": "01-notes-intro.pdf",
+          "fileNameFront": "Introduction"
+        }
+      ],
+      "fileNames": "Introduction",
+      "folded": false,
+      "tasks": [],
+      "id": 54095
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 1: 04 mai 2021",
+      "subject": "Introduction",
+      "docs": [
+        {
+          "fileNameBack": "0.1.Introduction.pdf",
+          "fileNameFront": "Introduction"
+        }
+      ],
+      "fileNames": "Introduction",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 6,
+          "taskName": "Vidéo introduction",
+          "taskDone": true
+        }
+      ],
+      "id": 54096
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 1: 07 mai 2021",
+      "subject": "Vie du logiciel\nModèles de développement",
+      "docs": [
+        {
+          "fileNameBack": "1.1.Vie de logiciel.pdf",
+          "fileNameFront": "Vie du logiciel"
+        },
+        {
+          "fileNameBack": "1.2.Modeles de developpement.pdf",
+          "fileNameFront": "Modèles de développement"
+        }
+      ],
+      "fileNames": "Vie du logiciel\nModèles de développement",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 7,
+          "taskName": "Vidéo vie du logiciel",
+          "taskDone": true
+        },
+        {
+          "id": 8,
+          "taskName": "Vidéo modèles de développement",
+          "taskDone": true
+        }
+      ],
+      "id": 54097
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 1: 05 mai  2021 - Syntaxe",
+      "subject": "Introduction\nSyntaxe",
+      "docs": [
+        {
+          "fileNameBack": "02-notes-syntax.pdf",
+          "fileNameFront": "Syntaxe"
+        },
+        {
+          "fileNameBack": "ex1.pdf",
+          "fileNameFront": "Exercices 1"
+        }
+      ],
+      "fileNames": "Syntaxe\nExercices 1",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 10,
+          "taskName": "Exercices 1",
+          "taskDone": true
+        }
+      ],
+      "id": 54099
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 1: 06 mai 2021 - Fonctions",
+      "subject": "Fonctions",
+      "docs": [
+        {
+          "fileNameBack": "03-notes-funs.pdf",
+          "fileNameFront": "Fonctions"
+        }
+      ],
+      "fileNames": "Fonctions",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 11,
+          "taskName": "Réécouter lambda-calcul",
+          "taskDone": true
+        },
+        {
+          "id": 12,
+          "taskName": "Réécouter beta-reduction",
+          "taskDone": true
+        }
+      ],
+      "id": 54100
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 01: 05 mai 2021 - Séance 02",
+      "subject": "Graphe creux\nArbre binaire parfaitement balancé\nHashing",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 39941,
+          "taskName": "Réécouter toutes les vidéos",
+          "taskDone": true
+        },
+        {
+          "id": 14209,
+          "taskName": "Lecture 2.1",
+          "taskDone": true
+        },
+        {
+          "id": 11239,
+          "taskName": "Lecture 2.2",
+          "taskDone": true
+        },
+        {
+          "id": 25680,
+          "taskName": "Lecture 2.3",
+          "taskDone": true
+        },
+        {
+          "id": 59903,
+          "taskName": "Lecture 2.4",
+          "taskDone": true
+        }
+      ],
+      "id": 54104
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 2: 10 mai 2021 - Répéter/Tant Que",
+      "subject": "Révision des techniques de preuve\nLangage Répéter",
+      "docs": [
+        {
+          "fileNameBack": "s2.pdf",
+          "fileNameFront": "Deux modèles calculatoires"
+        },
+        {
+          "fileNameBack": "TP1.pdf",
+          "fileNameFront": "TP 1 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP1-Done.pdf",
+          "fileNameFront": "TP 1 - Réponses"
+        }
+      ],
+      "fileNames": "Deux modèles calculatoires\nTP 1 - Énoncé\nTP 1 - Réponses",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 61963,
+          "taskName": "TP1",
+          "taskDone": true
+        }
+      ],
+      "id": 54105
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 2: 12 mai 2021",
+      "subject": "Langage Répéter",
+      "docs": [
+        {
+          "fileNameBack": "leprochainnbrepremier.pdf",
+          "fileNameFront": "Le prochain nombre premier"
+        }
+      ],
+      "fileNames": "Le prochain nombre premier",
+      "folded": true,
+      "tasks": [],
+      "id": 54106
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 3: 17 mai 2021",
+      "subject": "Langage Répéter",
+      "docs": [
+        {
+          "fileNameBack": "TP2.pdf",
+          "fileNameFront": "TP 2 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP2-Done.pdf",
+          "fileNameFront": "TP 2 - Réponses"
+        }
+      ],
+      "fileNames": "TP 2 - Énoncé\nTP 2 - Réponses",
+      "folded": true,
+      "tasks": [],
+      "id": 54107
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 3: 19 mai 2021",
+      "subject": "Langage Tant Que",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54108
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 4: 26 mai 2021 - Church-Turing",
+      "subject": "Church-Turing",
+      "docs": [
+        {
+          "fileNameBack": "MT0n1n.pdf",
+          "fileNameFront": "Exemple machine de Turing"
+        },
+        {
+          "fileNameBack": "s3.pdf",
+          "fileNameFront": "Church-Turing"
+        }
+      ],
+      "fileNames": "Exemple machine de Turing\nChurch-Turing",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 36766,
+          "taskName": "Lecture 3.1",
+          "taskDone": false
+        },
+        {
+          "id": 15158,
+          "taskName": "Lecture 3.2",
+          "taskDone": false
+        },
+        {
+          "id": 21496,
+          "taskName": "Lecture 3.3",
+          "taskDone": false
+        }
+      ],
+      "id": 54109
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 1: 07 mai 2021",
+      "subject": "",
+      "docs": [
+        {
+          "fileNameBack": "ex2.pdf",
+          "fileNameFront": "Exercices 2"
+        }
+      ],
+      "fileNames": "Exercices 2",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 77708,
+          "taskName": "Installer Haskell",
+          "taskDone": true
+        },
+        {
+          "id": 65762,
+          "taskName": "Exercices 2",
+          "taskDone": true
+        }
+      ],
+      "id": 54120
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 02: 10 mai 2021 - Séance 03",
+      "subject": "Complexité algorithmique\nListes",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [
+        {
+          "id": 30407,
+          "taskName": "Lecture 3.1",
+          "taskDone": true
+        },
+        {
+          "id": 28286,
+          "taskName": "Lecture 3.2",
+          "taskDone": true
+        },
+        {
+          "id": 24674,
+          "taskName": "Lecture 3.6",
+          "taskDone": true
+        },
+        {
+          "id": 71527,
+          "taskName": "Lecture 3.7",
+          "taskDone": true
+        }
+      ],
+      "id": 54121
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 2: 10 mai 2021",
+      "subject": "Filtres",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54122
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 2: 12 mai 2021",
+      "subject": "Higher order\nReduce",
+      "docs": [
+        {
+          "fileNameBack": "ex3.pdf",
+          "fileNameFront": "Exercices 3"
+        }
+      ],
+      "fileNames": "Exercices 3",
+      "folded": false,
+      "tasks": [
+        {
+          "id": 1713,
+          "taskName": "Exercices 2.5",
+          "taskDone": true
+        }
+      ],
+      "id": 54123
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 2: 13 mai 2021",
+      "subject": "Typeclass\nScope",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54124
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 2: 14 mai 2021",
+      "subject": "Exercices 4",
+      "docs": [
+        {
+          "fileNameBack": "ex4.pdf",
+          "fileNameFront": "Exercices 4"
+        }
+      ],
+      "fileNames": "Exercices 4",
+      "folded": false,
+      "tasks": [
+        {
+          "id": 17178,
+          "taskName": "Exercices 4",
+          "taskDone": true
+        }
+      ],
+      "id": 54125
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 2: 11 mai 2021",
+      "subject": "Modèles de développement\nProcessus de développement",
+      "docs": [
+        {
+          "fileNameBack": "1.3.Processus de developpement.pdf",
+          "fileNameFront": "Processus de développement"
+        }
+      ],
+      "fileNames": "Processus de développement",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 43502,
+          "taskName": "Vidéo processus de dev",
+          "taskDone": true
+        }
+      ],
+      "id": 54126
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 2: 14 mai 2021",
+      "subject": "Équipe de développement\nVersionnement de logiciel",
+      "docs": [
+        {
+          "fileNameBack": "1.4.Equipe de developpement.pdf",
+          "fileNameFront": "Équipe de développement"
+        },
+        {
+          "fileNameBack": "1.5.Versionnement de logiciel.pdf",
+          "fileNameFront": "Versionnement de logiciel"
+        }
+      ],
+      "fileNames": "Équipe de développement\nVersionnement de logiciel",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 71753,
+          "taskName": "Vidéo équipe de dev",
+          "taskDone": true
+        },
+        {
+          "id": 55276,
+          "taskName": "Vidéo versionnement de log",
+          "taskDone": true
+        },
+        {
+          "id": 53991,
+          "taskName": "Démo modèles de dev",
+          "taskDone": false
+        }
+      ],
+      "id": 54127
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 02: 12 mai 2021 - Séance 04",
+      "subject": "Piles\nQueues\nArbres binaires",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54128
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 3: 17 mai 2021",
+      "subject": "Scope\nOrdre\nFermeture",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54130
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 3: 19 mai 2021 - Macros",
+      "subject": "Macros",
+      "docs": [
+        {
+          "fileNameBack": "04-notes-macro.pdf",
+          "fileNameFront": "Macros"
+        },
+        {
+          "fileNameBack": "ex5.pdf",
+          "fileNameFront": "Exercices 5"
+        }
+      ],
+      "fileNames": "Macros\nExercices 5",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 33004,
+          "taskName": "Exercices 5",
+          "taskDone": true
+        }
+      ],
+      "id": 54131
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 03: 17 mai 2021 - Séance 05",
+      "subject": "Heapsort\nAlgo de Floyd\nArbres Full/Complete",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 48871,
+          "taskName": "Lecture 6.1",
+          "taskDone": true
+        },
+        {
+          "id": 2964,
+          "taskName": "Lecture 6.2",
+          "taskDone": true
+        },
+        {
+          "id": 78526,
+          "taskName": "Lecture 6.3",
+          "taskDone": true
+        },
+        {
+          "id": 5086,
+          "taskName": "Lecture 6.4",
+          "taskDone": true
+        },
+        {
+          "id": 25301,
+          "taskName": "Lecture 7.5",
+          "taskDone": true
+        }
+      ],
+      "id": 54132
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 03: 19 mai 2021 - Séance 06",
+      "subject": "Représentation puînée\nTAD Table",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 22925,
+          "taskName": "Lecture 4.1",
+          "taskDone": true
+        },
+        {
+          "id": 60984,
+          "taskName": "Lecture 4.2",
+          "taskDone": true
+        },
+        {
+          "id": 99805,
+          "taskName": "Lecture 4.3",
+          "taskDone": true
+        }
+      ],
+      "id": 54133
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 04: 26 mai 2021 - Séance 07",
+      "subject": "Arbre binaire de recherche",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 33385,
+          "taskName": "Lecture 4.4",
+          "taskDone": true
+        }
+      ],
+      "id": 54134
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 3: 20 mai 2021",
+      "subject": "Macros",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54135
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 3: 21 mai 2021",
+      "subject": "Révision d'intra",
+      "docs": [
+        {
+          "fileNameBack": "intra-revision.pdf",
+          "fileNameFront": "Révision d'intra"
+        }
+      ],
+      "fileNames": "Révision d'intra",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 22413,
+          "taskName": "Révision d'intra",
+          "taskDone": true
+        }
+      ],
+      "id": 54136
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 3: 18 mai 2021",
+      "subject": "Exigences\nCas d'utilisation",
+      "docs": [
+        {
+          "fileNameBack": "2.1.Exigences.pdf",
+          "fileNameFront": "Exigences"
+        },
+        {
+          "fileNameBack": "2.2.Cas dutilisation.pdf",
+          "fileNameFront": "Cas d'utilisation"
+        }
+      ],
+      "fileNames": "Exigences\nCas d'utilisation",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 47222,
+          "taskName": "Vidéo exigences",
+          "taskDone": true
+        },
+        {
+          "id": 71316,
+          "taskName": "Vidéo cas d'utilisation 1",
+          "taskDone": true
+        }
+      ],
+      "id": 54137
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 3: 21 mai 2021",
+      "subject": "Test 1\nCas d'utilisation",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 27997,
+          "taskName": "Vidéo cas d'utilisation 2",
+          "taskDone": true
+        },
+        {
+          "id": 46321,
+          "taskName": "Démo exigences",
+          "taskDone": false
+        },
+        {
+          "id": 55171,
+          "taskName": "Démo cas d'utilisation",
+          "taskDone": false
+        }
+      ],
+      "id": 54138
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 4: 25 mai 2021",
+      "subject": "Analyse",
+      "docs": [
+        {
+          "fileNameBack": "3.1.Analyse.pdf",
+          "fileNameFront": "Analyse"
+        }
+      ],
+      "fileNames": "Analyse",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 8195,
+          "taskName": "Vidéo analyse",
+          "taskDone": true
+        }
+      ],
+      "id": 54139
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 4: 26 mai 2021",
+      "subject": "Intra",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54140
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 4: 27 mai 2021 - Logique",
+      "subject": "Logique",
+      "docs": [
+        {
+          "fileNameBack": "05-notes-logic.pdf",
+          "fileNameFront": "Logique"
+        },
+        {
+          "fileNameBack": "ex6.pdf",
+          "fileNameFront": "Exercices 6"
+        }
+      ],
+      "fileNames": "Logique\nExercices 6",
+      "folded": false,
+      "tasks": [],
+      "id": 54141
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 05: 31 mai 2021 - Séance 08",
+      "subject": "Preuve profondeur d'un arbre moyen\nAVL",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54142
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 05: 02 juin 2021 - Séance 09",
+      "subject": "Fin de la preuve\nRebalancement",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54143
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 5: 31 mai 2021",
+      "subject": "Lambda-calcul",
+      "docs": [
+        {
+          "fileNameBack": "Corollaire_2_11.pdf",
+          "fileNameFront": "Corollaire 2.11"
+        },
+        {
+          "fileNameBack": "TP3.pdf",
+          "fileNameFront": "TP 3 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP3-Done.pdf",
+          "fileNameFront": "TP 3 - Réponses"
+        }
+      ],
+      "fileNames": "Corollaire 2.11\nTP 3 - Énoncé\nTP 3 - Réponses",
+      "folded": true,
+      "tasks": [],
+      "id": 54144
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 5: 02 juin 2021",
+      "subject": "Circuits booléens",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54145
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 6: 07 juin 2021 - Langages réguliers",
+      "subject": "Langages\nCorrection du Devoir 1",
+      "docs": [
+        {
+          "fileNameBack": "s4.pdf",
+          "fileNameFront": "Langages réguliers"
+        },
+        {
+          "fileNameBack": "TP4.pdf",
+          "fileNameFront": "TP 4 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP4-Done.pdf",
+          "fileNameFront": "TP 4 - Réponses"
+        }
+      ],
+      "fileNames": "Langages réguliers\nTP 4 - Énoncé\nTP 4 - Réponses",
+      "folded": false,
+      "tasks": [],
+      "id": 54146
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 6: 09 juin 2021",
+      "subject": "Automates finis déterministes\nLemme du pompiste d. 92",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 4399,
+          "taskName": "Lecture 1.1",
+          "taskDone": false
+        },
+        {
+          "id": 53179,
+          "taskName": "Lecture 1.4",
+          "taskDone": false
+        }
+      ],
+      "id": 54147
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 4: 28 mai 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54148
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 5: 31 mai 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54149
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 5: 02 juin 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54150
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 5: 03 juin 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54151
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 5: 04 juin 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54152
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 6: 07 juin 2021 - Impératif",
+      "subject": "Impératif",
+      "docs": [
+        {
+          "fileNameBack": "06-notes-imp.pdf",
+          "fileNameFront": "Impératif"
+        }
+      ],
+      "fileNames": "Impératif",
+      "folded": false,
+      "tasks": [],
+      "id": 54153
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 6: 09 juin 2021 - Mémoire",
+      "subject": "Mémoire",
+      "docs": [
+        {
+          "fileNameBack": "07-notes-mem.pdf",
+          "fileNameFront": "Mémoire"
+        }
+      ],
+      "fileNames": "Mémoire",
+      "folded": true,
+      "tasks": [],
+      "id": 54154
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 6: 10 juin 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54155
+    },
+    {
+      "cours": "IFT2035",
+      "semaine": "Semaine 6: 11 juin 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54156
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 7: 14 juin 2021",
+      "subject": "Automates finis non-déterministes",
+      "docs": [
+        {
+          "fileNameBack": "TP5.pdf",
+          "fileNameFront": "TP 5 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP5-Done.pdf",
+          "fileNameFront": "TP 5 - Réponses"
+        }
+      ],
+      "fileNames": "TP 5 - Énoncé\nTP 5 - Réponses",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 61867,
+          "taskName": "Lecture 1.2",
+          "taskDone": false
+        }
+      ],
+      "id": 54157
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 7: 16 juin 2021",
+      "subject": "Équivalences AFD-AFN\nExpressions régulières",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 75663,
+          "taskName": "Lecture 1.3",
+          "taskDone": false
+        }
+      ],
+      "id": 54158
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 8: 21 juin 2021",
+      "subject": "Révision\nCorrection du Devoir 2",
+      "docs": [
+        {
+          "fileNameBack": "TP6.pdf",
+          "fileNameFront": "TP 6 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP6-Done.pdf",
+          "fileNameFront": "TP 6 - Réponses"
+        }
+      ],
+      "fileNames": "TP 6 - Énoncé\nTP 6 - Réponses",
+      "folded": true,
+      "tasks": [],
+      "id": 54159
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 4: 28 mai 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54160
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 5: 01 juin 2021",
+      "subject": "Conception",
+      "docs": [
+        {
+          "fileNameBack": "4.1.Conception.pdf",
+          "fileNameFront": "Conception"
+        }
+      ],
+      "fileNames": "Conception",
+      "folded": true,
+      "tasks": [],
+      "id": 54161
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 5: 04 juin 2021",
+      "subject": "Modélisation",
+      "docs": [
+        {
+          "fileNameBack": "4.2.Modelisation.pdf",
+          "fileNameFront": "Modélisation"
+        }
+      ],
+      "fileNames": "Modélisation",
+      "folded": true,
+      "tasks": [],
+      "id": 54162
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 6: 08 juin 2021",
+      "subject": "Modélisation",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54163
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 6: 11 juin 2021",
+      "subject": "Architecture",
+      "docs": [
+        {
+          "fileNameBack": "4.3.Architecture.pdf",
+          "fileNameFront": "Architecture"
+        }
+      ],
+      "fileNames": "Architecture",
+      "folded": true,
+      "tasks": [],
+      "id": 54164
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 7: 15 juin 2021",
+      "subject": "Paradigme orienté-objet",
+      "docs": [
+        {
+          "fileNameBack": "4.4.Paradigme oriente-objet.pdf",
+          "fileNameFront": "Paradigme orienté-objet"
+        }
+      ],
+      "fileNames": "Paradigme orienté-objet",
+      "folded": true,
+      "tasks": [],
+      "id": 54165
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 7: 18 juin 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54166
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 8: 22 juin 2021",
+      "subject": "Patrons de conception",
+      "docs": [
+        {
+          "fileNameBack": "4.5.Patrons de conception.pdf",
+          "fileNameFront": "Patrons de conception"
+        }
+      ],
+      "fileNames": "Patrons de conception",
+      "folded": true,
+      "tasks": [],
+      "id": 54167
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 8: 25 juin 2021",
+      "subject": "Pas de cours",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54168
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 06: 07 juin 2021 - Spécial",
+      "subject": "Buddy system",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 71798,
+          "taskName": "Voir instructions sur visionnement",
+          "taskDone": true
+        },
+        {
+          "id": 67167,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54169
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 06: 09 juin 2021 - Intra",
+      "subject": "Intra",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54170
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 07: 14 juin 2021 - Séance 10",
+      "subject": "Hashing",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 80066,
+          "taskName": "Lecture 5.1",
+          "taskDone": true
+        },
+        {
+          "id": 28654,
+          "taskName": "Lecture 5.2",
+          "taskDone": true
+        },
+        {
+          "id": 46180,
+          "taskName": "Lecture 5.3",
+          "taskDone": true
+        },
+        {
+          "id": 64439,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54171
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 07: 16 juin 2021 - Séance 11",
+      "subject": "Hashing",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 56793,
+          "taskName": "Lecture 5.4",
+          "taskDone": true
+        },
+        {
+          "id": 47293,
+          "taskName": "Lecture 5.5",
+          "taskDone": true
+        },
+        {
+          "id": 33510,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54172
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 08: 21 juin 2021 - Séance 12",
+      "subject": "Tri topologique",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 48378,
+          "taskName": "Lecture 9.1",
+          "taskDone": true
+        },
+        {
+          "id": 94181,
+          "taskName": "Lecture 9.2",
+          "taskDone": true
+        },
+        {
+          "id": 39303,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54173
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 08: 23 juin 2021 - Séance 13",
+      "subject": "Algorithme de Prim\nThreaded trees/lists",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 76770,
+          "taskName": "Lecture 9.5.1",
+          "taskDone": true
+        },
+        {
+          "id": 97707,
+          "taskName": "Lecture 9.3.2",
+          "taskDone": true
+        },
+        {
+          "id": 17167,
+          "taskName": "Lecture 9.3.5",
+          "taskDone": true
+        },
+        {
+          "id": 83589,
+          "taskName": "Lecture 9.6.1",
+          "taskDone": true
+        },
+        {
+          "id": 66917,
+          "taskName": "Regarder démo",
+          "taskDone": true
+        },
+        {
+          "id": 61911,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54174
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 8: 23 juin 2021",
+      "subject": "Intra",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54175
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 9: 28 juin 2021",
+      "subject": "Langages hors-contexte\nCorrection de l'intra",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54176
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 9: 30 juin 2021",
+      "subject": "Langages hors-contexte",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54177
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 9: 29 juin 2021",
+      "subject": "Test #3\nImplémentation",
+      "docs": [
+        {
+          "fileNameBack": "5.1.Implementation.pdf",
+          "fileNameFront": "Implémentation"
+        }
+      ],
+      "fileNames": "Implémentation",
+      "folded": true,
+      "tasks": [],
+      "id": 54178
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 9: 02 juillet 2021",
+      "subject": "Implémentation",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54179
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 10: 06 juillet 2021",
+      "subject": "Vérification et validation",
+      "docs": [
+        {
+          "fileNameBack": "5.2.Verification et validation.pdf",
+          "fileNameFront": "Vérification et validation"
+        }
+      ],
+      "fileNames": "Vérification et validation",
+      "folded": true,
+      "tasks": [],
+      "id": 54180
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 10: 09 juillet 2021",
+      "subject": "Tests unitaires",
+      "docs": [
+        {
+          "fileNameBack": "5.3.Tests unitaires.pdf",
+          "fileNameFront": "Tests unitaires"
+        }
+      ],
+      "fileNames": "Tests unitaires",
+      "folded": true,
+      "tasks": [],
+      "id": 54181
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 11: 13 juillet 2021",
+      "subject": "Déploiement\nMaintenance ",
+      "docs": [
+        {
+          "fileNameBack": "6.1.Deploiement.pdf",
+          "fileNameFront": "Déploiement"
+        },
+        {
+          "fileNameBack": "6.2.Maintenance.pdf",
+          "fileNameFront": "Maintenance"
+        }
+      ],
+      "fileNames": "Déploiement\nMaintenance",
+      "folded": true,
+      "tasks": [],
+      "id": 54182
+    },
+    {
+      "cours": "IFT2255",
+      "semaine": "Semaine 11: 16 juillet 2021",
+      "subject": "Conclusion\nTest #4",
+      "docs": [
+        {
+          "fileNameBack": "0.2.Conclusion.pdf",
+          "fileNameFront": "Conclusion"
+        }
+      ],
+      "fileNames": "Conclusion",
+      "folded": true,
+      "tasks": [],
+      "id": 54183
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 10: 05 juillet 2021",
+      "subject": "Lemme du pompiste HC\nPropriétés de fermeture de HC",
+      "docs": [
+        {
+          "fileNameBack": "TP8.pdf",
+          "fileNameFront": "TP 8 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP8-Done.pdf",
+          "fileNameFront": "TP 8 - Réponses"
+        }
+      ],
+      "fileNames": "TP 8 - Énoncé\nTP 8 - Réponses",
+      "folded": true,
+      "tasks": [],
+      "id": 54184
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 10: 07 juillet 2021 - DEC et REC",
+      "subject": "Langages décidables et reconnaissables\nModèle de calcul de la plante carnivore",
+      "docs": [
+        {
+          "fileNameBack": "s6.pdf",
+          "fileNameFront": "Langages décidables et reconnaissables"
+        }
+      ],
+      "fileNames": "Langages décidables et reconnaissables",
+      "folded": false,
+      "tasks": [],
+      "id": 54185
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 11: 12 juillet 2021",
+      "subject": "Langages indécidables et reconnaissables\nA-MT, HALTE-MT",
+      "docs": [
+        {
+          "fileNameBack": "TP9.pdf",
+          "fileNameFront": "TP 9 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP9-Done.pdf",
+          "fileNameFront": "TP 9 - Réponses"
+        }
+      ],
+      "fileNames": "TP 9 - Énoncé\nTP 9 - Réponses",
+      "folded": false,
+      "tasks": [],
+      "id": 54186
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 09: 28 juin 2021 - Séance 14",
+      "subject": "Skip Lists\nArbres 2-3",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 78858,
+          "taskName": "Lecture 10.4.2",
+          "taskDone": true
+        },
+        {
+          "id": 11445,
+          "taskName": "Lecture 4.7",
+          "taskDone": true
+        },
+        {
+          "id": 46761,
+          "taskName": "Chat",
+          "taskDone": true
+        },
+        {
+          "id": 73903,
+          "taskName": "Regarder vidéo supplémentaire",
+          "taskDone": false
+        }
+      ],
+      "id": 54187
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 09: 30 juin 2021 - Séance 15",
+      "subject": "Arbres 2-4\nArbres rouge-noir",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 98013,
+          "taskName": "Lecture 12.2",
+          "taskDone": true
+        },
+        {
+          "id": 53775,
+          "taskName": "Chat",
+          "taskDone": true
+        },
+        {
+          "id": 62348,
+          "taskName": "Démo",
+          "taskDone": true
+        }
+      ],
+      "id": 54188
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 10: 05 juillet 2021 - Séance 16",
+      "subject": "1-2-3 deterministic skiplists\nSplay trees",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 16870,
+          "taskName": "Lecture 4.5",
+          "taskDone": true
+        },
+        {
+          "id": 74721,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54189
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 10: 07 juillet 2021 - Séance 17",
+      "subject": "Splay trees",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 87938,
+          "taskName": "Démo",
+          "taskDone": true
+        },
+        {
+          "id": 24141,
+          "taskName": "Chat",
+          "taskDone": true
+        }
+      ],
+      "id": 54190
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 11: 14 juillet 2021",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [
+        {
+          "id": 23932,
+          "taskName": "Démo",
+          "taskDone": true
+        }
+      ],
+      "id": 54191
+    },
+    {
+      "cours": "IFT2015",
+      "semaine": "Semaine 12: 21 juillet 2021",
+      "subject": "Final",
+      "docs": [],
+      "fileNames": "",
+      "folded": true,
+      "tasks": [],
+      "id": 54192
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 11: 14 juillet 2021",
+      "subject": "TOUT-MT, REG-MT",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54193
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 12: 19 juillet 2021",
+      "subject": "TOUT-GHC, EQ-GHC\nCorrection du devoir 3",
+      "docs": [
+        {
+          "fileNameBack": "Devoir3-Q2.pdf",
+          "fileNameFront": "Devoir 3 #2"
+        },
+        {
+          "fileNameBack": "Devoir3-Q3.pdf",
+          "fileNameFront": "Devoir 3 #3"
+        },
+        {
+          "fileNameBack": "TP10.pdf",
+          "fileNameFront": "TP 10 - Énoncé"
+        },
+        {
+          "fileNameBack": "TP10-Done.pdf",
+          "fileNameFront": "TP 10 - Réponses"
+        }
+      ],
+      "fileNames": "Devoir 3 #2\nDevoir 3 #3\nTP 10 - Énoncé\nTP 10 - Réponses",
+      "folded": false,
+      "tasks": [],
+      "id": 54194
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 12: 21 juillet 2021",
+      "subject": "10 problèmes\nJeu de la vie",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54195
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 12: 23 juillet 2021",
+      "subject": "",
+      "docs": [
+        {
+          "fileNameBack": "Correction devoir 4 (incomplet).pdf",
+          "fileNameFront": "Correction du devoir 4 (incomplète)"
+        }
+      ],
+      "fileNames": "Correction du devoir 4 (incomplète)",
+      "folded": false,
+      "tasks": [],
+      "id": 54196
+    },
+    {
+      "cours": "IFT2105",
+      "semaine": "Semaine 13: 26 juillet 2021",
+      "subject": "Final",
+      "docs": [],
+      "fileNames": "",
+      "folded": false,
+      "tasks": [],
+      "id": 54197
+    }
+  ]
+}

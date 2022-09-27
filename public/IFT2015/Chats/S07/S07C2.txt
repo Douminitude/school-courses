@@ -1,0 +1,38 @@
+Neil Frederick Stewart	08:53 Neil Frederick:
+Dans l'esquisse de preuve, j'ai appliqué la règle d'Hôpital à la fonction log(N), H(N) est défini seulement pour les entiers.
+Il est facile de montrer que H_N est très proche de log N dans le cas spécial quand N=2 exposant k. C'est motivant, rassurant. Le preuve générale est plus difficile.
+Questions?
+Ok, soulignons ce que nous allons faire dans la suite.
+Nous allons prendre un arbre "aléatoire" pour commencer.
+Et nous allons montrer que la profondeur en moyen est log N.
+C'est très rassurant. Un peu surprenant peut-être.
+Était-il évident a priori qu'il n'y a pas tellement d'arbres "méchants" pour donner très souvent des profondeurs très grandes?
+Pour moi non.
+Cela veut dire que les arbres "méchants" sont rares.
+
+David Whipps	08:58 David:
+Wouldn't we assume some kind of "average" tree depth is most likely?
+
+Neil Frederick Stewart	08:58 Neil Frederick:
+Mais on aimerait limiter la profondeur dans le plus mauvais cas aussi.
+
+Neil Frederick Stewart	08:58 Neil Frederick:
+David, c'est une très bonne question.
+What is the sample space here? What do we MEAN by an average tree?
+
+Man Ping Li	08:59 Man Ping:
+parce que la probabilite est 1/2 pour l'arbre gauche et l'arbre droiote? pas grande de probabilite avoir l'arbre mechant?
+
+Neil Frederick Stewart	09:00 Neil Frederick:
+Nous allons prendre comme definition d'un arbre aléatoire qqchose qui se base sur l'ordre d'insertion.
+
+David Whipps	09:00 David:
+For any given tree structure, that with a random data set, the depth will tend to some average, rather than something "mechant"
+
+Man Ping Li	09:00 Man Ping:
+genre 1/2*1/2*1/2*1/2...de probabilite avoir le mechant
+
+Neil Frederick Stewart	09:00 Neil Frederick:
+Yes, David. We're going to take an average over all possible orders of insertion in the tree.
+After that, as you say, the depth will have some sort of average.
+Et nous allons voir que la valeur qui sort de l'analyse est O(log N). Cela mérite un point d'exclamation: !

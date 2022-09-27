@@ -1,0 +1,57 @@
+Avatar Neil Frederick Stewart	08:52 Neil Frederick:
+Au début de la deuxième partie du segment, j'ai utilisé h comme nom de clef. Pas un très bon choix de nom de clef!
+Possibilité de confusion entre clef et la fonction h. triste
+Le problème de ré-hachage sera discuté dans le TP aujourd'hui.
+Questions?
+Voici une idée. Pour sauver du temps, peut-on utiliser la même fonction de hachage pour p qu'on a utilisé pour h?
+
+Avatar David Whipps	08:54 David:
+Je n'ai pas tout-a-fait compris comment le "tombstone" nous aide a trouver la prochaine celf
+
+Avatar Neil Frederick Stewart	08:55 Neil Frederick:
+Pour sauver le temps de calculer p, c'est ça l'idée.
+David, vous avez un chemin de collision que vous suivez pour trouver les clefs dans chaque cas.
+Vous décidez de retirer une clef, et cela peut briser le chemin de collision pour d'autres clefs.
+
+Avatar David Whipps	08:56 David:
+Si on avez besoin de la valeur de e.g. "y" pour trouver "z", est si "y" est disparu, comment est ce que un asterix nous aiderai?
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+Cela dit à l'algorithme qui cherche une clef qu'il ne faut pas arrêter la recherche!
+
+Avatar David Whipps	08:57 David:
+Est'ce-qu'on laisse la valeur "y" dans le cas, mais, on INDIQUE que la valeur est vide?
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+Normalement ces recherches terminent quand elles tombent sur une case vide.
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:57 Rafael De Jesus:
+pour garder "la place"... et garder le chemin ?
+
+Avatar David Whipps	08:57 David:
+c'est ca le asterix?
+
+Avatar Neil Frederick Stewart	08:58 Neil Frederick:
+On met une étoile pour dire à l'algo "cette case ne devrait pas être considérée vide pour fins de terminer la recherche d'une clef. Continuez.
+Voyez-vous?
+
+Avatar David Whipps	08:58 David:
+ok, "y" dans cet example est l'index du cas
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Ceci étant dit, l'algorithme d'insertion peut remplacer les étoiles par une nouvelle (vraie) clef.
+
+Avatar David Whipps	08:59 David:
+Oui, je comprends pourquoi c'est note. J'avez de la confusion par rapport aux noms des variables
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Voyez-vous?
+
+Avatar David Whipps	08:59 David:
+oui
+
+Avatar Neil Frederick Stewart	09:00 Neil Frederick:
+Mais, CECI étant dit, si vous faites cela, il faut faire attention au moment de l'insertion:
+Quand vous insérer, normalement vous cherchez pour voir si la clef est déjà présente.
+Il ne faut pas arrêter cette recherche avant d'avoir continué jusqu'à la fin du chemin, après une case étoilée il faut continuer, n'est-ce pas?
+Pause de 10 minutes, on peut revenir à cela plus tard au besoin.

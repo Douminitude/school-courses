@@ -1,0 +1,97 @@
+Avatar Neil Frederick Stewart	08:50 Neil Frederick:
+Bon, commençons. Y'a-t-il des questions sur le premier ou deuxième segments?
+Sur les queues de priorité par exemple?
+La preuve de l'algorithme de Floyd O(N) est intéressant. L'idée est utilisée ailleurs.
+Faut regarder l'exemple de Weise, p. 239 O(N log k0. Intéressant aussi.
+Questions?
+
+Avatar David Whipps	08:53 David:
+Are there good "practice problems" we might focus on?
+
+Avatar Maxime Lechasseur	08:53 Maxime:
+Personnellement tout me semble claire, mais pour les espace vide, ici, en application ce serait des espace null lorsque l'on initie notre arbre c'est bien ça?i
+
+Avatar Neil Frederick Stewart	08:53 Neil Frederick:
+David: there are copies of old exams available at the library. The trouble is ...
+
+Avatar David Whipps	08:54 David:
+... no library access.
+Are they not available digitally?
+
+Avatar Neil Frederick Stewart	08:54 Neil Frederick:
+the trouble is that the nature of the exams is different, in COVID times (take-home exam).
+
+Avatar Claudéric Deroy	08:54 Claudéric:
+libraries are open david
+
+Avatar David Whipps	08:55 David:
+I find having some questions to think about while reading and reviewing the material really helps
+Merci Claudéric.
+
+Avatar Neil Frederick Stewart	08:55 Neil Frederick:
+Les anciens examens sont moins utiles, parce que la nature des examens 26 heures on-line est très différente. Je pourrais vous envoyer l'examen de E20, ça serait peut-être approprié.
+David, I think I could sent you a copy of the E20 exam. That would be ...
+
+Avatar David Whipps	08:56 David:
+Ca serai très utile. Merci.
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+That would be more representative of what you might expect on the mid-term this summer.
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:56 Rafael De Jesus:
+si vous pouvez le partager pour tous, on vous remercie!
+
+Avatar Gabriel Ste-Marie	08:56 Gabriel:
+Pour les examens take-home, savez-vous le temps nécessaire pour les compléter?
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+The questions obviously have to be quite different from an exam "présentiel"
+
+Avatar Catherine Larivière	08:57 Catherine:
+il a dit 26h si je ne me tormpe pas
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+Oui, Gabriel, je vous donne 26 heures.
+L'examen sera disponible le matin, le 8 juin, vers 9:00.
+
+Avatar Gabriel Ste-Marie	08:57 Gabriel:
+Mais, dans ces 26 heures, combien de temps environ est nécessaire pour le compléter? Les 26 heures au complet?
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+Vous aurez 26 heures pour le faire.
+J'ai déjà informé les autres profs qui donnent des cours cet été ...
+
+Avatar David Whipps	08:58 David:
+It's less that I want to prepare for the midterm, and more that just studying the material in a void (analysis without synthesis) makes it more difficult to learn. The homeworks will help too.
+
+Avatar Kha Pham	08:59 Kha:
+le premier devoir va arriver quand ?
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+ils vont faire de leur mieux de minimiser la quantité de travail dans les autres cours ce jour-là
+Kha Pham, je viens de terminer le Devoir 1 en fin de semaine.
+
+Avatar David Whipps	08:59 David:
+Les questions d'examen E20 serais tres utile.
+
+Avatar Abdulmonhem Al Khalil	08:59 Abdulmonhem:
+how much time on average do we need to solve the exam?
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Mon idée était de vous l'envoyer mercredi de cette semaine.
+
+Avatar Abdulmonhem Al Khalil	09:00 Abdulmonhem:
+i understand that we have 26 hours to solve it but the question
+
+Avatar Neil Frederick Stewart	09:00 Neil Frederick:
+Je vais d'ailleurs vous envoyer un message sur les devoirs cet après-midi.
+Abdulmonhem Al Khalil: c'est le genre de question que vous lisez, vous y pensez pendant que vous prenez votre déjeuner, l'idée de la réponse vient subitement à votre esprit, et vous rédiger la réponse dans l'après-midi.
+Il n'y a que trois ou quatre questions. Mais:
+Mais il ne s'agit pas de me répéter ce que je vous ai dit dans le cours. Il faudra réfléchir ....
+
+Avatar Abderrahmane Manseur	09:02 Abderrahmane:
+Y'aura pas de code a écrire?
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+Vous voyez mon idée? Regardez l'Intra E20 que je vais vous envoyer.
+Mais gardez à l'esprit que j'avais donné des petits hints avant l'examen, il ne faut pas être découragé si vous trouvez les questions difficiles.

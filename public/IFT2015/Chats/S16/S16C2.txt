@@ -1,0 +1,22 @@
+Avatar Neil Frederick Stewart	08:51 Neil Frederick:
+Vous voyez l'idée?
+On commence par vous dire comment retirer une clef qui est, par hasard, dans le premier "gap"
+Cette partie est claire?
+S'il y a au moins de noeuds de niveau h-1 au prochain niveau, il n'y a rien à faire.
+Au moins "deux" je voulais dire.
+C'est seulement quand il y avait seulement un noeud au niveau h-1 qu'on a un problème.
+Pour régler le problème, on descend le "prochain" noeud, et on remonte celui qui vient après, selon le cas.
+Cela nous permet de descendre dans le premier gap avec au moins deux noeuds, ...
+Sans gâcher les choses à droite.
+Avec toujours 2 noeuds à gauche, on peut continuer de descendre au besoin.
+On pourrait prendre ces règles pour inventer une méthode pour retirer une clef dans un arbre 2-4!
+Questions?
+Bon, ok, il nous reste un sujet, une nouvelle méthode complètement, les Splay Tree.
+On change notre critère un peu.
+Si vous acheter une voiture, quel est le coût de l'exploitation de cet appareil?
+$X par année. Mais cela ne tient pas compte du coût d'achat.
+Vous dire, ok, cela me coût $Y par année pour "déprécier" la voiture, mettons $2,500 par année si cela vous a couté $25,000 et vous allez garder 10 ans.
+Mais une autre façon de s'exprimer est de parler du coût amorti.
+En anglais, "what is the amortized cost of the vehicle over 10 years"?
+C'est le coût total, prix d'achat plus tous les autre frais pendant 10 ans. Et après, vous pouvez prendre le coût total et diviser par 10. C'est une autre façon de mesurer le coût par année.
+Faisons une pause de 10 minutes.

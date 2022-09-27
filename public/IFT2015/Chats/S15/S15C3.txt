@@ -1,0 +1,56 @@
+Avatar Neil Frederick Stewart	09:30 Neil Frederick:
+Et encore. À 0:33 le problème vient de l'oncle ROUGE, et a 5:17 cela empêcherait un oncle ROUGE.
+C'est les oncles rouges qui créent problème.
+Est-ce que les idées principales sont claires?
+Comme je l'ai dit, le cas où il n'y a que un ou deux noeuds dans l'arbre, au début de la création de l'arbre, sont à considérer séparément.
+Mais ce n'est pas difficile, les solutions sont simples.
+
+Avatar David Whipps	09:33 David:
+Je n'ai pas bien compris la correspondance entre les arbres 2-4 et les skip-list deterministes. Pouvez vous l'expliquer?
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+Bon, ok, il ne reste que de séances de 2 heures chaque. Les Splay Tree sont importants.
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+David, il faut attendre la présentation de la semaine prochaine pour vraiment comprendre. Mais rien n'empêche de faire une description préliminaire maintenant. Cela vous prépare pour la présentation:
+Pugh a suggéré une façon de réaliser les SkipList. Cela permettait une structure qui n'était pas parfaitement de la bonne forme, mais assez proche pour assurer un comportement log N.
+Il y a 20 ans à peu près, une approche déterministe a été suggéré, à la place de la méthode de Pugh.
+On commence par regarder la nombre de noeuds dans chaque "écart" à chaque niveau. C'est quoi un "écart"? C'est ma traduction du mot anglais "gap".
+Regardons dans un SkipList au niveau h (quelconque).
+Entre deux noeuds de niveau h, vous avez un certain nombre d'autres noeuds reliés aux niveaux plus bas.
+Il y a un "gap" entre les deux noeuds. J'ai traduit cela en disant il y a un "écart" entre les deux noeuds. Ok, quelle est l'idée de la méthode?
+Dan le gap entre deux noeuds, dans l'écart, vous acceptez un certain minimum et un certain maximum pour le nombre de noeuds de niveau h-1. Ça doit être 1, 2 ou 3, et c'est pour cela que la méthode s'appèle
+1-2-3 deterministic skip-list.
+
+Avatar Mahsa Najimoghadam	09:41 Mahsa:
+Les nœuds peuvent être déplacés
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+On est capable d'insérer, et retire, en toujours respectant cette condition 1-2-3
+Oui Mahsa, vous avez raison.
+Mais après coût, chaque fois qu'on fait quelque chose en respectant cette condition, on voit que:
+On voit qu'on peut interpréter ce qu'on vient de faire comme une manipulation des noeuds d'un arbre 2-4.
+La correspondance est biunivoque.
+Mais pour vraiment comprendre, il faut attendre la présentation des 1-2-3 deterministic skip list.
+
+Avatar David Whipps	09:45 David:
+Merci
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Je trouve intéressante ces correspondances, mais je veux souligner que la chose la plus importante dans la suite est l'idée de Splay Tree, et méthodes semblables.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:45 Rafael De Jesus:
+merci
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+C'est une idée complètement différent pour la manipulation d'arbres binaires.
+AVL et ROUGE-NOIR sont semblables, d'un certain point de vue. Splay Tree est différent.
+J'aime présenter comme "motivé par l'idée de self-organizing list".
+C'est une façon de voir, mais je souligne à maintes reprises, que les avantages du Splay tree vont beaucoup plus loin que l'idée de "self-organizing list".
+
+Avatar David Whipps	09:47 David:
+Quel est le sujet de la TP aujourd'hui?
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+David, j'oublie, j'avais pris les TP de l'année passée, et réarrangé à cause de cédule différente.
+Vous allez voir en 10 minutes!

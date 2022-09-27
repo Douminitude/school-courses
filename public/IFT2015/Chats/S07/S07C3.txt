@@ -1,0 +1,228 @@
+Avatar Neil Frederick Stewart	09:29 Neil Frederick:
+J'ai dit que Knuth a inventé LaTeX. Non, il a inventé TeX. C'est Lamporte qui a fait des macros avec Tex, et donc LaTex
+Ok, pour commencer, avez-vous des questions?
+Man Ping Li, j'ai admiré vos efforts de penser à "comment faire la preuve?"
+Nous ferons qqchose de différent, mais c'est très bien d'essayer vous même.
+Il y a E, qui est comme I, mais dans l'arbre avec les noeuds d'échec.
+Pourquoi intéressant? Parce que la Recherche dans le cas d'échec nous intéresse beaucoup.
+Quel est le coût moyen de recherche dans le cas de recherches échouées? (Insertion)
+Pour le calcul de E, vous faites la même chose, mais en utilisant seulement les noeuds d'échec.
+
+Avatar Man Ping Li	09:32 Man Ping:
+n^2?
+
+Avatar Neil Frederick Stewart	09:33 Neil Frederick:
+Commençons avec un arbre avec un noeud. Il y a deux noeuds d'échec. La valeur de I est 0. La valeur de E est 1 + 1 = 2. Voyez-vous?
+Prenons un arbre avec la racine, est un enfant à gauche. Quelle est la valeur de E?
+
+Avatar David Whipps	09:34 David:
+3
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+David, non. Il y a combien de noeuds d'échec?
+
+Avatar Charles Desmeules	09:34 Charles:
+5?
+
+Avatar Gabriel Ste-Marie	09:35 Gabriel:
+1 + 2 + 2
+
+Avatar Man Ping Li	09:35 Man Ping:
+2 or 3?
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Oui Charles, expliques nous pourquoi. Gabriel a commencé l'explication
+
+Avatar Catherine Larivière	09:35 Catherine:
+on a deux noeuds d'échec à gauche, plus un à droite
+les deux à gauche sont de profondeur 2
+
+Avatar Charles Desmeules	09:35 Charles:
+2+2 à gauche +1 noeud d'échec à droite
+
+Avatar Catherine Larivière	09:35 Catherine:
+et celui à droite de profondeur 1
+
+Avatar Neil Frederick Stewart	09:36 Neil Frederick:
+Catherine nous donne l'explication, avec la somme de Gabriel, cela explique tout. Merci!
+Maintenant, une racine avec deux enfants. Quelle est la valeur de I, et quelle est la valeur de E?
+
+Avatar Man Ping Li	09:37 Man Ping:
+je n'ai pas biens compris le question...
+
+Avatar Catherine Larivière	09:37 Catherine:
+2 pour I, et 8 pour E
+
+Avatar Neil Frederick Stewart	09:37 Neil Frederick:
+Man Ping, prenez un arbre avec N=3 noeuds, la racine avec deux enfants. Quelle est la valeur de E. Catherine a compris.
+
+Avatar Man Ping Li	09:38 Man Ping:
+merci
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:38 Rafael De Jesus:
+I = 2... E = 8
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:38 Marthy Stivaliz:
+je ne comprends pas qu'est-ce que c'est E... pourrais-vous m'expliquer svp
+
+Avatar Neil Frederick Stewart	09:38 Neil Frederick:
+Rafael aussi. Maintenant une autre question ....
+Comment calculer E, étant donné I et N, sans passer par la définition détaillée?
+Regardez les trois petits exemples déj
+
+Avatar Catherine Larivière	09:40 Catherine:
+E=I^N
+
+Avatar Neil Frederick Stewart	09:40 Neil Frederick:
+Non, Catherine, mais continuez avec votre pensée ...
+
+Avatar Charles Desmeules	09:40 Charles:
+E = I * N
+
+Avatar Auriane Egal	09:40 Auriane:
+E = i*N ?
+
+Avatar Neil Frederick Stewart	09:41 Neil Frederick:
+Non ...
+
+Avatar Man Ping Li	09:41 Man Ping:
+n!
+
+Avatar Jeanne Laflamme	09:41 Jeanne:
+E=I + 2*(N+1) ?
+
+Avatar Neil Frederick Stewart	09:41 Neil Frederick:
+Faites un autre exemple, disons la racine avec deux enfants, et deux petits-enfants à gauche.
+N = 5.
+
+Avatar Man Ping Li	09:43 Man Ping:
+i=6
+
+Avatar David Whipps	09:43 David:
+N + 1
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:43 Rafael De Jesus:
+I = 6
+e = 16
+
+Avatar Olivier Ethier	09:44 Olivier:
+E = I +2N ?
+
+Avatar Mahsa Najimoghadam	09:44 Mahsa:
+I=0+1+1+2+2
+
+Avatar Man Ping Li	09:44 Man Ping:
+I=6,E=4
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Quelle est la valeur de E - I ?
+
+Avatar Man Ping Li	09:45 Man Ping:
+-2
+
+Avatar Auriane Egal	09:45 Auriane:
+10
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Olivier nous a donné la réponse!
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:45 Rafael De Jesus:
+10
+
+Avatar Olivier Ethier	09:45 Olivier:
+I = 6, E = 16
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Bravo Olivier.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:46 Rafael De Jesus:
+oui
+
+Avatar Neil Frederick Stewart	09:46 Neil Frederick:
+Tout le monde a remarqué que la conjecture de Oliver tient toujours?
+
+Avatar Man Ping Li	09:46 Man Ping:
+pourquoi E=16?
+
+Avatar Auriane Egal	09:46 Auriane:
+E = 3*4 + 2*2
+(deux enfants en positions 2 et 4 enfants en position 3)
+
+Avatar Mahsa Najimoghadam	09:47 Mahsa:
+E=16?
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+Man Ping Li, parce que 6 + 6 + 2 + 2 = 16
+Oliver, comment ferait-on la preuve?
+
+Avatar Olivier Ethier	09:48 Olivier:
+hum bonne question haha
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+"Olivier" plutôt.
+
+Avatar Olivier Ethier	09:49 Olivier:
+pas de problème, mais vite comme ça, je ne sais pas
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Quelle serait l'approche générale pour faire la preuve?
+
+Avatar Gabriel Ste-Marie	09:49 Gabriel:
+On pourrait procéder par induction
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Très bien Gabriel
+Comment procéder?
+
+Avatar Gabriel Ste-Marie	09:50 Gabriel:
+On vérifie que la formule fonctionne pour le cas de base, l'arbre qui n'a que la racine.
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+Je connais deux façons, parce que j'ai posé la question plusieurs fois aux étudiants dans le passée, et comme chaque année, il y a des étudiants brillants ...
+Gabriel, très bien. Mais pour l'étape inductive. Supposons que nous ayons un arbre avec N noeuds, et une certaine valeur de I.
+
+Avatar Gabriel Ste-Marie	09:51 Gabriel:
+Et ensuite poser l'hypothèse que cela fonctionne pour N, et a partir de N, tenter d'ajouter des noeuds pour vérifier si N+1 fonctionne
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+Et que nous avons E = I + 2N
+Quoi faire?
+
+Avatar Olivier Ethier	09:51 Olivier:
+E(N+1) = E(N) + 2
+et on remplace l'hypothèse d'induction?
+
+Avatar Neil Frederick Stewart	09:52 Neil Frederick:
+Oui Gabriel, c'est ça qu'on fait dans la pratique! Mais
+Mais pour faire la preuve on doit dire "Ok, supposons maintenant que j'ai un arbre avec N+1 noeuds.
+Comment faire entrer l'hypothèse inductive?
+
+Avatar Olivier Ethier	09:53 Olivier:
+l'hypothese est que E(N) = I + 2N non?
+
+Avatar Gabriel Ste-Marie	09:53 Gabriel:
+Si l'on retire un noeud de l'arbre avec N+1 et que l'on observe les conséquences?
+
+Avatar Jeanne Laflamme	09:54 Jeanne:
+On regarge l'arbre qui a comme racine l'enfant gauche de la racine de l'arbre initial et celui qui a comme racine l'enfant droit de la racine de l'arbre initial
+
+Avatar Neil Frederick Stewart	09:54 Neil Frederick:
+Gabriel, nous avons un arbre avec N+1 noeuds. Nous savons que le résultat. ok Gabriel vient de nous donner la réponse. Oliver, oui, ce que vous dites est vrai.
+
+Avatar Man Ping Li	09:54 Man Ping:
+E-I = 2(n+1)?
+
+Avatar Neil Frederick Stewart	09:54 Neil Frederick:
+Gabriel, résumez pour nous la preuve svp.
+
+Avatar Gabriel Ste-Marie	09:56 Gabriel:
+Vérifier que la formule fonctionne pour le cas de base (N =1, racine seulement), ce qui est le cas. Poser que la formule fonctionne pour N (hypotèse d'induction). Vérifier que la formule fonctionne pour N+1, et a partir de l'arbre avec N+1 noeud, l'on retire 1 noeud pour obtenir un arbre N et ainsi utiliser l'hypotèse
+
+Avatar Neil Frederick Stewart	09:57 Neil Frederick:
+Ok, mais faisons cela. Quelle est la conséquence pour I d'enlever un noeud. Disons que I est réduit de d.
+
+Avatar Catherine Larivière	09:58 Catherine:
+faudrait faire attention de terminer le cours à 9h50, pour qu'on puisse avoir une pause avant la démo svp
+
+Avatar Neil Frederick Stewart	09:59 Neil Frederick:
+Oui, je vous laisse avec la dernière étape. NFS

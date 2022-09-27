@@ -1,0 +1,72 @@
+Avatar Neil Frederick Stewart	08:52 Neil Frederick:
+Le troisième segment est un parenthèse, comme je l'ai dit sur le site.
+J'ai inséré un enregistrement supplémentaire que j'avais fait en E20.
+Questions sur les matières?
+Je reviens donc à mon idée de "regardez le principe derrière"
+
+Avatar David Whipps	08:53 David:
+Can you clarify the statement you made at the end of the second recording about how Weiss names chapter 4.3?
+
+Avatar Abderrahmane Manseur	08:53 Abderrahmane:
+Une liste chainée est un TAD ou une méthode ??
+je comprend pas la nuance
+
+Avatar Neil Frederick Stewart	08:54 Neil Frederick:
+David, ok. For me it's important to think clearly about things, and mixing the problem with the method is not thinking clearly!
+The problem I want to solve is "How do I implement the o
+
+Avatar David Whipps	08:54 David:
+En anglais, "Table" is "Table" or a "Map?"
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+Hmm, suddenly everything froze. Table is a Table.
+The problem I want to solve is "how do I implement the operations in TAD Table?"
+One of the METHODS to solve this problem is to use a binary search tree. Another is to use hashing. Or 1-2-3 deterministic skip lists.
+
+Avatar David Whipps	08:56 David:
+But Weiss doesn't seem to refer to any ADT called "Table", or am I missing it?
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+These are METHODS.
+You're right, Weiss introduces ADTs, that's good, but he doesn't use the language very consistently, that's bad.
+Il y avait un autre exemple mentionné, excusez-moi, j'ai oublié par qui.
+Liste chaînée est une MÉTHODE.
+J'ai le TAD Liste (en italiques)
+
+Avatar Michael Roussel	08:58 Michael:
+Alors un binary search tree n'est pas un TAD ?
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Un certain nombre d'opérations que je dois implanter
+Michael, un BST n'est pas un TAD, c'est une méthode pour résoudre TAD Table.
+J'ai le TAD Liste (en italiques), un certain nombre d'opérations que je dois réaliser. Comment faire? Quelles sont les méthodes possibles?
+Une méthode serait le tableau contigue. Une autre serait la liste chaînée.
+
+Photo de Julien Thibeault	09:01 Julien:
+Pourriez-vous différencier TAD Table et méthode Table svp?
+
+Avatar Neil Frederick Stewart	09:02 Neil Frederick:
+Julien, il n'y a pas de méthode "Table". TAD Table est le problème, les opérations à réaliser.
+Je peux parler comme "tableau" comme méthode. C'est une collection de cellules continues, avec accès direct par indexage. Mais cela n'a rien à voir avec TAD Table.
+Je vous ai donné en haut d'une diapo des exemples de problème: TAD Liste, ... etc
+
+Avatar Catherine Larivière	09:03 Catherine:
+mais le tableau contient des méthodes
+
+Avatar Mathieu Coupal	09:03 Mathieu:
+Donc TAD Table c'est une façon plus longue de juste dire TAD ?
+
+Avatar Neil Frederick Stewart	09:04 Neil Frederick:
+TAD Table est un exemple de TAD Mathieu.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:04 Rafael De Jesus:
+non, Table est un TAD
+
+Avatar Neil Frederick Stewart	09:04 Neil Frederick:
+Catherine, un tableau contigu EST une méthode, c'est une méthode pour réaliser TAD Liste
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:04 Rafael De Jesus:
+et l y a des autres exemples
+
+Avatar Neil Frederick Stewart	09:05 Neil Frederick:
+Oui Rafael, TAD Table est bel et bien un TAD!

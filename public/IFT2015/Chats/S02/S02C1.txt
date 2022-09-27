@@ -1,0 +1,94 @@
+Avatar Neil Frederick Stewart	08:20 Neil Frederick:
+Dans le contexte de hashing, let mot "retrait" est utilisé de deux façons différentes. Aussi, dans notre étude, le mot "liste" est utilisé de 17 façons différentes, parfois pour indiquer une méthode, parfois pour indiquer un problème! Ça vaut mieux de remarquer cela!
+
+Avatar Calin Popa	08:21 Calin:
+La liste TAD c'est différent des listes généralisées?
+
+Avatar Olivier Ethier	08:22 Olivier:
+Bonjour, pourriez-vous énoncer plus précisément le but de l'example 2?
+
+Avatar Neil Frederick Stewart	08:22 Neil Frederick:
+Calin: un TDA n'est pas une liste. C'est des données avec un des opérations spécifiées.
+
+Avatar Guillaume Gagné-Labelle	08:23 Guillaume:
+Est-ce que la méthode d'implantation d'un TAD peut en influencer l'efficacité de telle sorte que l'ordre d'un type d'opération puisse changer, ou est-ce que toutes les méthodes d'implantation se comporte environ de la même manière?
+
+Avatar Neil Frederick Stewart	08:23 Neil Frederick:
+Olivier: je vais énoncer très clairement l'exemple 2.
+
+Avatar Gabriel Ste-Marie	08:23 Gabriel:
+L'example 2 est-il censé représenter un TAD ou bien un moyen d'organiser des TAD?
+
+Avatar Neil Frederick Stewart	08:23 Neil Frederick:
+Guillaume, définitivement la différence peut être énorme. Regardez l'exemple #1 qui s'en vient.
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:24 Rafael De Jesus:
+pouvez-vous parler un sur la liste ré-entrant, s'il vous plaît ?
+
+Avatar Neil Frederick Stewart	08:24 Neil Frederick:
+L'exemple 2 est une description générale d'une méthode pour résoudre le problème défini par le TAD Table. Vous verrez.
+Rafael. Supposons que vous modéliser l'organisation "U de M" ...
+Les étudiants de deuxième année en INFO pourrait être dans une sous-liste très grande, avec beaucoup d'informations reliés ...
+Mais cette sous-liste pourrait être intéressant pour le registraire, et aussi pour le directeur du DIRO ...
+Plutôt que d'emmagasiner la sous-liste deux fois, permettons à différents noeuds dans la liste de partager la sous-liste. Moins d'espace utilisé. ...
+
+Avatar Calin Popa	08:27 Calin:
+donc liste de données abstraites peut etre aussi le probleme quon nous pose?
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:27 Rafael De Jesus:
+... alors, c'est un peu comme un graph connexe, pas cyclique, mais nécessairement connexe... c'est le cas ?
+
+Avatar Neil Frederick Stewart	08:27 Neil Frederick:
+Très bien. Mais il faut faire attention:
+Si le directeur décide qu'il n'a plus besoin de la sous-liste, il faut la couper ...
+Mais le registraire n'aura plus accès! ...
+Pour résoudre ce problème, on ajoute par exemple un compteur qui indique combien de noeuds accède à la sous-liste. ... On ne supprime pas avant que le compteur descend à zéro. Voyez-vous?
+
+Avatar Mathieu Coupal	08:29 Mathieu:
+On ajoute ce compteur à chaque noeud?
+
+Avatar Calin Popa	08:29 Calin:
+donc on déconnecte les connection jusqa avoir zero au compteur?
+
+Avatar Neil Frederick Stewart	08:29 Neil Frederick:
+Mathieu, non, un compteur à la sous-liste.
+Calin, oui, c'est ça. ...
+
+Avatar Calin Popa	08:30 Calin:
+et ensuite on suprime la sous liste?
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:30 Rafael De Jesus:
+ok, je vois... merci
+
+Avatar Neil Frederick Stewart	08:30 Neil Frederick:
+Si le directeur n'a plus besoin de la sous-liste, il couple simplement lien vers la sous-liste. ..
+
+Avatar Calin Popa	08:31 Calin:
+donc liste de données abstraites peut etre aussi le probleme quon nous pose?
+
+Avatar Neil Frederick Stewart	08:31 Neil Frederick:
+Mais le système ne doit pas éliminer la sous-liste s'il y a d'autre noeuds qui en ont besoin, le registraire par exemple.
+Calin, les choses sont plus simples que vous pensez. Il n'y a rien de compliqué ici! ...
+
+Avatar Christopher Almeida Neves	08:32 Christopher:
+Ok alors si quelquun veux plus la sous liste, il coupe juste la reference a la sous liste?
+
+Avatar Neil Frederick Stewart	08:32 Neil Frederick:
+Christopher, exactement!
+
+Avatar Christopher Almeida Neves	08:32 Christopher:
+Ok parfait, merci!
+
+Avatar Neil Frederick Stewart	08:33 Neil Frederick:
+Calin. Pour décider quelle est la meilleure méthode pour résoudre tel out tel problème, il faut préciser soigneusement le problème. VOus êtes d'accord. ...
+Alors, je peux dire vaguement " je veux insérer et retirer des items dans une liste de comptes de banque. Quelle est la meilleure méthode?" ...
+
+Avatar Abderrahmane Manseur	08:34 Abderrahmane:
+Donc c'est quoi que l'on utilise ici une list chainée avec differents noeuds contenant ou non une référence a la sous liste
+
+Avatar Neil Frederick Stewart	08:35 Neil Frederick:
+Mais m'exprimer comme cela est trop vague si je veux faire les choses soigneusement. Qu'est-ce que je veux faire exactement? Dites-moi cela et je vais commencer comparer les méthodes (les structures de données) soigneusement! ...
+Avant de me définir EXACTEMENT le problème, je ne peux pas vous dire PRÉCISÉMENT quelle est la meilleure méthode. ...
+Alors, pour définir le problème, j'introduis le TAD Table. ...
+Nous allons voir que ce TAD faire références à des données et plusieurs opérations, avec la fréquence de chaque opération précisée
+Nous sommes en retard. Au segment 2!

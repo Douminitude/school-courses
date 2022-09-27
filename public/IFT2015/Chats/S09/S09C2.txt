@@ -1,0 +1,75 @@
+Avatar Neil Frederick Stewart	08:50 Neil Frederick:
+Catherine, une chose à la fois!
+Avez vous compris pourquoi nous pouvons fixer d, et minimiser N, plutôt que de fixer N et maximiser d?
+Prenez le cas simple. Si je montre que d les N sur 2, c'est la même chose que montrer que N gel 2d. Voyez-vous?
+d
+d \leq N/2. N \geq 2d
+
+Avatar Catherine Larivière	08:53 Catherine:
+oui ça c'est trivial
+
+Avatar Neil Frederick Stewart	08:53 Neil Frederick:
+Très bien. Alors nous décidons de plutôt faire cela. Fixons d, minimisons N.
+Ok. d est fixe. Nous construisons l'arbre qui minimise N.
+Abre AVL de hauteur d-1 à droite, arbre AVL de hauteur d-2 a gauche.
+Ok? Ça c'est l'arbre qui minimise N.
+Voyez-vous cela?
+Nous avons l'arbre qui minimise N.
+Si ce n'était pas cela, on pourrait remplacer l'arbre qui prétend être optimal par un arbre avec moins de noeuds. Contradiction.
+
+Avatar Olivier Ethier	08:56 Olivier:
+Les phi sont les solutions de la relation de récurrence de fibonacci. Comme notre récurrence G est très proche, on s'en sert pour exprimer G_d. c'est bien ça?
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+L'arbre qui minimise N doit être AVL d-2 à gauche, AVL d-1 à droite
+C'est bien ça Olivier, mais une chose à la fin. Il faut commencer par voir que l'arbre qui minimise N doit avoir la forme mentionnée. Catherine, voyez-vous cela?
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+"Une chose à la fois" plutôt
+Catherine, voyez-vous que l'un des sous-arbres doit avoir la hauteur d-1?
+
+Avatar Catherine Larivière	08:58 Catherine:
+oui
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:59 Rafael De Jesus:
+c'est pour minimiser N
+
+Avatar Man Ping Li	08:59 Man Ping:
+c'est pour garder avl
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Ok, c'est parce que nous supposons que nous commençons avec un arbre dans P_d
+Maintenant, nous voulons minimiser le nombre de noeuds.
+À gauche il faut que cela soit d-2 , pour que cela reste AVL. D''accord?
+Et les sous-arbres de hauteur d-1 et d-2 doivent eux aussi minimiser le nombre de noeuds, vous êtes d'accord?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:01 Rafael De Jesus:
+oui
+
+Avatar Mahsa Najimoghadam	09:01 Mahsa:
+oui
+
+Avatar Neil Frederick Stewart	09:01 Neil Frederick:
+Ils doivent donc être dans P_{d-2} et P_{d-2} respectivement. D'accord?
+
+Avatar Mahsa Najimoghadam	09:02 Mahsa:
+P_{d-2} et P_{d-2}?
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+No, P_{d-2} et P_{d-1} j'ai mal tapé. Merci.
+
+Avatar Mahsa Najimoghadam	09:03 Mahsa:
+merci
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+Catherine, voyez-vous que les sous-arbres doivent eux-mêmes minimiser le nombre de noeuds?
+
+Avatar Catherine Larivière	09:04 Catherine:
+j'ai compris la preuve maintenant
+merci
+
+Avatar Neil Frederick Stewart	09:04 Neil Frederick:
+Très bien. Sinon, l'arbre original n'aurait pas été optimal.
+Cela nous donne une récurrence pour G.
+On peut résoudre la récurrence en comparant avec Fibonacci.
+Faisons une pause de 5 minutes

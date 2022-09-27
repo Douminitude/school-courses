@@ -1,0 +1,109 @@
+Avatar Neil Frederick Stewart	09:30 Neil Frederick:
+Je n'ai pas discuté, dans le deuxième cas où deux rotations sont nécessaires, pourquoi T2 et T3 doivent avoir les hauteurs indiquées. C'est les mêmes arguments que nous avons utilisés dans le premier cas: l'arbre original était AVL, et le noeud S était la PREMIÈRE fois qu'il y avait un manque de balancement. Regardez cela, et si vous avez des questions plus tard, posez-les.
+En général, pour les questions avant l'Intra, posez-les dans la discussion générale, de sorte que ...
+de sorte que tout le monde peut voir la question et la réponse.
+Les quatre dernière lignes de la dernière diapo, au sujet de l'Intra E20 sont ...
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:31 Marthy Stivaliz:
+je veux seulement être certaine.. l'intra sera ouverte le 8 juin à 00:01... la date limite de remise est?
+
+Avatar Neil Frederick Stewart	09:31 Neil Frederick:
+Sont évidemment à ignorer.
+C'est la fin des matières pour l'Intra. Par contre,
+Par contre, il y a cours lundi prochain sur le Buddy System
+Ce cours là ne fait pas partie des matières pour l'Intra.
+Certains détails sur la preuve AVL seront discutés dans la TP aujourd'hui
+Questions?
+
+Avatar David Whipps	09:33 David:
+Other than the E20 intra, are there other recommended practice problems, or recommended readings (outside the obvious) to prepare?
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+David: No, I think it would be a good idea to look at the E20 Intra carefully.
+
+Avatar David Whipps	09:34 David:
+Reading the E20, the questions seem quite difficult without having practiced many similar questions.
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+Ça serait bien de regarder l'Intra E20 soigneusement.
+Yes, a take-home exam has to be more difficult.
+Un examen à la maison doit être plus difficile.
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:35 Marthy Stivaliz:
+et nous devons le faire en latex aussi pour de bonus?
+
+Avatar David Whipps	09:35 David:
+Est-ce-que les solutions de l'intra E20 serait disponible en anglais? J'ai trouve seulment les solutions en francais.
+
+Avatar Gabriel Ste-Marie	09:35 Gabriel:
+Pour l'intra E20, dans vos commentaires, je crois qu'il est mentionné que certains étudiants avaient cité des sources pour répondre aux questions. Est-ce donc possible, si on trouve par ex. une information sur wikipedia, de l'utiliser en la citant?
+
+Avatar Neil Frederick Stewart	09:36 Neil Frederick:
+Regardez la question sur la hauteur de P_{d-2} dans l'Intra de E20.
+Pourquoi j'ai posé cette question?
+Pour commencer, ce n'est pas si facile que cela, et pourtant, il est toujours pris comme évident!
+C'est une bonne question pour un examen à la maison, parce que je n'ai jamais vu la question discuté dans les preuves présentées. L'étudiant ne peut pas facilement trouver ce détail sur l'Internet. (Je me trompe peut-être!)
+Mais la preuve n'est pas si facile. Beaucoup d'étudiants ont essayé de démontrer cela en utilisant la récurrence sur G, mais ça ne fonctionne pas, c'est l'argument en cercle qui inquiétait Catherine.
+
+Avatar Catherine Larivière	09:39 Catherine:
+inquiétait est un mot un peu fort
+
+Avatar David Whipps	09:39 David:
+Par contre, c'est difficile d'apprendre des techniques pour resoudres des tels problemes si'ils ne sont presentees nul part!
+
+Avatar Neil Frederick Stewart	09:39 Neil Frederick:
+Notre intuition nous dit que l'arbre le plus petit doit avoir une hauteur plus petite.
+David, ok, let's continue with the E20 example, just to have a good example. What's the method after all?
+Regardons l'arbre P_{d-2} qui est supposé avoir le nombre minimal de noeuds. Une façon de faire serait de prendre le chemin le plus longue dans cet arbre.
+
+Avatar Mahsa Najimoghadam	09:42 Mahsa:
+Is it possible to take the exam in two languages? I have a problem with French
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+Si cela a longueur supérieure à d-2, on pourrait l'enlever, l'arbre resterait AVL, et pour tant il aurait moins de noeuds. Contadiction.
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+The exam is available in French and English. The skeletons already on the web are in English and in French.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:43 Rafael De Jesus:
+... mais l'hauteur de l'arbre le plus petit doit être limité pour que l'arbre complet soit balancé (AVL) : l'hauteur TG - 1
+
+Avatar Mahsa Najimoghadam	09:44 Mahsa:
+merci
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Oui, Rafael, j'ai parlé seulement de la partie la plus difficile. On peut éliminer d pour commencer, mais pourquoi pas d-1, c'est ça la question difficile.
+A student asked (in English) about exams from previous years. But those exams were very different. There I could ask questions checking on basic knowledge. With a take-home exam I can't.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:46 Rafael De Jesus:
+si les deux sous-arbres (g, d) sont d-1, ça ne minimise pas N
+alors, un sous-arbre doit être d-2
+
+Avatar Man Ping Li	09:47 Man Ping:
+parce que'on veut avoir fabonacci pour faire la preuve
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+Un étudiant a demandé au sujet des examens des années antérieures. Mais ces examens sont très différents, avec des examens présentiels j'ai pu vérifier les connaissances de base, ici il faut poser des questions plus difficiles, qui demandent un peu de pensée "originale" de vous.
+Oui, Rafael, cela no minimise pas N, mais démontrez-moi cela!
+
+Avatar Catherine Larivière	09:48 Catherine:
+comment on peut éliminer les possibilités autres que d-2, d-1 et d?
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+Alors, pour répondre à David, l'approche générale dans le contexte d'une preuve comme ça ...
+... et à la question que Catherine vient de poser! ...
+est de supposer que l'énoncé est faux.
+
+Avatar Catherine Larivière	09:49 Catherine:
+mon énoncé ou celui de David?
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Si on avait d-1, par exemple, le chemin de longueur maximale serait de longueur d-1.
+Catherine, les deux.
+Comment procéder pour faire une telle preuve% Comment éliminer les possibilités que vous avez mentionné?
+
+Avatar Catherine Larivière	09:51 Catherine:
+je vais reposer la question sur studium, puisqu'il est déjà 9h50
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+Faites l'hypothèse que l'énoncé est faux, trouver une contradiction. J'avais dit dans l'énoncé qu'il fallait une preuve dans le même style. D'accord Catherine.

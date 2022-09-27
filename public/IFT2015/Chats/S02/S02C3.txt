@@ -1,0 +1,163 @@
+Avatar Neil Frederick Stewart	09:26 Neil Frederick:
+Oui, je suis là. Excusez-moi, j'ai complètement raté le timing. Je vais commencer le Chat 3 à 9:30, tel que prévu.
+
+Avatar Neil Frederick Stewart	09:27 Neil Frederick:
+Je vais commencer par répondre à une question de Isabel, et après par une question sur la recherche dichotomique.
+Isabel, oui, pour un seul carrefour, le coût, que cela soit en temps de calcul ou en mémoire utilisée, serait de l'ordre de 1 pour la liste chaînée, et de l'ordre de N pour le tableau. Mais je dois faire cela pour N carrefours, ce qui veut dire la différence entre N et N^2. Est-ce que c'est claire pur vous?
+
+Avatar Isabelle Viarouge	09:30 Isabelle:
+oui, merci!
+
+Avatar Neil Frederick Stewart	09:31 Neil Frederick:
+Pour la question de Mahsa. Recherche dichotomique:
+J'ai fait la comparaison entre l'arbre binaire et une liste non-triée. ...
+
+Avatar Christopher Almeida Neves	09:32 Christopher:
+C'est quoi la notation "cf" qui est utilisé apres l'example 1 dans "3 k n (cf N^2)" dans le video s2s2?
+
+Avatar Kha Pham	09:32 Kha:
+je n'ai pas compris quand vous parlez de liste plus general et moin general.
+
+Avatar Neil Frederick Stewart	09:32 Neil Frederick:
+J'ai constaté que certaines opérations sont de l'ordre de lg N, plutôt que N. Ça rend l'idée d'arbre de recherche intéressante. ...
+
+Avatar Mathieu Coupal	09:33 Mathieu: 
+https://en.wikipedia.org/wiki/Cf.#:~:text=The%20abbreviation%20cf.,with%20the%20topic%20being%20discussed.
+
+Avatar Christopher Almeida Neves	09:33 Christopher:
+Merci Mathieu
+
+Avatar Neil Frederick Stewart	09:33 Neil Frederick:
+Ok, fin de la comparaison. Mais vous pourriez vous dire, mais qu'est-ce qui se passe si le tableau est trié?
+
+Avatar Mahsa Najimoghadam	09:34 Mahsa:
+Le temps de recherche est très court
+
+Avatar Man Ping Li	09:35 Man Ping:
+logN pour tableau trie?non?/
+
+Avatar Calin Popa	09:35 Calin:
+si tableau trié on fait recherche binaire en lgn
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Dans le cas d'un tableau trié, la recherche devient lg N. Mais je vous signale qu'il y a d'autres opérations (retrait) qui sont de l'ordre de N, l'idée d'utiliser l'arbre binaire reste intéressante.
+
+Avatar David Whipps	09:35 David:
+Can we clarify the decision about whether we're going to have a Zoom video for the final (3rd) chat of each lecture?
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Pour votre question même sur la recherche dichotomique:
+Nous commençons avec un tableau avec N=2^k éléments. ...
+
+Avatar Gabriel Ste-Marie	09:36 Gabriel:
+J'aimerais aussi savoir comment nous auront accès aux TPs
+
+Avatar Michael Roussel	09:37 Michael:
+Il y a un lien zoom sur Studium
+
+Avatar Neil Frederick Stewart	09:37 Neil Frederick:
+Après avoir fait une comparaison, nous savons que l'élément cherché est en haut ou en bas, soit un tableau de longueur 2^{k-1}. ...
+Après 2 comparaisons, l'élément se trouve dans un table de longueur 2^
+de longer 2^{k-2).
+
+Avatar Mathieu Coupal	09:38 Mathieu:
+{k-2}
+
+Avatar Neil Frederick Stewart	09:39 Neil Frederick:
+Apres m comparaisons, dans un tableau de longueur 2^{k-m}
+Le processus va terminer quand vous avez fait m=k comparaisons, parce que la vous aurez une liste de longueur 1.
+Mais k = lg N, donc ca prend m= lg N étapes.
+
+Avatar Maxime Lechasseur	09:40 Maxime:
+assumant que l'on fait les 2^k-k comparaison ca ne semble pas tres rapide comme algorithme non?
+
+Avatar Neil Frederick Stewart	09:41 Neil Frederick:
+Vous n'avez pas parfaitement compris les arbres binaires, ni le hashing. Nous allons passer des semaines là-dessus!
+Oui, Maxime, lg N est très bien par rapport à N. Par contre ...
+Si vous faîtes la comparaison entre arbre binaire et tableau trié: ...
+Il faut trier. Cela coute N log N. Aussi:
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:42 Rafael De Jesus:
+oui, c'est mieux lgN que N
+
+Avatar Maxime Lechasseur	09:42 Maxime:
+oui c'est sur!
+
+Avatar Neil Frederick Stewart	09:43 Neil Frederick:
+Pour retirer un élément, ça coute N pour le tableau trié, mais nous allons voir que le retrait dans l'arbre binaire est aussi log N.
+
+Avatar Calin Popa	09:43 Calin:
+donc N lg N pour trier + lgN pour chercher dans tableau
+
+Avatar Neil Frederick Stewart	09:43 Neil Frederick:
+Oui Calin, alors tout dépend combien de retraits faut-il faire, combien de recherches, combien d'insertions, ....
+
+Avatar Maxime Lechasseur	09:44 Maxime:
+donc c'est bien mieu !
+
+Avatar Neil Frederick Stewart	09:44 Neil Frederick:
+Le TAD Table va lister ces opérations, et si vous avez une idée de la fréquence de chaque opération, vous pouvez décider quelle est la meilleure méthode.
+
+Avatar Catherine Larivière	09:45 Catherine:
+si on connait d'avance notre N, et qu'il reste fixe, on peut par contre choisir une strure de type 2^N, en sachant que notre N reste très petit
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Les arbres binaires sont log N pour la recherche, log N pour le retrait, log N pour l'insertion. Il n'y a rien qui coute de l'ordre de N. C'est très bien.
+
+Avatar Mathieu Coupal	09:46 Mathieu:
+Donc l'arbre binaire est toujours la meilleure solution? C'est quoi leur défauts?
+
+Avatar Neil Frederick Stewart	09:46 Neil Frederick:
+Catherine, je vois les choses différemment. Supposons que je propose une méthode 2^N. ...
+Si je sais a priori que N sera toujours petit, oui, je peux me servir de l'algo.
+C'est pour cela que quand nous faisons des analyses nous ignorons ce qui se passe pour N petit. ...
+Si N = 10, la différence entre N et log N n'est pas grand, utilisez l'algo qui vous plaît. Ça m'est égale, ça vous est égal.
+
+Avatar Catherine Larivière	09:48 Catherine:
+oui c'est ce que je voulais dire, merci
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Mais si jamais il y a la possibilité que N va être grand, vous êtes mieux de faire la distinction entre N et N^2, ou N et lg N, etc. Voyez-vous?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:49 Rafael De Jesus:
+oui, dans ces cas (N petit), on peut choisir l'algo le plus facile à faire
+
+Avatar Catherine Larivière	09:49 Catherine:
+oui bien sûr
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+D'autres questions, nous sommes 9:50 déjà. N'hésitez-pas de poser des questions dans la Discussion générale, je vais essayer de répondre. NFS
+
+Avatar Mathieu Coupal	09:50 Mathieu:
+Pourquoi est-ce qu'on ne choisirait pas l'arbre binaire?
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+Mathieu: souvent l'arbre binaire est effectivement un bon choix. Mais:
+
+Avatar Man Ping Li	09:51 Man Ping:
+un bon choix si le tableau est tri?
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+Pensez au guichet automatique. Là vous avez besoin de répondre très vite à la question: combien dans mon compte? ....
+
+Avatar Mathieu Coupal	09:52 Mathieu:
+et la recherche se fait en ln N, donc très rapide non?
+
+Avatar Neil Frederick Stewart	09:52 Neil Frederick:
+Et il arrive que la méthode de Hashing peut répondre à cette question dans un temps de l'ordre constant!
+Tout dépend de la fréquence des opérations spécifiées dans le TAD.
+
+Avatar Mathieu Coupal	09:53 Mathieu:
+d'après moi je n'ai pas bien compris la méthode de Hashing alors
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:53 Rafael De Jesus:
+alors, on doit considèrer le coût pour l'opération la plus fréquente ou la plus importante, c'est ça ?
+
+Avatar Neil Frederick Stewart	09:53 Neil Frederick:
+Vous allez bien comprendre le Hashing avant la fin du cours. Promis!
+
+Avatar Mathieu Coupal	09:54 Mathieu:
+d'accord sourire
+
+Avatar Neil Frederick Stewart	09:55 Neil Frederick:
+Rafael, dans la pratique l'est choses sont un peu moins claires. Mais vous vous dites, hmm, j'ai besoin de faire des consultations vite, mais retirer un enregistrement peut se faire lentement, cela correspond à fermer le compte du client. Je vais donc penser à hashing.

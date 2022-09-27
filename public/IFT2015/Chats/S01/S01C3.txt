@@ -1,0 +1,232 @@
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+Oui, commençons par dire que nous pouvons continuer après le cours dans la Discussion Générale
+We can continue with the chat in the "General discussion" after the end of the course
+
+Avatar Maxime Lechasseur	09:35 Maxime:
+Donc si j'ai bien compris une liste pure est séparé comme un arbre ?
+
+Avatar Neil Frederick Stewart	09:36 Neil Frederick:
+Vous avez remarquez que, dans un contexte (liste indexée), la meilleure méthode (list chainée vs tableau continu) pour faire de insertions ou retraits dépend de la fréquence de ces opérations.
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:36 Marthy Stivaliz:
+on parle suivant de N/2 operations pour retirer ou accéder un element (dependent du cas). Comment nous avons calculé N/2?
+
+Avatar Neil Frederick Stewart	09:37 Neil Frederick:
+Dans l'autre cas (le sac, exemple de simulation de la fumée) le tableau continue est toujours bon.
+Vous avez compris cela.
+Mais comment exprimer cela en termes de TAD? Répondez, svp.
+
+Avatar Calin Popa	09:37 Calin:
+dans la structure de donnée avec ordre quand on fait une liste chainée et on veut trouver element avec un indec c'est en N/2?
+
+Avatar Yutao Zhang	09:38 Yutao:
+c'est en moyenne N/2 si je ne me trompe
+
+Avatar Neil Frederick Stewart	09:39 Neil Frederick:
+You noticed that in one context (indexed list), the best method (linked list vs simple tableau) to do insertions and deletions depended on the frequency of the operations. In another (case of the "bag" or "sac", the contiguous tableau was always good. You understood that. But tell me explicitly how this can happen, using the terminology of the TAD.
+Comment exprimer ce que nous avons remarqué en utilisant la terminologie du TAD? How do you express what we noticed using the terminology of the ADT?
+
+Avatar Alexandre Simard	09:41 Alexandre:
+Quelle est cette terminologie?
+
+Avatar Neil Frederick Stewart	09:41 Neil Frederick:
+Réponse: La meilleur méthode peut évidemment changer si le problème change. Answer: the best method can obviously change if you change the problem
+
+Avatar Mathieu Coupal	09:41 Mathieu:
+Parce que nous devons explorer chaque noeuds pour connaitre son contenu et savoir s'il y a une nouvelle liste à l'intérieur
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:42 Rafael De Jesus:
+pouvez-vous également écrire les titres des chapitres / sections avec les références (lectures dans le livre) sur Studium (au cas où nous travaillerions avec la deuxième édition du livre)?
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+Non, écoutez. Nous avons remarqué des faits très simples. Je vous demande comment formuler cela en utilisant la terminologie de l'ADT
+
+Avatar Raphaël Collette	09:43 Raphaël:
+Est-ce que les différentes sortes de listes que nous avons vues sont plusieurs TAD ou différentes implémentations du même TAD
+
+Avatar Neil Frederick Stewart	09:43 Neil Frederick:
+La meilleur méthode change parce que le problème a changé.
+C'est quoi qui définit le problème? Répondez svp
+What defines the problem. Answer please:
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:43 Marthy Stivaliz:
+le nombre d'operations à faire?
+
+Avatar Mathieu Coupal	09:43 Mathieu:
+le nombre de donnée N
+
+Avatar Mathieu Coupal	09:44 Mathieu:
+la présence de sous-liste, de cycles
+
+Avatar Catherine Larivière	09:44 Catherine:
+N
+
+Avatar Maxime Lechasseur	09:44 Maxime:
+N
+le type de problème
+
+Avatar Yutao Zhang	09:44 Yutao:
+le type des operations
+
+Avatar Neil Frederick Stewart	09:44 Neil Frederick:
+Non, c'est le TAD qui définit le problème!
+
+Avatar Mathieu Coupal	09:44 Mathieu:
+les opérations à faire (retirer ou indexé)
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:44 Rafael De Jesus:
+même la meilleur méthode peut aussi changer si l'échelle change... c'est à dire : si on a beaucoup ou peux élements
+
+Avatar Mahsa Najimoghadam	09:44 Mahsa:
+Peu importe quand il s'agit de rechercher.
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:44 Marthy Stivaliz:
+donc la méthode defini le probleme?
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+C'est le TAD de données qui définit le problème
+Comment le TAD a changé entre les deux cas que nous avons regardé?
+
+Avatar Mathieu Coupal	09:45 Mathieu:
+qu'est-ce que vous voulez dire quand vous dites que c'est le TAD? Ça inclut quoi le TAD?
+
+Avatar Calin Popa	09:45 Calin:
+lordre du premier TAD etait important pas celui du deuxieme
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:45 Rafael De Jesus:
+... par example... pour trier des élements, si la liste est petit, les trier avec une approache naîve marche bien, mais si la liste est longue, on devriez utiliser une autre approximation (tri-rapide, etc.)
+
+Avatar Neil Frederick Stewart	09:46 Neil Frederick:
+Bon, c'est quoi un TAD? C'est des données, avec un certain nombre d'opérations à effectuer.
+
+Avatar Catherine Larivière	09:46 Catherine:
+on parle de tri ou de strucutres?
+
+Avatar Mahsa Najimoghadam	09:46 Mahsa:
+Lors de l'ajout d'un nœud à la liste
+
+Avatar Calin Popa	09:46 Calin:
+lordre etait important pour le premier TAD
+
+Avatar Neil Frederick Stewart	09:46 Neil Frederick:
+OUI Calin!
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+Le TAD de données a changé parce que les opérations ont changé.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:47 Rafael De Jesus:
+ahh... ici quand on parle de méthode, c'est seulement de structures ?
+
+Avatar David Whipps	09:47 David:
+Can you explain this last part in English?
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+Dans un cas, il fallait garder les éléments dans l'ordre. Dans l'autre cas non.
+
+Avatar David Whipps	09:48 David:
+The Abstract Data Type changed, because the operations changed?
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+Si l'opération change, le TAD change. Et il est normal que la meilleur méthode puisse changer.
+
+Avatar Calin Popa	09:48 Calin:
+Quand on dit TAD de données on dit Type Abstrait De Données?
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+OUi Rafael, la méthode c'est une structure de données.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:49 Rafael De Jesus:
+merci
+
+Avatar Calin Popa	09:49 Calin:
+et le TAD c'est juste le data non organisé au debut?
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Yes, David, the ADT changed because the operations changed. In one case we had to maintain the order, in the other case we did not.
+If you change the operation in an ADT, you've changed the ADT.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:50 Rafael De Jesus:
+alors... quelle est la différence entre la Méthode et le TAD ?
+
+Avatar Christopher Almeida Neves	09:50 Christopher:
+So we choose a TAD based on the underlying data and the operations we will need to perform using that dataÉ
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+If you've changed the ADT, you've changed the problem to be solved.
+
+Avatar David Whipps	09:50 David:
+I guess it's a question of language... you mean WE CHOSE another ADT because of the constraints, and the operations
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+If you change the problem to be solved, it's normal that the best method (the best Data Structure) might change.
+
+Avatar David Whipps	09:51 David:
+Makes sense
+
+Avatar Elvis Lucas Yanice Bamouni	09:51 Elvis Lucas Yanice:
+j'arrive plus a suivre !
+
+Avatar Jérémy Rabes	09:51 Jérémy:
+Dans l'exemple des particules de fumée, le TAD était constitué des différentes particules et des opérations ajouter et retirer ?
+
+Avatar Calin Popa	09:51 Calin:
+ah donc les methodes c'est des structure comme par exemple liste chainées?
+
+Avatar Catherine Larivière	09:52 Catherine:
+c'est très mélangeant et difficile à suivre comme chat
+
+Avatar Neil Frederick Stewart	09:52 Neil Frederick:
+David, the important thing is that we have formalized the problem we want to solve before trying to say which method (which Data Structure) is best. Seems like a good idea!
+
+Avatar Raphaël Collette	09:52 Raphaël:
+Est-ce que vous pourriez donner une définition précise de ce qu'est un TAD? Si je comprends bien c'est une classe qui doit posséder certaines méthodes et certaines variables pré-définies...
+
+Avatar Mathieu Coupal	09:53 Mathieu:
+Et c'est quoi les critères qui definissent le TAD?
+
+Avatar Neil Frederick Stewart	09:53 Neil Frederick:
+La chose importante est qu'il faut définir formellement le problème que nous voulons résoudre avant de s'exprimer sur la meilleur méthode. Ça semble être une bonne idée! C'est ça que nous faisons avec le TDA Raphael et Mathieu: c'est NOUS qui définissons le TAD
+
+Avatar Guillaume Gagné-Labelle	09:53 Guillaume:
+Qu'est-ce qui différencie un type de données abstrait d'un type concret?
+
+Avatar Neil Frederick Stewart	09:55 Neil Frederick:
+Nous disons, ok, c'est ceci que je veux faire. J'ai des éléments qui satisfont à certains critères (p.e. ordonnés ou pas), j'ai des opérations à réaliser (insertion, retrait, etc). Très bien. J'ai dit ce que je veux faire. J'ai défini le problème. Maintenant je peux répondre à la question (quelle est la meilleure méthode?) Quelle et la meilleure structure de données?
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:56 Marthy Stivaliz:
+Professeur, I am brand new to CS. I am an industrial engineer with PhD in operations research.. i have learned to program through experience... can you kindly recommend a reference to read so I can be prepare to this class? I have never deal before with data types. I feel a little bit lost.
+
+Avatar Mathieu Coupal	09:56 Mathieu:
+D'accord, je commence à comprendre je crois, pour l'instant, quand vous mentionné la possibilité de sous-listes, de listes cycliques, pures, linéaire, du besoin d'accès ou de retirer du data, etc etc, ce ne sont que des exemples qui pourraient être utilisé pour définir un TAD, le genre d'analyse que nous devrons faire pour choisir la méthode idéal par la suite?
+
+Avatar Neil Frederick Stewart	09:57 Neil Frederick:
+Nous pouvons continuer dans la Discussion Générale. Si vous avez des questions, posez-les.
+
+Avatar Calin Popa	09:57 Calin:
+les listes sont les methodes je crois
+Mathieu pour ta question
+
+Avatar Mathieu Coupal	09:57 Mathieu:
+le type de liste est un exemple de méthode non?
+
+Avatar Calin Popa	09:57 Calin:
+oui comme liste generale par exemple
+ca cest une methode et liste chainne cest une autre
+
+Avatar Mathieu Coupal	09:58 Mathieu:
+au final, ça se résume à: C'est important de commencé par le définition du problème avant de commencer par la résolution
+
+Avatar Calin Popa	09:58 Calin:
+oui
+
+Avatar Mathieu Coupal	09:58 Mathieu:
+merveilleux
+
+Avatar Calin Popa	09:59 Calin:
+ou est le lien pour le general chat?
+
+Avatar Jérémy Rabes	09:59 Jérémy:
+Si je comprends, le but est d'analyser les données et les opérations que l'on doit faire pour trouver quelle méthode (structure de données) est la meilleure ? et dans les vidéos ces méthodes étaient les différents types de liste ?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:59 Rafael De Jesus:
+C'est vrai, Mathieu!

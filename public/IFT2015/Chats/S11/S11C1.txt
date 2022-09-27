@@ -1,0 +1,40 @@
+Avatar Neil Frederick Stewart	08:20 Neil Frederick:
+J'ai remarqué des choses "mal exprimés" dans ma présentation, mais avant cela, questions?
+À 5:00 à peu près j'ai noté l'ensemble d'entiers 0, ..., M-1 par [0,M-1]. Mauvaise notation, bien sûr, ce dernier est un ensemble de nombres réels. Je devrais avoir honte.
+
+Photo de Julien Thibeault	08:23 Julien:
+Pouvez-vous définir M svp?
+
+Avatar Neil Frederick Stewart	08:23 Neil Frederick:
+M est la taille de la table.
+Nous commençons avec 26 exposant 20 possibilités pour des clefs, et h(x) envoie tout cela ...
+dans une petite table avec seulement M cases.
+Une autre chose mal dite. Quand je parlais de hachage double ...
+Pour expliquer l'avantage, j'ai dit que cela serait peu probable que p(x) soit égal à 1. D'où vient cela, voyons?!
+Plutôt: ça serait peu probable que h(x) = hOui, et aussi p(x) = pOui. c-à-d que ...
+... que deux clefs distinctes vont suivre le même chemin de collision. Voyez-vous?
+
+Avatar Catherine Larivière	08:27 Catherine:
+doit-on deviner ce qui se trouve à la place des pouces?
+c'est la question?
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+c'est un y je ne sais pas pourquoi StudiUm fait cela.
+
+Avatar Catherine Larivière	08:28 Catherine:
+ah d'accord
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+h(x) = hOui et aussi p(x) = pOui
+quand je tape je vois un y, c'est la lettre entre x et z, mais StudiUm affiche des pouces.
+Bienvenue à l'enseigement à distance.
+
+Avatar David Whipps	08:29 David:
+C'est un "emoji"
+Vous tapez le code pour "thumbs up"
+
+Avatar Neil Frederick Stewart	08:30 Neil Frederick:
+Avez-vous vu mon message de ce matin? En tout cas, regardons le deuxième segment.
+
+Avatar David Whipps	08:31 David:
+"(" + "y" + ")" = Oui

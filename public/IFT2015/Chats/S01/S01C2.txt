@@ -1,0 +1,28 @@
+Avatar Marthy Stivaliz Garcia Alvarado	09:02 Marthy Stivaliz:
+i am not sure i understood the ln(N) for binary trees.. can you please elaborate?
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+Question de profondeur de l'arbre. The question of tree depth.
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+I didn't write "ln", I wrote "lg". The first means log to the base e, the second means log to the base 2.
+In CS we almost always use lg, log to the base 2.
+We will spend a lot of time figuring out how to keep trees BALANCED, which means that their depth is only about lg N.
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:04 Marthy Stivaliz:
+ok got it... il veut dire la longueur de l'arbre c'est Log(N)... merci
+
+Avatar Neil Frederick Stewart	09:05 Neil Frederick:
+That means that if you have a million keys, since 2 to the 20th is about a million, replacing N by lg N changes the cost from a million comparisons to about 20. Worth the trouble.
+
+Avatar Neil Frederick Stewart	09:06 Neil Frederick:
+Nous allons passer beaucoup de temps à garder la profondeur des arbres de recherche autour de lg N. Cela veut dire remplace p.e. 1000000 par 20. Ça vaut la peine.
+Which questions haven't I answered?
+
+Avatar Neil Frederick Stewart	09:07 Neil Frederick:
+Pourquoi je mets tellement l'accent sur les TAD? Why so much emphasis on ADTs?
+C'est parce que, au début de l'info, l'étude dans ce domaine était très ad hoc. Telle ou telle méthode est bonne pour ceci, une autre est meilleur pour autre chose.
+Le TAD a permis de mettre un peu d'ordre là-dedans.
+Regardez encore le graphe à 9:46 du segment 1, ou au début du segment 1.
+Axe vertical: le coût. Axe horizontal N, la taille du problème.
+Le coût de faire quoi? De résoudre le problème. Et le problème est défini par le TAD. Je reviens après le troisième segement.

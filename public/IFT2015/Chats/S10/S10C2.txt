@@ -1,0 +1,61 @@
+Avatar Neil Frederick Stewart	08:51 Neil Frederick:
+Vous n'êtes pas nombreux ce matin! Questions sur les idées de base de hashing?
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:52 Marthy Stivaliz:
+non. j'ai une question toute simple.. P(T)=22 -> H(T)=6... je n'ai pas bien entendu l'operation pour arriver à 6.
+
+Avatar Neil Frederick Stewart	08:53 Neil Frederick:
+J'ai fait comme d'habitude beaucoup d'erreurs "verbales" dans la présentation. C'était la stress du stop-watch, enregistrer ou pas, share screen ou pas. Je m'excuse.
+
+Avatar Man Ping Li	08:54 Man Ping:
+quelle est le cout de trouver la clef s'il y une collision?
+
+Avatar Neil Frederick Stewart	08:54 Neil Frederick:
+Non, T est la 20 i'ème lettre de l'alphabet
+20 modulo 7 est égal à 6.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:55 Marthy Stivaliz:
+ok, merci
+
+Avatar Neil Frederick Stewart	08:55 Neil Frederick:
+20 divisé par 7 est égal à 2, avec un reste de 6
+J'ai dit dans la présentation que J était la troisième lettre de l'alpha, c'est faux bien sûr.
+J est la dixième lettre. 10 modulo 7 est égal à 3. Je l'ai mis à la bonne place, mais
+mais j'ai dit une bêtise verbalement.
+10 divisé par 7 est égale à 1, avec un reste de 3. Alors on met la clef dans la case 3.
+Le lendemain, quand j'ai besoin des informations, je répète le processus.
+JE DOIS AVOIR ENREGISTRÉ LA CLEF AVEC LES INFO
+Je regarde dans la case 1, et en regardant la clef, je peux savoir si je suis à la bonne place, ou si plutôt ...
+... ou si je dois plutôt suivre le "chemin de collision" (collision path) pour trouver la clef. C'est clair?
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:59 Rafael De Jesus:
+je vois que Hashing est plus facile pour enregistrer (avec h(x) ), mais n'est pas pratique pour rechercher ou récupérer les données dans l'ordre... alors pourquoi est-ce le hashing "intéressant" ?... quels sont les cas pratiques d'application ?
+
+Avatar Neil Frederick Stewart	09:00 Neil Frederick:
+Rafael: exemple classique: guichet automatique à la banque.
+
+Avatar David Whipps	09:00 David:
+I think an STL::map is an implementation of a Hash Table.
+Prof. Stewart peut me corriger
+
+Avatar Neil Frederick Stewart	09:00 Neil Frederick:
+Yes, David, but what good is it, I think that's the question asked by Rafael.
+
+Avatar David Whipps	09:01 David:
+mais c'est util pour des cas ou on veut acceder des infomations par un clef qui est un string
+
+Avatar Neil Frederick Stewart	09:02 Neil Frederick:
+Deux réponses. guichet automatique à la banque. Les requêtes de fouille doivent être instantanées. Je ne veux pas attendre 2 minutes pour savoir si j'ai $200 dans mon compte. Je veux une réponse immédiate.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:02 Rafael De Jesus:
+alors, c'est plus utile pour faire des "transactions"... où on traite les données "indépendamment"
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+par contre, si je décide de fermer mon compte (retrait dans la structure de données) je suis prêt à attendre.
+Rafael, la fouille est très très vite. Retirer un élément est plus lent.
+
+Avatar David Whipps	09:03 David:
+Mais en generale, on veut toujours avoir nos reponses "immediatement"
+
+Avatar Neil Frederick Stewart	09:03 Neil Frederick:
+Continuons après la pause.

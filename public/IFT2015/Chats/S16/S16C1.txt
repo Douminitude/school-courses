@@ -1,0 +1,36 @@
+Avatar Neil Frederick Stewart	08:20 Neil Frederick:
+Vous voyez l'idée de base de l'insertion?. Il n'y a pas de problème à insérer si l'écart est inférieur ou égal à 2.
+Si l'écart est égal à 3, on s'en occupe en montant le noeud au milieu.
+
+Avatar David Whipps	08:21 David:
+Oui, mais j'ai un peu de confusion par rapport a l'algorithme quad l'ecart est 3
+
+Avatar Neil Frederick Stewart	08:21 Neil Frederick:
+Est-ce que c'est clair?
+
+Avatar David Whipps	08:22 David:
+dans un example, vous avez monter le 25, mais a la fin de la video, vous avez parler de monter la cellule dans la milieu des trois
+c'est a dire le 35
+
+Avatar Neil Frederick Stewart	08:22 Neil Frederick:
+Ok David, commençons par l'autre bout. Le cas inf ou égal à 2 est clair.
+Ok, dans mon exemple, il y avait des écarts de 3 à deux niveaux différents.
+Dans le premier cas, il a fallu monter le 25 pour pouvoir descendre.
+On l'a fait. Cela nous a donné, au plus haut niveau, deux écarts de 1, à gauche et à droit. Après, on descend dans l'un ou l'autre
+En descendant on a trouvé un autre écart de 3. Alor, on a dû ...
+On a dû faire la même chose au plus bas niveau.
+J'ai aussi mentionné, dans le cas de l'insertion dans un écart de 2, que cela donne maintenant un écart de 3. Ce qui veut dire ...
+Ce qui veut dire que, si plus tard vous voulez insérer une autre clef dans ce "gap", alors ...
+alors il va falloir remonter le noeud au milieu.
+Je veux vite motiver ce qui se passe pour le retrait, dans le prochain segment
+
+Avatar David Whipps	08:28 David:
+Y-a-t'il un explication dans Weiss?
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+Je commence par expliquer ce qu'il faut faire pour retirer une clef du premier écart, ou du "first gap".
+Ça se fait, mais pour le faire, il faut utiliser le deuxième gap.
+Problème: je vois quoi faire pour insérer dans le 2ième gap, je me sers du 3ième. Et ainsi de suite. Mais qu'est ce que je fait pour traiter le dernier écart? Il n'y a pas un gap plus loin à utiliser. Réponse:
+Je fais demi-tour, et j'utilise exactement le même méthode, mais en allant de droit à gauche.
+En fait, les auteurs utiliser gauche à droite pour le premier, et ils vont en sens inverse pour tous les autres. Peu importe.
+Regardons la vidéo.

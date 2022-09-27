@@ -1,0 +1,24 @@
+Avatar Neil Frederick Stewart	08:52 Neil Frederick:
+À 2:27 je vous demande "êtes-vous certain qu'il n'y a pas de problème?" Vous devriez être certain! Il n'y a pas de problème! Je vous demande d'y penser, c'est tout!
+J'entends 2:27 de la deuxième partie du segment.
+Alors le processus en deux parties. D'abords, décidez ou mettre la clef. Après:
+Remonter dans l'arbre pour corriger le problème d'avoir deux couches rouges de suite.
+Le problème arrive dans le cas de l'oncle rouge.
+Le problème peut se corriger en répétant le processus que j'ai décrit, mais il faut répéter à chaque niveau, en remontant vers la racine.
+C'est très semble aux arbres AVL finalement, ce processus de remonter pour corriger.
+Y'y-a-t'il des questions?
+"très semblable"
+Je ne sais pas ce qui était dans la tête de la personne qui a inventé les arbres rouge-noir.
+
+Avatar David Whipps	08:56 David:
+C'est bizarre.
+Mais ca fonctionne!
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+A-t-elle les arbres 2-4 à l'esprit, et modifié cela pour inventer les arbres rouge-noir?
+Normalement on voit les arbres rouge-noir présenté comme idée indépendante, et on remarque après que c'est équivalent aux arbres 2-4
+En tout cas, la correspondance est intéressante.
+Nous allons voir dans le prochain segment une autre équivalence. Une équivalence avec une structure qui n'est même pas un arbre.
+Soit, les skip-list déterministes.
+Est-ce que c'est comme ça que les Skip-liste déterministe ont été inventé? Aucune idée.
+Faisons une pause de 9 minutes.

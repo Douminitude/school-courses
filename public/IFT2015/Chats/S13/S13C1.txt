@@ -1,0 +1,51 @@
+Avatar Neil Frederick Stewart	08:19 Neil Frederick:
+J'ai dit que j'allais vous dire comment Dijkstra est le "même" algorithme, mais maintenant ...
+Je ne suis pas certain que je l'ai jamais fait.
+SInon, je pourrai le faire aujourd'hui.
+Y'a-t-il des questions?
+Dommage que j'ai dû couper la présentation avec seulement un peu cas à regarder.
+Pour Dijkstra, il faut changer les étapes de l'algo
+Ça va être un peu lent à taper:
+si T[v].d + c_{vw} < T[w].d
+alors
+(deux choses)
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:25 Rafael De Jesus:
+je ne comprends bien quand vous dites "donc le coût"... le coût mélangé de chercher minimums et de mettre à jour ?
+(Prim)
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+T[w].d <-- T[v].d + c_{vw}
+T[w].p <-- v
+C'est tout.
+Voyez-vous, on garde trace maintenant du coût pour SE RENDRE au noeud
+Et pas seulement le coût d'attache.
+C'est l'algorithme de plus court chemin, une origine, N destinations
+Rassurez-moi, y'a-t-il quelqu'un?!
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:28 Rafael De Jesus:
+oui
+
+Avatar Gabriel Ste-Marie	08:28 Gabriel:
+Oui, je suis bien ici!
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+Très bien! sourire
+
+Avatar Olivier Ethier	08:28 Olivier:
+oui oui, nous sommes là!
+
+Avatar Mahsa Najimoghadam	08:28 Mahsa:
+merci
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+Alors regardons la suite, il y a seulement un cas à traiter.
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:29 Rafael De Jesus:
+merci
+
+Avatar Neil Frederick Stewart	08:29 Neil Frederick:
+Revoir la vidéo peut-être avec l'exemple
+... avec l'exemple original sur une feuille de papier à l'étape
+étudiée dans mon exemple ici.
+Regardons segment 2.

@@ -1,0 +1,151 @@
+Avatar Neil Frederick Stewart	09:30 Neil Frederick:
+Ok, la preuve pour AVL s'en vient bientôt. Il faut regardez les preuves soigneusement.
+Questions?
+Tout est parfaitement clair? Très bien!
+
+Avatar David Whipps	09:32 David:
+Quand est-ce-q'on va voir la preuve que d_max = 1.441lg(N) pour un arbre AVL?
+Ou, ou est-ce-qu'on peut le voir?
+
+Avatar Neil Frederick Stewart	09:32 Neil Frederick:
+Quoi exactement David?
+ok je vois. Je crois que c'est mercredi matin que je fais la preuve.
+
+Avatar David Whipps	09:33 David:
+Ok, merci
+
+Avatar Neil Frederick Stewart	09:33 Neil Frederick:
+Nous allons faire la preuve en détail. Il y aura à la fin de la preuve des étapes qui sont plutôt "mécaniques" ...
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:34 Rafael De Jesus:
+pourquoi on dit que d(node sans enfants) = -1 ?
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+Le démonstrateur va faire ces détails mercredi après le cours. Rafael:
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:35 Rafael De Jesus:
+je me demande, pourquoi -1 et pas 0 ?
+
+Avatar David Whipps	09:35 David:
+Et, dans les chats precedentes, vous avez parle de la constante. C'est bien la constante qui relie le temps de recherche moyenne pour un arbre de recherche binare, a "I"?
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Le choix de -1 pour les arbres vide est un peu bizarre, je suis d'accord. Mais c'est ce qu'il faut pour pouvoir toujours dire la même chose, que la DIFFÉRENCE entre gauche et droite ne peut pas dépasser 1 en valeur absolue.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:36 Rafael De Jesus:
+d'accord
+
+Avatar Neil Frederick Stewart	09:36 Neil Frederick:
+David. Pour commencer, nous sommes dans un nouveau théorème maintenant. Quand je parlais de constant, c'était dans le cas de l'arbre moyen, critère "coût moyen"
+Nous parlons maintenant d'une nouvelle méthode: AVL.
+
+Avatar Catherine Larivière	09:37 Catherine:
+un arbre moyen est un BST sans particularité?
+
+Avatar Neil Frederick Stewart	09:37 Neil Frederick:
+Oui, Catherine.
+
+Avatar Neil Frederick Stewart	09:38 Neil Frederick:
+Pour le cas moyen, on n'a rien ajouté. On sait que les méthodes AVL etc etc s'en vient, mais pour établir une base de comparaison, on a commencé avec l'idée de ne rien ajouter à l'arbre.
+Ce que nous avons constaté est que le comportement n'est pas si pire!
+On n'ajoute rien, et pourtant nous avons un comportement log N en moyen. Surprenant en fait.
+Si nous ajoutons les astuces comme celles de AVL, nous avons un comportement log N même dans le plus mauvais cas.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:40 Rafael De Jesus:
+juste pour être sûr... quand on dit logN on parle de log_2(N)... oui?
+
+Avatar Neil Frederick Stewart	09:40 Neil Frederick:
+Et la longueur maximale maintenant est seulement 1.44 fois plus long que l'optimum lg N. Wow.
+Pourquoi -1 , je veux revenir à cela. Ce qu'il faut pour AVL est que la différence ne dépasse jamais 1 en valeur absolue.
+Pour ne pas être obligé à dire quelque chose de spécial dans le cas un peu spécial du sous-arbre vide on introduit ...
+On introduit la définition que d(\Lambda) = -1. Cela nous permet d'exprimer ce qu'on veut en utilisant la même phrase "différence ne dépasse 1 en valeur absolue".
+
+Avatar Catherine Larivière	09:43 Catherine:
+pour avoir que la balance est toujours Bcœur=H(T_L)-H(T_R)
+B (H)
+c'est bien ça non?
+
+Avatar Neil Frederick Stewart	09:43 Neil Frederick:
+Dans d'autres contextes, cela va être un peu différent. Voir par exemple la première question du Devoir 2, où vous avez qqchose de plus "naturel"
+Oui Catherine, sauf que j'ai noté par d plutôt que H
+
+Avatar Catherine Larivière	09:44 Catherine:
+c'est quoi plus "naturel" ?
+
+Avatar Gabriel Ste-Marie	09:44 Gabriel:
+Le devoir 2 est-il suppose etre deja disponible?
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Mais attention, "balancé" veut dire "presque balancé". Et après la découvert de AV et L il y avait d'autres façons de trouver des arbres "balancés"
+
+Avatar Catherine Larivière	09:45 Catherine:
+on a pas encore vu le devoir 2, difficile d'en discuter
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Catherine, oui, j'ai terminé le Devoir 2 en fin de semaine, partie théorique, j'attends l'insertion de la partie pratique.
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+La première question du devoir n'est pas compliquée, je vous signale que je vous demande d'ajouter une petite quelque chose que j'ai omis au début de la preuve. La question est tellement simple que je ne peux rien dire sans vous donner la réponse. Vous allez voir.
+
+Avatar Man Ping Li	09:47 Man Ping:
+c'est quoi le gain pour utiliser avl? je ne voir pas grande amelioration...
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+Man Ping Li, c'est le fait que c'est vrai dans le plus mauvais cas!
+Vous n'avez pas peur que, au fur et à mesure d'ajouter et retirer des clefs que ...
+Que l'arbre va devenir une liste linéaire, ou presque!
+Vous pouvez comptez sur une réponse dans un temps qui ne dépasse pas 50% plus cher que le maximum.
+Voyez-vous?
+
+Avatar Catherine Larivière	09:49 Catherine:
+non
+
+Avatar Michael Roussel	09:49 Michael:
+moi non plus
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+Catherine, supposons que par hasard les clefs arrivent dans l'ordre 1, 2,3, 4, 5, ...
+Dans un arbre quelconque, cela va être une liste linéaire, non?
+Toutes les clefs sont ajoutées à droit chaque fois. Cela donne des recherches O(N)
+Mais avec AVL, nous allons relancer avec chaque insertion, et cela va rester O(lg N)
+
+Avatar Catherine Larivière	09:51 Catherine:
+relancer quoi?
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+Nous allons "relabalancer" plutôt. C'est le correcteur d'ortho qui fait ça
+
+Avatar Yutao Zhang	09:51 Yutao:
+On parlera plus tard de comment maintenir un arbre AVL en ajoutant ou retirant des noeuds?
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+REBALANCER
+
+Avatar Gabriel Ste-Marie	09:51 Gabriel:
+Quel est le cout du rebalancement?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:51 Rafael De Jesus:
+alors l'arbre AVL est presque balancé
+
+Avatar Man Ping Li	09:52 Man Ping:
+mais vous avez dit que l'arbre mechant est tres rare...
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:52 Marthy Stivaliz:
+cout de relancement= O(N) non?
+
+Avatar Neil Frederick Stewart	09:52 Neil Frederick:
+Nous rebalançons l'arbre après chaque insertion, retrait, et ça reste balancé, jamais plus profond que 1.44 lg N
+Non, Marthy, cela aussi est lg N avec AVL.
+
+Avatar Marthy Stivaliz Garcia Alvarado	09:53 Marthy Stivaliz:
+ok
+
+Avatar Neil Frederick Stewart	09:53 Neil Frederick:
+C'est O(N) si on n'ajoute pas des astuces comme AVL
+Je vois que le correcteur d'ortho fait la même chose pour Marthy.
+
+Avatar Mahsa Najimoghadam	09:53 Mahsa:
+merci
+
+Avatar Neil Frederick Stewart	09:54 Neil Frederick:
+Cout de rebalancement est O(lg N) avec AVL.

@@ -1,0 +1,36 @@
+Avatar Neil Frederick Stewart	08:51 Neil Frederick:
+Bon, je répète, le graphe est non-orienté dans le cas de Prim.
+Questions?
+Nous allons parle un peu d'algorithmiques voraces ...
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:52 Marthy Stivaliz:
+Pour concevoir un arbre de longueur minimal, nous utilisont tres suivant Kruskal. Est-ce que vous avez idee de l’ordre d’un tel algo? Comment l’implementer?
+
+Avatar Neil Frederick Stewart	08:52 Neil Frederick:
+et de l'algo de Prim en grand détail, dans le but de parler de l'astuce mentionnée
+Marthy, oui, Kruskal et Prim sont concurrents, je choisis Prim parce que c'est intéressant du point de vue de S de Données, c'est tout.
+Vous dites "nous utilisons souvent Kruskal". Vous voulez dire en IFT2125, ou en RO , ou ... ?
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:55 Marthy Stivaliz:
+oui, j'ai un doc en RO
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+Ah je vois. Non, comme je l'ai dit, c'est seulement parce que Prim me donne un bel exemple pour S de D.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:57 Marthy Stivaliz:
+mais sinon kruskal s'implement comment? un queue?
+
+Avatar Neil Frederick Stewart	08:58 Neil Frederick:
+Marhy, j'avoue que je n'ai jamais regardé. Vous pouvez trouver cela dans Weiss, Sec 9.5.2, page 397.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:58 Marthy Stivaliz:
+ok pas de probleme. Merci sourire
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+La s de données est discuté p 398, il parle de "building a heap in linear time", mais je répète, je n'ai jamais regardé cela en détail.
+
+Avatar Marthy Stivaliz Garcia Alvarado	08:59 Marthy Stivaliz:
+ok, je vais regarder merci
+
+Avatar Neil Frederick Stewart	08:59 Neil Frederick:
+Ok, on va faire une pause de 10 minutes, et nous allons au moins regarder Prim en grand détail

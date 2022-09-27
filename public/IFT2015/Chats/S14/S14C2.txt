@@ -1,0 +1,22 @@
+Avatar Neil Frederick Stewart	08:51 Neil Frederick:
+DANGER de malentendu!
+Il y a un changement de contexte qui arrive à peu près ici.
+Comprenez ce que j'essaimais de faire.
+Je vous vous expliquer d'où vient les règles bizarres sur le nombre de clefs dans chaque noeud d'un arbre B.
+J'introduit donc les arbres-B, avec une grande valeur de M. Le but est de minimiser le nombre d'accès au disque.
+On peut voir à ce moment d'où vient les règles bizarre.
+On veut que M soit grand pour minimiser le nombre d'accès au disque.
+Par contre, on ne peut pas insister sur M branchements partout, ça serait impossible de retirer des noeuds.
+Il faut comprendre cette idée. Plafond de M sur 2 jusqu'à M, comme gamme de possibilités, vous permet de retirer les noeuds.
+Ok, nous avons compris cela. Maintenant, on remarque que ça ne donne rien de diviser les arbres en page en mémoire interne, alors NOUS OUBLIONS ce critère de minimiser le nombre d'accès.
+MAIS: même si l'idée de B-tree ne fonctionne pas en mémoire interne pour la raison que ça fonctionnait dans le cas de données externes ...
+Rien ne nous empêche de regarder ce qu ça donne pour des petites valuers de M, M=3 ou M=4 par exemple.
+Il arrive par hasard que cela donne quelque d'utile dans le contexte de données internes POUR DES RAISONS COMPLÈTEMENT DIFFÉRENTES.
+Ces raison différentes sont les suivantes. Cela donne une méthode qui est un peu comme AVL à cette différence près.
+Avec AVL on laissait varier les hauteurs des sous-arbres un peu. Cele nous a laissé le jeu pour faire les mises-à-jour.
+Le nombre de pointeurs dans chaque noeud pour AVL était 2.
+Les arbres avec M=3 nous donne une autre façon d'avoir le jeu de faire les mises-à-jour.
+Ils gardent les hauteurs des sous-arbres constants, mais ils laissent un peu de jeu dans le nombre de pointeurs dans chaque noeud.
+Alors finalement cela n'a rien à voir avec les critères de l'arbre B, c'est d'autre raisons complètement.
+Mais c'est les arbres B qui permettent à comprendre d'où cette idée est venue.
+Faisons une pause, vous allez voir. Mais comprenez qu'il y a un changement de motivation entre arbre-B et arbre 2-3.

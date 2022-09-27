@@ -1,0 +1,128 @@
+Avatar Neil Frederick Stewart	09:06 Neil Frederick:
+Ok, des questions?
+Est-ce que les idées sont claires?
+
+Avatar David Whipps	09:07 David:
+At the end, I didn't understand the relationship between the doubly-linked list, and the memory blocks we're trying to manage.
+
+Avatar Maxime Lechasseur	09:08 Maxime:
+j'ai une question peut etre naive mais je vais la poser pareil. qu'est-ce qui arrive si l'usager demande trop d'espace?
+
+Avatar Olivier Ethier	09:08 Olivier:
+oui, quel est l'intérêt de la liste si nous connaissons déjà toutes les adresses a priori?
+
+Avatar Neil Frederick Stewart	09:08 Neil Frederick:
+Maxime, la réponse à ta question est facile: on répond qu'on ne peut pas satisfaire à la requête.
+
+Avatar Maxime Lechasseur	09:08 Maxime:
+dans le sens que nous avons des bloc de 2^3 disons partout et il en demande 2^8 ou 2^16
+
+Avatar David Whipps	09:09 David:
+That is, we have this idea of contiguous memory that we're trying to manage efficiently, but we're managing it with a doubly-linked list, (which itself need not be contiguous in memory), but we're accessing items in that doubly-linked list "quickky" simply by flipping bits
+"quickly"
+
+Avatar Neil Frederick Stewart	09:09 Neil Frederick:
+David, les blocs sont là. Vous avez disons N=64 cellules de disponibles.
+
+Avatar David Whipps	09:10 David:
+It's the actual implementation details that confuse me I guess, and less the theory (which makes sense)
+
+Avatar Maxime Lechasseur	09:10 Maxime:
+D'accord Merci!
+
+Avatar Neil Frederick Stewart	09:12 Neil Frederick:
+David, you've got 64 cells available, total, N=64. They're just sitting there! Certain blocks inside this set of cells are available. For example, maybe 32 and 33 are available as a block of size 2. The linked list is formed by putting the link pointers WITHIN the available size. There's no separate linked list! There's lots of room for pointers within the cell itself.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:13 Rafael De Jesus:
+alors selon le "buddy system" on alloue seulement des blocs de taille 2^k... toujours exponentiel
+
+Avatar Neil Frederick Stewart	09:13 Neil Frederick:
+Voyez vous ce que je viens de dire. Les listes Disp ne sont pas séparées. Les listes sont faites en mettant les pointeurs de liste à l'intérieur des blocs qui sont disponibles.
+
+Avatar Michael Roussel	09:14 Michael:
+Donc la mémoire se décrit elle même ?
+
+Avatar Neil Frederick Stewart	09:14 Neil Frederick:
+Oui Rafael, on se content d'allouer des blocs uniquement de taille 2 exposant quelque chose parce que ...
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:14 Rafael De Jesus:
+... même quand il y a de gaspillage (quand n < 2^k)
+
+Avatar Neil Frederick Stewart	09:15 Neil Frederick:
+cela nous permet une grande efficacité critère temps.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:15 Rafael De Jesus:
+... tout pour optimiser le processus d'allocation
+
+Avatar David Whipps	09:15 David:
+AH! ok. Maintenant je comprends (mieux) ce qui ce passe. I'l y a un certain "overhead" dans la systeme (mais c'est vrai pour n'importe quel system pour la gestion de la memoire)
+
+Avatar Neil Frederick Stewart	09:16 Neil Frederick:
+Michael, je ne comprends pas ce que vous entendez par "se décrit" elle même. La mémoire est là, mettons N=64 cellules.
+
+Avatar Neil Frederick Stewart	09:16 Neil Frederick:
+Nous devons rendre certaines segments de la mémoire temporairement à l'usager qui en a besoin.
+L'usage nous dit "J'ai besoin de 5 cellules".
+Nous devons trouver 5 cellules qui sont libres.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:17 Rafael De Jesus:
+alors c'est pourquoi dans la pratique on voit que pour la mémoire on travaille toujours avec des blocs 2^j !!!
+
+Avatar Michael Roussel	09:17 Michael:
+Je veux dire, la liste qui décris la division des blocs est stockée elle même dans les blocs, donc l'allocation de la mémoire est définie par la mémoire qui est allouée.
+
+Avatar Neil Frederick Stewart	09:17 Neil Frederick:
+Pour faire cela, on garder trace des cellules qui ne sont pas déjà en utilisation.
+Oui, Michael, le système se sert du bloc, qui n'est pas en utilisation en ce moment, pour emmagasiner les pointeurs qui relient les blocs qui ne sont pas en utilisation par les usagers. C'est astucieux!
+Il y a beaucoup de petites choses austucieuses là-dedans.
+Pas de listes séparées: les blocs libres sont reliés par des pointeurs emmagasinés à l'intérieur des blocs non-utilisés.
+On n'est pas obligé à passer à travers des listes pour trouver des blocs à fusionner: on y va en changeant un bit. Aussi astucieux!
+
+Avatar Maxime Lechasseur	09:21 Maxime:
+Est-ce que vous pouvez donner un exemple d'application du buddy systeme dans l'industrie qui est fréquent?
+
+Avatar Neil Frederick Stewart	09:21 Neil Frederick:
+On a utilisé une liste double chainée. On peut facilement supprime un bloc qui sera fusionné. Astucieux!
+Maxime, non, mon domaine de recherche n'est pas du tout dans "systèmes". Par contre, je parle informellement avec des collègues pour savoir ce qui est utilisé couramment dans l'industrie.
+Quand je dis "collègues" je veut dire des gens que je rencontre dans des comités qui travaillent dans le domaine "systèmes"
+
+Avatar Mahsa Najimoghadam	09:24 Mahsa:
+Pas besoin de déplacer le bloc pour fusionner, et seul le pointeur fonctionne-t-il ?
+
+Avatar Neil Frederick Stewart	09:25 Neil Frederick:
+Ce qui est claire, c'est que beaucoup de systèmes de "Allocation de mémoire" sont maintenant rendus caduques, et je n'en parle pas. Faut suivre des cours en Système pour connaître les méthodes courantes, je dirais que cela ne fait pas parfait de "Structures de Données" maintenant.
+Par contre, on me dit informellement que les Buddy Method sont toujours utilisés.
+Oui Mahsa, le blocs ne se déplacent pas. C'est des blocs de mémoire fixes. C'est notre interpretation de chaque cellule qui change.
+
+Avatar Mahsa Najimoghadam	09:27 Mahsa:
+merci
+
+Avatar Neil Frederick Stewart	09:27 Neil Frederick:
+"cela ne fait pas part de "Structures de Données" maintenant.
+
+Avatar David Whipps	09:28 David:
+Any final recommendations for the Midterm tomorrow?
+
+Avatar Maxime Lechasseur	09:28 Maxime:
+parfait merci!
+
+Avatar Neil Frederick Stewart	09:28 Neil Frederick:
+Yes David. First of all, it's hard to find good questions for a take-home exam.
+
+Avatar David Whipps	09:29 David:
+No doubt.
+
+Avatar David Whipps	09:29 David:
+I couldn't imagine trying to write an exam that tests a students' retention when they have access to Google!
+
+Avatar Neil Frederick Stewart	09:29 Neil Frederick:
+Oui David, il est difficile de trouver de bonnes questions pour un examen à la maison. Il faut que cela soit exige un certain niveau de "invention".
+Je ne peux pas vérifier les petits faits que l'étudiant peut facilement trouver dans ses notes de cours.
+
+Avatar David Whipps	09:30 David:
+Retention then becomes comprehension, which is more difficult to test.
+
+Avatar Neil Frederick Stewart	09:30 Neil Frederick:
+Je ne peux même pas utilisé les choses qui sont facilement trouvables par Google.
+Par contre (mon conseil s'en vient!) je peux mal viser. Alors le conseil principal est "don't panic".
+L'examen dure 26 heures. Si vous trouvez que quelquechose n'est pas du tout claire, posez une question dans la discussion générale. Je vais décider si et comment je veux répondre. et tout le monde verra la question et la réponse.

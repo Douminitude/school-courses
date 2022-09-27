@@ -1,0 +1,33 @@
+Avatar Neil Frederick Stewart	08:19 Neil Frederick:
+Bonjour, j'aurai un couple de commentaires pour commencer. NFS
+Pour commencer, trois commentaires:
+Premier commentaire: les références aux Devoirs 2 et 1 sont périmées, cela vient de E20.
+Deuxième commentaire. À 3:00 sur la vidéo, je fais référence à la constante. Il est quand même possible de dire quelque chose à ce sujet. Pensez à cela!
+Troisième commentaire. Il est mieux de séparer la partie "aléatoire" en deux parties. On commence par choisir la FORME de l'arbre de façon aléatoire, et après on fait la moyenne sur les NOEUDS dans l'arbre, en divisant I par N. On y reviendra.
+Vous avez des questions?
+Mercredi dans le tp le démonstrateur va vous parler d'approximer H_N par ln N
+Pensez à mes commentaires deux et trois. Cela sera discuté encore dans la suite.
+
+Avatar Mathieu Coupal	08:24 Mathieu:
+Mais si ce n'est pas le cas dans un arbre méchant, pourquoi est-ce que ce serait vrai pour tout les autres types d'arbres ?
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+Mathieu: si quoi n'est pas le cas?
+
+Avatar Mathieu Coupal	08:25 Mathieu:
+que la profondeur soit estimable à log N
+
+Avatar Mathieu Coupal	08:26 Mathieu:
+quand vous parliez de constante dans le vidéo, c'était pour faire l'estimation de la profondeur non?
+
+Avatar Neil Frederick Stewart	08:26 Neil Frederick:
+Mathieu, nous allons commencer par faire un choix d'arbre aléatoire, et après ...
+Nous allons faire une pondération sur tous les NOEUDS de l'arbre, en divisant I par N. Il sera quand même possible d'étudier la constante ...
+
+Avatar Mathieu Coupal	08:28 Mathieu:
+donc la constante est pour définir la valeur de I / N et non la profondeur ?
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+Vous voyez l'idée de diviser I par N? C'est pourquoi nous avons introduit I.
+La constante est pour le coût moyen.
+Mathieu, je ne vous oublie pas. Revenons à cela après le segment 2.

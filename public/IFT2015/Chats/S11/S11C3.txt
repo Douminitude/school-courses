@@ -1,0 +1,63 @@
+Avatar Neil Frederick Stewart	09:30 Neil Frederick:
+À 7:22 de la première partie du segment 3, j'ai fait une "correction" que j'aurais pas dû faire:
+J'avais simplement indiqué que w_i et w_{i+1} sont éléments de E. C'était parfait. Mais:
+Mais je ne sais pas pourquoi, pour telle ou telle raison j'ai décidé d'ajouter des parenthèses ( ) autour. Je n'aurais pas dû.
+Questions? On peut revenir aux pierres tombales si vous voulez.
+Tout a été parfaitement compris alors. Tant mieux!
+Quel étudiant, la première fois qu'il a entendu parler de nombres premiers entre eux, aurait pensé que cela avait une utilité pratique?!
+
+Avatar Abdulmonhem Al Khalil	09:34 Abdulmonhem:
+in undirected graph can we assume that edge {e,v} always equal o {v,e}
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Je préfère changer votre notation. I'd like to changer your notation.
+Dans un graphe orienté, les arêtes n'ont pas d'orientation. In a directed graphe, the edges have no orientation.
+C'est comme une ville sans rues à sens unique. It's like a city with no one-way roads.
+Si vous avez une ville sans rues à sens unique, toutes les rues ont deux sens, c'est logiquement la même chose que "aucune orientation". If you have a city with no one-way streets, it's logically the same as a city with roads with no orientation.
+Dans ce cas, si i-j est une arète, alors j-i est aussi une arête. In this case, if i-j is an edge, then j-i is also an edge.
+Vous pouvez représentez avec les deux arêtes explicitement présentes, ou pas, dépendant de vos besoins. You can represent this graph with both edges explicitly present, or just one non-oriented edge, depending on your needs.
+Is this clear?
+
+Avatar Abdulmonhem Al Khalil	09:40 Abdulmonhem:
+yes thanks
+
+Avatar Neil Frederick Stewart	09:40 Neil Frederick:
+D'autres questions?
+
+Avatar Abdulmonhem Al Khalil	09:41 Abdulmonhem:
+i am ok if you write only frensh , i am using google translate all the time
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+ok, prenons cela comme politique, questions en anglais permises, les réponses seront en anglais, si vous ne comprenez pas vous dites "I don't understand", ou simplement "Huh?" , et je vais répéter en anglais. sourire
+non, les réponses seront en français.
+
+Avatar Abdulmonhem Al Khalil	09:43 Abdulmonhem:
+thanks
+
+Avatar Neil Frederick Stewart	09:43 Neil Frederick:
+Bon, s'il n'y a pas d'autres questions, je vais m'arrêter pour inventer des questions plus difficiles pour l'examen final. Je vois que les matières sont trop faciles.
+
+Avatar David Whipps	09:44 David:
+Gah!
+
+Avatar Man Ping Li	09:44 Man Ping:
+merci,bonne journee
+
+Avatar Neil Frederick Stewart	09:44 Neil Frederick:
+Prenez donc une pause de 15 minutes avant la tp, qui sera ...
+... qui sera relié dans certaines parties au hachage.
+Les notes devraient être affichées avant ce soir, je vais essayer d'indiquer votre note sur chaque section. Je vais ..
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:45 Rafael De Jesus:
+pas du tout!... moi, je suis en train de revoir la première section pour mieux comprendre le hâchage double
+
+Avatar Neil Frederick Stewart	09:46 Neil Frederick:
+Rafael, je plaisantais bien sûr! L'examen final va être facile, exactement comme l'Intra. clin d’œil
+je vais préparer un solutionnaire détaillé aussi, qui tient compte des réponses données par vous aussi.
+Dans certains cas des mauvaises réponses, mais dans d'autres cas, des réponses meilleures que j'avais moi-même à l'esprit. Bravo et brava!
+
+Avatar Gabriel Ste-Marie	09:47 Gabriel:
+Pour le final est-ce qu'on pourra avoir accès au précédent, avec solutions, comme pour l'intra?
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+Oui Gabriel, si j'oublie, signalez-moi.

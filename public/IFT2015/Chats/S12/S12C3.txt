@@ -1,0 +1,57 @@
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Ok, c'est quoi l'idée pour une amélioration de l'algorithme?
+C'est que nous n'avons pas parlé de comment trouver le minimum des coûts à chaque étape.
+C-à-d que j'ai parlé vite, j'ai dit, prenons le coût minimum.
+Comment trouver? Passer à travers les noeuds non-visités?
+Qu'est-ce que ça va donner comme coût total? N exposant 2.
+
+Avatar Gabriel Ste-Marie	09:37 Gabriel:
+Juste mentionné que pour moi la dernière vidéo ne fonctionnait pas telle quelle, j'ai du la télécharger
+
+Avatar Neil Frederick Stewart	09:38 Neil Frederick:
+Gabriel, merci. Je n'y pouvais rien, sans refaire toutes les vidéos. Parfois quand je faisais "Trim", ça donnait des fichiers corrompus paraît-il.
+Cela donnerait un algorithme n carrée. L'idée brillante est la suivante:
+Pourquoi pas utiliser une queue de priorité pour emmagasiner les coûts pour ajouter un nouveau noeud?
+C'est cette idée que nous allons regarder, et qui va donner une amélioration, mais uniquement dans le cas de ...
+...uniquement dans le cas de graphes creux.
+Questions?
+Le Devoir 2 sera à remettre pour mercredi. Les solutions seront présentées dans le tp, donc ...
+donc aucune possibilité d'accepter des devoirs en retard.
+
+Avatar Aleksandar Rachkov	09:41 Aleksandar:
+Est-ce que l'idée d'utiliser la QP est de parcourir les noeuds en les emmagaisnant dans le min heap?
+
+Avatar Neil Frederick Stewart	09:41 Neil Frederick:
+Oui, Aleksander, exactement cela. Mais il y a des choses qu'il veut regarder quand même:
+
+Avatar Aleksandar Rachkov	09:42 Aleksandar:
+Pourquoi ça marche uniquement avec les graphes creux?
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+Comment garder ce min-heap à jour?
+Aleksander, l'idée que j'ai déjà mentionné: nous allons voir que cela donne un algorithme qui est e log e, à cause de ...
+... à cause des mises-à-jour des éléments dans la queue. N'oubliez-pas que ...
+... que les coûts sont toujours en train de s'améliorer, le coût du meilleur point d'attache est toujours en train de changer, cela veut dire ....
+cela veut-dire que nous devons mettre le min-heap à jour. À la fin c'est e log e
+et pour un graphe dense, e = N x N. e log e est moins bon que N x N dans ce cas.
+Dan le cas de graphe creux, e log 3 est N log N, c'est meilleur.
+Nous verrons cela en détail mercredi.
+
+Avatar Aleksandar Rachkov	09:45 Aleksandar:
+ah, je vois, ça fait du sense, merci!
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Il ne reste que 5 séances, le temps passe vite quand on s'amuse bien!
+Le cours est "demi-accéléré". Je n'aime pas les cours accélérés, il faut du temps entre chaque Séance. Mais ...
+Mais dans ce contexte de présentation, je voulais absolument avoir toujours des séances de 2 heures.
+J'ai l'impression que le Devoir 3 va vous garder bien occupé en tout cas.
+Vous aurez la semaine du 12 juillet à la fin, Devoir 3 à remettre le 14 juillet.
+
+Avatar Aleksandar Rachkov	09:48 Aleksandar:
+Est-ce qu'on sait la date de l'examen final?
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+Oui, c'est le 21 juillet.
+Ou plutôt le 20-21 juillet, encore un examen de 26 heures.
+Cette fois-ci il y aura 4 questions, 4x10=40
+Ok, il est 9:50, à mercredi alors.

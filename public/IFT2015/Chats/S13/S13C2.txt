@@ -1,0 +1,35 @@
+Avatar Neil Frederick Stewart	08:52 Neil Frederick:
+Pas très bien organisé, avec une coupure comme ça. Mais cette idée d'arbre cousu et liste cousue n'est pas difficile à comprendre, vous allez voir dans le prochain segment.
+Le prochain segment est divisé en 3 parties. Il faut les visionner l'une après l'autre
+Questions déjà?
+Pointeurs "inversés" dans l'algorithme de Prim. Bonne idée.
+Pour moi, cela me rappelle d'autre chose.
+À l'époque je parlais d'algorithmiques pour parcourir un arbre sans pile, et sans ficelle.
+C'ést possible de parcourir un arbre sans utiliser une pile, et sans ajouter des pointeurs "ficelles".
+Voyez-vous comment?
+L'algo c'est l'algorithme de Deutsch-Schorr-Waite
+
+Avatar Mahsa Najimoghadam	08:56 Mahsa:
+is it possible?
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+Inventé pour être utilisé pour parcours une liste généralisée pour récupérer l'espace.
+
+Avatar Mahsa Najimoghadam	08:56 Mahsa:
+A C E B F D
+
+Avatar Neil Frederick Stewart	08:56 Neil Frederick:
+Yes it's possible!
+L'algo devait tourner exactement au moment quand il ne restait plus de mémoire, fallait pas utiliser une pile.
+
+Avatar Mahsa Najimoghadam	08:57 Mahsa:
+merci
+
+Avatar Neil Frederick Stewart	08:57 Neil Frederick:
+Mahsa, how could this be done? Comment faire cela?
+L'idée est d'inverser les pointeurs gauches et droits dans l'arbre par des pointeurs inversés, des pointeurs qui indiquent le parent. (!)
+À chaque moment, quand vous êtes dans un noeud, il y a le chemin vers la racine qui est indiqué par les pointeurs inversés.
+Il faut bien sûr remettre ces pointeurs aux valeurs originales, au fur et à mesure de traverser l'arbre.
+C'est possible, avec trois pointeurs auxiliaires.
+Moins d'intérêt aujourd'hui, mais peut-être vous voulez mettre cela dans votre "sac de trucs".
+Faisons une pause de 10 minutes. Après, segment 3 en 3 parties.

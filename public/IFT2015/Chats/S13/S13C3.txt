@@ -1,0 +1,28 @@
+Avatar Neil Frederick Stewart	09:38 Neil Frederick:
+Dans le bon vieux temps, le langage de programmation "standard" du département c'était le Pascal, avec mots clefs réservés en français (tantque, pour, ...)
+Quand je parlais de l'insertion dans les arbres cousus j'aurais dû, à la première étape
+i.e. premier pointeur ajouté, j'aurais dû indiquer comme ficelle, pas un lien ordinaire.
+Questions?
+Quel est le sens du champs p dans l'algorithme de Dijkstra?
+Pour Prim c'était le "point d'attache". Pour Dijkstra c'est quoi?
+Dans Dijkstra, nous regardons plutôt à chaque étape le meilleur choix jusqu'ici pour se rendre au noeud.
+Quand un noeud est ajouté à l'arbre que nous sommes en train de construire, nous notons cela dans le champs p.
+Ce qui veut dire qu'on peut interpréter "p" comme "prochain".
+p nous donne le prochain noeud sur le plus court chemin
+Le plus court chemin depuis le noeud de départ choisi au début.
+Vous pourriez écrire un petit segment de code pour tracer le chemin le plus court depuis ce noeud de départ ...
+en utilisant à chaque étape le champs p.
+Voyez-vous?
+
+Avatar Mahsa Najimoghadam	09:46 Mahsa:
+oui
+
+Avatar Neil Frederick Stewart	09:47 Neil Frederick:
+D'autres réponses? C'est clair? Trop difficile ou trop facile pour mériter une réponse?!
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:47 Rafael De Jesus:
+oui
+
+Avatar Neil Frederick Stewart	09:48 Neil Frederick:
+ok, très bien. Dans le tp le démo va corriger le Devoir 2
+S'il n'y a pas d'autres questions, bonne semaine!

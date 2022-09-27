@@ -1,0 +1,76 @@
+Neil Frederick Stewart	09:30 Neil Frederick:
+Ok, en fait je vais vous envoyer plusieurs choses, il faut regarder cela plus tard dans la journée.
+David, ça serait utile effectivement peut-être de regarder les anciens examens, même si l'Intra E21 risque d'être très différent.
+Je vais vous envoyer copie de l'Intra E20. Je vais aussi vous envoyer ...
+... des commentaires sur l'échéancier des devoirs.
+Je vais mettre le pdf de l'Intra E20 disponible sur le site.
+
+Louis-André Brassard	09:34 Louis-André:
+Quand est dû le premier devoir?
+
+Neil Frederick Stewart	09:34 Neil Frederick:
+J'ai décidé d'avancer la présentation du Buddy system au 7 juin MAIS ...
+
+Neil Frederick Stewart	09:34 Neil Frederick:
+... mais ça ne fera PAS partie des matières d'Intra.
+(C'est le jour avant le début de l'Intra.)
+Mais je veux vous poser une question là-dessus dans le Devoir 3. Le sujet de la question est intéressant ... mais ...
+... mais la question est un peu plus difficile que d'habitude.
+Le Devoir 3 est plus difficile que les autres. Pour commencer ....
+Pour commencer, le projet de programmation est un projet d'envergure ...
+
+Victor Braguta	09:37 Victor:
+Bonjour, Le devoir doit-il être effectué uniquement en équipe ou peut-il être effectué individuellement?
+
+Neil Frederick Stewart	09:37 Neil Frederick:
+... et la partie théorique sera un peu plus difficile aussi. Mais
+
+Marthy Stivaliz Garcia Alvarado	09:37 Marthy Stivaliz:
+devoir 3?
+
+Elvis Lucas Yanice Bamouni	09:37 Elvis Lucas Yanice:
+On parle deja du devoir 3?
+
+Neil Frederick Stewart	09:37 Neil Frederick:
+Mais le fait d'avoir le Buddy system plus tôt va vous laisser un peu plus libre autour du début juillet.
+Victor, tous les devoirs peuvent se faire individuellement si vous préférez.
+
+Abderrahmane Manseur	09:38 Abderrahmane:
+Pourquoi on parle du devoir 3 alors qu'on pas encore fait le devoir 1
+
+Neil Frederick Stewart	09:38 Neil Frederick:
+Normalement je permet du travails en groupe de taille maximale deux.
+Oui, je planifie déjà le Devoir 3. En fin de semaine j'ai préparé le Devoir 1 avec Samuel, l'un des démos.
+J'ai aussi pensé au Devoir 3. Les professeurs doivent travailler fort ...!
+Y'a-t-il des questions sur le matières?
+
+Rafael De Jesus Carrascal Cantillo	09:41 Rafael De Jesus:
+oui... je ne comprends pas les concepts de feuilles et noeuds internes
+qu'est-ce qu'ils sont vraiment ?... les noeuds internes sont-ils les noeuds avec enfant(s) ?
+
+Neil Frederick Stewart	09:43 Neil Frederick:
+Rafael, exactement.
+
+Rafael De Jesus Carrascal Cantillo	09:43 Rafael De Jesus:
+et les feuilles ?
+
+Neil Frederick Stewart	09:43 Neil Frederick:
+Les noeuds internes ont des enfants. Sinon, le noeud est une feuille.
+Les feuilles n'ont pas d'enfants.
+Avez-vous compris la preuve O(N) de l'algorithme de Floyd?
+
+Abdoulaye Drame	09:45 Abdoulaye:
+Moi no
+
+Neil Frederick Stewart	09:46 Neil Frederick:
+Abdoulaye, vous commencez par regardez l'énoncé de l'algorithme.
+Vous devez faire quelque chose pour chaque noeud interne.
+Vous devez balayez les noeuds internes de droite à gauche, et faire quelque chose chaque fois.
+Avec le dernier petit résultat, vous savez exactement ce que cela veut dire.
+Vous savez où se trouve le dernier noeud interne, et vous scannez à gauche pour trouver les autres.
+Ok, pour commencer, pour trouver le coût total, il faut se demander combien de noeuds internes
+On a remarque qu'il y en a 2 exposant i au niveau i.
+On a aussi remarqué que, pour chaque noeud interne, il faut descendre h-i étapes.
+Cela nous permet d'écrire la somme total d'étapes.
+Après cela, il ne reste qu'à trouver un formule simple pour la somme ...
+... l'astuce de diviser cela en séries géométriques, horizontales et verticales sur la page, nous a permis de donner un estimé simple.

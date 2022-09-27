@@ -1,0 +1,72 @@
+Avatar Neil Frederick Stewart	08:31 Neil Frederick:
+J'ai peut-être égaré avec ma comparaison avec le plus mauvais cas dans QuickSort. ...
+Dans le cas où nous entrons les clefs dans l'ordre, pour créér une liste linéaire ...
+Combien de rotations pour créer cette liste linéal, N ou N^2 ?
+"liste linéaire" plutôt
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:34 Rafael De Jesus:
+N
+
+Avatar Abdoulaye Drame	08:34 Abdoulaye:
+n
+
+Avatar Neil Frederick Stewart	08:35 Neil Frederick:
+Oui, pourquoi?
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:36 Rafael De Jesus:
+parce que dans tous les cas (pour ce cas mauvais), on doit simplement insérer chaque nouveau élement avece une rotation
+... à la racine
+
+Avatar Neil Frederick Stewart	08:36 Neil Frederick:
+C'est parce qu'il n'y a qu'un seule rotation chaque fois qu'on ajoute un noeud, il ne s'agit pas du tout de 1 + 2 + ... + N
+Oui, Rafael, merci.
+Comme je l'ai dit, j'avais simplement peur que j'ai égaré en comparant avec Quicksort
+Ce qui est impressionnant avec les Splay tree c'est la simplicité de la chose.
+Finalement, je n'ai jamais fait un exemple de rotation ZIG-ZAG, mais ce n'est pas plus compliqué.
+Questions au sujet des ski-list déterministe? On a été coupé lundi matin ...
+"skip-list" plutôt
+
+Avatar David Whipps	08:39 David:
+Is there a resource that describes the algorithm for insertion and deletion somwhere? It's not in Weiss, and the question from last year's final is confusing without one.
+
+Avatar Catherine Larivière	08:40 Catherine:
+youtube
+
+Avatar Neil Frederick Stewart	08:40 Neil Frederick:
+Merci Catherine, je ne savais pas! En fait, j'ai travaillé moi-même avec les papiers originaux.
+
+Avatar David Whipps	08:41 David:
+C'est difficile sans avoir les diapos.
+Et sans texte
+
+Avatar Neil Frederick Stewart	08:41 Neil Frederick:
+Une chose que les étudiants ont trouvé compliquée dans le passée est le truc de "choix de direction". Et pourtant c'est simple.
+Voici. L'algorithme pour "tomber dans le premier intervalle" compte sur le fait qu'il y a un deuxième intervalle. Très bien.
+Si on doit tomber dans le dernier intervalle, on pourrait tout simplement faire demi-tour, et faire la même chose, mais de droit à gauche. Vous êtes d'accord?
+Je prends le silence pour un "oui"!
+Cela veut dire que nous pourrions faire tous sauf le dernier de gauche à droit, et le dernier de droit à gauche, ou bien ...
+Tous sauf le premier de droit à gauche, et le premier de gauche à droit. Peu importe ...
+Quant à l'algorithme pour descendre, il faut regarder les exemples que j'ai donnés. David, si vous ne voyez pas l'idée, posez une question spécifique sur tel ou tel exemple. Ou telle ou telle règle dans la description de l'algorithme.
+En général, je serai disponible toute la semaine prochaine pour répondre aux questions.
+
+Avatar David Whipps	08:49 David:
+Ca serai tres util de faire la solution pour l'examen final (2020) Q.1.b
+Mais c'est difficile de le faire dans ce chat.
+
+Avatar Neil Frederick Stewart	08:49 Neil Frederick:
+Si je considère que la réponse pourrait intéresser tous les étudiants, je vais répondre dans la "discussion générale", sans préciser qui a posé la question. Gênez vous pas des poser des questions!
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:49 Rafael De Jesus:
+merci
+
+Avatar David Whipps	08:51 David:
+Peut-etre Samuel peut le faire dans le TP.
+
+Avatar Neil Frederick Stewart	08:51 Neil Frederick:
+David, posez la question dans n'importe quel format, faites référence à n'importe quelle partie de n'importe quelle vidéo, envoyez un pdf avec un exemple qui vous gêne, n'importe quoi ...
+
+Avatar David Whipps	08:53 David:
+I'm not being shy. This chat format is terrible for trying to answer questions like that. There's no way to share any visuals, do any math (of consequence) or have synchronous back and forth.
+
+Avatar Neil Frederick Stewart	08:55 Neil Frederick:
+Bon, je fais l'hypothèse que vous allez réviser les matières la semaine prochaine, encore une fois, n'hésitez pas de poser des questions. Vous pouvez aussi posez des questions à Julien et Samuel, bien sûr.

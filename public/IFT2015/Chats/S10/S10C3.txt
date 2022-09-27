@@ -1,0 +1,123 @@
+Avatar Neil Frederick Stewart	09:32 Neil Frederick:
+Yes David, we always want everything to be fast. But there are always trade-offs in life!
+I wanted to be rich, and I wanted to do something interesting. I put more weight on the second thing, so I went to grad school!
+
+Avatar David Whipps	09:33 David:
+In this context, we use it because of what we DON'T need (e.g. findMax) rather than what we do need
+
+Avatar Neil Frederick Stewart	09:33 Neil Frederick:
+If you use a balanced tree, you can do everything in log N. It's not bad,
+But if you want to have very fast search, and you're willing to accept waits in the context of deletion, then hashing is for you.
+
+Avatar David Whipps	09:34 David:
+exactly
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:34 Rafael De Jesus:
+yes... O(1) is always better!
+
+Avatar Neil Frederick Stewart	09:34 Neil Frederick:
+Think of an ATM in a bank. You want fast access, but you don't care if deleting an account is a bit slow.
+
+Avatar David Whipps	09:34 David:
+It's because (in this context) we don't care about e.g. deletion that we prefer a hash table
+
+Avatar Neil Frederick Stewart	09:35 Neil Frederick:
+Yes, I think you have an idea. Here's another example. Twenty years ago when PC's were slow ...
+I could search for a file on a PC, KNOWING THE NAME OF THE FILE. The little dog would be there, wagging its tail while the search was proceeding, and I could go for lunch.
+Là c'était dans mon propre ordinateur, en connaissant le nom du fichier. Et pourtant, aujourd'hui Google peut me trouver n'importe document sur la planète en quelques secondes. Comment faire?
+
+Avatar David Whipps	09:37 David:
+mapReduce
+
+Avatar Neil Frederick Stewart	09:37 Neil Frederick:
+Je ne connais pas les détails des algorithmes de Google, ils publient même pas ...
+mais je suis sûr qu'il y ait de l'indexage et le hashing là-dedans.
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:39 Rafael De Jesus:
+oui... et maintenant aussi de l'appréntissage machine
+
+Avatar Neil Frederick Stewart	09:39 Neil Frederick:
+Il y avait une idée intéressante à 5:30. Qu'est-ce que ça donne pour TRIER les listes externes?
+Est-ce que la réponse dépend du cas? Clef présente ou clef absente?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:40 Rafael De Jesus:
+un peu de publicité : il y a un très bon cours sur la mattière (IFT 6255 Recherche d'information))
+
+Avatar Maxime Lechasseur	09:40 Maxime:
+dans le premier ou 2eme video?
+
+Avatar Neil Frederick Stewart	09:40 Neil Frederick:
+Si je sais a priori que la clef est absente?
+Si, a posteriori il arrive que la clef n'était pas présente.
+Maxime, le premier je crois.
+Mais pensez à cela. Qu'est
+Qu'est-ce que ça donne de trier les listes externes?
+Dans les circonstances différentes?
+
+Avatar David Whipps	09:42 David:
+Je ne comprends pas la question.
+"Est-ce-que c'est utile de trier les listes externes?"
+
+Avatar Neil Frederick Stewart	09:42 Neil Frederick:
+David, think about external chaining.
+Exactly. And does the answer differ in different circumstances?
+For example, what if I know a priori that the key isn't there?
+
+Avatar Man Ping Li	09:43 Man Ping:
+we don't sort
+
+Avatar David Whipps	09:43 David:
+Disons pour un recherche reussie vs. non-reussi?
+
+Avatar Neil Frederick Stewart	09:43 Neil Frederick:
+What if I don't know, but a posteriori it turns out the key isn't there.
+Man Ping, well, that's a bit abrupt.
+
+Avatar Man Ping Li	09:44 Man Ping:
+when we know the key is not there,why we need to sort the list?
+
+Avatar Neil Frederick Stewart	09:45 Neil Frederick:
+Peut-être il y a un avantage. Quel est l'avantage. Quand on saura cela on peut décider si cela vaut la peine de trier.
+Man Ping, I can't remember right now.
+Y'a-t-il d'autres questions?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:46 Rafael De Jesus:
+but by sorting the list it's easier to determine if the element is present or not
+
+Avatar Maxime Lechasseur	09:46 Maxime:
+n/m vs 1+lambda/2
+
+Avatar David Whipps	09:46 David:
+Right. So next time we'll fail faster?
+
+Avatar Neil Frederick Stewart	09:49 Neil Frederick:
+David, if the keys are sorted, and you're looking for the key STEWART, and you come to the key WHIPPS, do you continue looking to the end of the list (ZIMMERMAN)?
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:49 Rafael De Jesus:
+... et si on a la liste trié on pourrait faire 1 + log( taille_de_la_liste) ?
+
+Avatar David Whipps	09:49 David:
+Exactly. It "fails faster". More efficient.
+But how to decide whether the cost of sorting (and keeping sorted) is less overall than sequential search every time.
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+Ok, sorry, I thought you were making a small ironic joke. Yes.
+
+Avatar David Whipps	09:50 David:
+"Succeeds to exit the method faster"
+
+Avatar Neil Frederick Stewart	09:50 Neil Frederick:
+David, you can look at the effect on average cost.
+
+Avatar David Whipps	09:51 David:
+I'm sure I'll have to do that at some point!
+
+Avatar Neil Frederick Stewart	09:51 Neil Frederick:
+Ok, je vais faire de mon mieux de corriger la correction de l'Intra avant mercredi, mais cela n'avance pas vite. NFS
+de TERMINER la correction de l'Intra
+
+Avatar Rafael De Jesus Carrascal Cantillo	09:51 Rafael De Jesus:
+but we should prioritize the cost associated to the most common operation, don't we ?
+
+Avatar Neil Frederick Stewart	09:52 Neil Frederick:
+Oui, Rafael. après avoir estimé les coûts, on peut donner la priorité selon nos besoins,

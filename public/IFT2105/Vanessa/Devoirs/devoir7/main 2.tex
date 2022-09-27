@@ -1,0 +1,406 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{shuffle}
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[thinlines]{easytable}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{pifont}
+\usetikzlibrary{automata, positioning, arrows}
+\newtheorem{theorem}{THEOREM}
+\newtheorem{proof}{PROOF}
+\usepackage{etoolbox}
+\AtBeginEnvironment{align}{\setcounter{equation}{0}}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \textsc{\large UNIVERSITÉ DE MONTRÉAL}\\[3.5cm]
+        
+        \textsc{\large DEVOIR 7}\\[2.5cm]
+       
+        \textsc{\large PAR}\\
+        \textsc{\large CHENGZONG JIANG (20122046)}\\
+        \textsc{\large MICHAEL PLANTE (20182677)}\\
+        \textsc{\large VANESSA THIBAULT-SOUCY (20126808)}\\
+        \textsc{\large JAYDAN ALADRO (20152077)}\\
+        \textsc{\large SOUKAINA BENABID (20148642)}\\[3.5cm]
+        
+        
+        \textsc{\large BACCALAURÉAT EN INFORMATIQUE}\\
+        \textsc{\large FACULTÉ DES ARTS ET SCIENCES}\\[3.5cm]
+        
+        \textsc{\large TRAVAIL PRÉSENTÉ À GENA HAHN}\\
+        \textsc{\large DANS LE CADRE DU COURS IFT 2105}\\
+        \textsc{\large INTRODUCTION À L'INFORMATIQUE THÉORIQUE}\\[3cm]
+        
+        \textsc{\large 05 AVRIL 2021}\\
+    \end{center}
+\end{titlepage}
+\section*{Question 2}
+\large On veut prouver que tout langage régulier est hors contexte.
+\newline 
+\newline Soit $L_1$ un langage régulier quelconque. Par définition, on sait qu'il existe un automate $M=(Q,\Sigma,\delta,s,F)$ tel que $L(M)=L_1$. 
+\newline 
+\newline Soit la grammaire hors contexte $G$ tel que : $G=(V,\Sigma,R,S)$
+\newline $G$ possedera une variable $v$ pour chacun des états de l'automate. 
+\newline On définit : 
+\newline $V=\{R_i | q_i \in Q\}$
+\newline $\delta(q_i,a)=q_j$
+\newline $R_i \rightarrow aR_j$
+\newline $\forall q_i \in F, R_i \rightarrow \epsilon$
+\newline $S=R_0$
+\newline 
+\newline On a prouvé alors qu'on peut definir une grammaire hors contexte pour n'importe quel langage regulier. Donc tout langage régulier est hors contexte. CQFD.
+
+\newpage
+\section*{Question 3}
+\large On cherche à donnez la forme normale de Chomsky de la grammaire suivante, etape par etape.
+\newline 
+\newline $S \rightarrow aBBBCD|BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+\newline $E \rightarrow a|b|bb|aa$
+\newline 
+\newline Tout d'abord on remarque que la règle $E \rightarrow a|b|bb|aa$ est inaccessible, elle est donc inutile et on peut la laisser tomber.
+\newline On constate egalement, que le terminal $S$ figure à droite dans la règle \newline $C \rightarrow S|BABAB$. On doit donc ajouter la règle suivante : $S' \rightarrow S$
+\newline 
+\newline On obtient donc : 
+\newline $S' \rightarrow S$
+\newline $S \rightarrow aBBBCD|BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+\newline
+\newline \textbf{*} Ensuite, éliminons les règles $\epsilon$ : $B \rightarrow \epsilon$ :
+\newline On obtient :
+\newline $S' \rightarrow S$
+\newline $S \rightarrow aBBBCD|BC|A|BAB|aBBCD|aCD|C|A|BA|AB$ \textcolor{red}{Il ne manque pas aBCD? Et il y a 2 A -Jay}
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|B$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|AAB|AA|ABA|BAA$
+\newline
+\newline \textbf{*} On élimine également les règles unitaires (de la forme $A \rightarrow B$) :
+\newline On commence par éliminer : $B \rightarrow B$ : On obtient : 
+\newline $S' \rightarrow S$
+\newline $S \rightarrow aBBBCD|BC|A|BAB|aBBCD|aCD|C|A|BA|AB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|AAB|AA|ABA|BAA$
+\newline 
+\newline On élimine ensuite  : $S \rightarrow A$ : On obtient : 
+\newline $S' \rightarrow S$
+\newline $S \rightarrow aBBBCD|BC|A|BAB|aBBCD|aCD|C|A|BA|AB|aAa|aba|Cbb$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|AAB|AA|ABA|BAA$
+\newline 
+\newline 
+On elimine ensuite : $S \rightarrow C$ : On obtient : 
+\newline $S' \rightarrow S$
+\newline $S \rightarrow aBBBCD|BC|A|BAB|aBBCD|aCD|C|A|BA|AB|aAa|aba|Cbb|S|BABAB|ABAB|BAAB|\newline BABA|AAB|AA|ABA|BAA$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|AAB|AA|ABA|BAA$
+\newline 
+On elimine enfin : $C \rightarrow S$ : On obtient : 
+\newline $S' \rightarrow S$
+\newline $S \rightarrow aBBBCD|BC|A|BAB|aBBCD|aCD|C|A|BA|AB|aAa|aba|Cbb|S|BABAB|ABAB|BAAB|\newline BABA|AAB|AA|ABA|BAA$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|AAB|AA|ABA|BAA|\newline aBBBCD|BC|A|BAB|aBBCD|aCD|C|A|BA|AB|aAa|aba|Cbb|\newline S|BABAB|ABAB|BAAB|BABA|AAB|AA|ABA|BAA$
+\newline
+\newline \textbf{*} On continue, 
+\\
+\\
+\\
+\\
+\\
+\\
+
+[Vanessa]\\
+\\
+Ici on met le blabla de la question... \\
+\\
+\newline $S \rightarrow aBBBCD|BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+\newline $E \rightarrow a|b|bb|aa$
+\\
+\\
+\\
+-Étape 1 : on enlève les règles qui sont inutile.\\
+
+On enlève la règle E car elle n'est jamais référer par les autre règle de la grammaire, et donc elle ne peut pas être atteint via la variable de départ S.\\
+\newline $S \rightarrow aBBBCD|BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+
+
+On enlève également le mot aBBBCD car comme nous n'avons pas de règle D, le mots ne peut pas être terminal.
+\newline $S \rightarrow BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+\\
+\\
+\\
+-Étape 2 : Ajouter une variable initiale $S_0$ et de la règle associée.\\
+\newline $S \rightarrow BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+\newline $S_0 \rightarrow S$
+\\
+\\
+\\
+-Étape 3 : Enlever les règle de la forme $A \rightarrow \epsilon$.\\
+
+- $B \rightarrow \epsilon$ :\\
+\newline $S \rightarrow BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB$
+\newline $S_0 \rightarrow S$
+\\
+
+- $S \rightarrow \epsilon$ par l'entremise de $B$ :\\
+\newline $S \rightarrow BC|A|BAB|AB|BA|C$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB$
+\newline $S_0 \rightarrow S$
+\\
+
+- $C \rightarrow \epsilon$ par l'entremise de $B$ :\\
+\newline $S \rightarrow BC|A|BAB|AB|BA|C$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow S$
+\\
+\\
+\\
+-Étape 4 : Enlever les règles de la forme $A \rightarrow B$\\
+
+- $S \rightarrow A$ :
+\newline $S \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|C|$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow S$
+\\
+
+- $S \rightarrow C$ :
+\newline $S \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow S|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow S$
+\\
+
+- $C \rightarrow S$ :
+\newline $S \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow S$
+\\
+
+- $S_0 \rightarrow S$ :
+\newline $S \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\\
+\\
+\\
+- Étape 5 : Enlever les règles de la forme $A \rightarrow u_1...u_k$ pour $k>2$.\\
+
+- $S \rightarrow u_1...u_k$ pour $k>2$ :
+\newline $S \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $X_1 \rightarrow BX_2$
+\newline $X_2 \rightarrow BX_3$
+\newline $X_3 \rightarrow BC$
+\newline $X_5 \rightarrow a$
+\newline $X_6 \rightarrow AB$
+\newline $X_7 \rightarrow AX_5$
+\newline $X_8 \rightarrow ba$
+\newline $X_9 \rightarrow bb$
+\newline $X_{10} \rightarrow X_6X_6$
+\newline $X_{11} \rightarrow BA$
+\\
+\\
+
+- $A \rightarrow u_1...u_k$ pour $k>2$ :
+\newline $S \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $A \rightarrow X_5X_7|X_5X_8|CX_{13}$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $S_0 \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $X_1 \rightarrow BX_2$
+\newline $X_2 \rightarrow BX_3$
+\newline $X_3 \rightarrow BC$
+\newline $X_5 \rightarrow a$
+\newline $X_6 \rightarrow AB$
+\newline $X_7 \rightarrow AX_5$
+\newline $X_8 \rightarrow ba$
+\newline $X_9 \rightarrow bb$
+\newline $X_{10} \rightarrow X_6X_6$
+\newline $X_{11} \rightarrow BA$
+\\
+
+- $C \rightarrow u_1...u_k$ pour $k>2$ :
+\newline $S \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $A \rightarrow X_5X_7|X_5X_8|CX_{13}$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $S_0 \rightarrow BC|BAB|AB|BA|aAa|aba|Cbb|BABAB|ABAB|BAAB|BABA|ABA|BAA|AAB|AA$
+\newline $X_1 \rightarrow BX_2$
+\newline $X_2 \rightarrow BX_3$
+\newline $X_3 \rightarrow BC$
+\newline $X_5 \rightarrow a$
+\newline $X_6 \rightarrow AB$
+\newline $X_7 \rightarrow AX_5$
+\newline $X_8 \rightarrow ba$
+\newline $X_9 \rightarrow bb$
+\newline $X_{10} \rightarrow X_6X_6$
+\newline $X_{11} \rightarrow BA$
+\\
+
+- $S_0 \rightarrow u_1...u_k$ pour $k>2$ :
+\newline $S \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $A \rightarrow X_5X_7|X_5X_8|CX_{13}$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $S_0 \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $X_1 \rightarrow BX_2$
+\newline $X_2 \rightarrow BX_3$
+\newline $X_3 \rightarrow BC$
+\newline $X_5 \rightarrow a$
+\newline $X_6 \rightarrow AB$
+\newline $X_7 \rightarrow AX_5$
+\newline $X_8 \rightarrow ba$
+\newline $X_9 \rightarrow bb$
+\newline $X_{10} \rightarrow X_6X_6$
+\newline $X_{11} \rightarrow BA$
+\\
+\\
+\\
+-Étape 6 : Enlever les règles de la forme $A \rightarrow xB$, $A \rightarrow Bx$ et $A \rightarrow xy$ et ajouter des règles qui génère les variables.
+\\
+
+Nous avons traiter tous les cas pour les regles de la forme $A \rightarrow xB$ et $A \rightarrow Bx$ lors de l'étape précédente.\\
+\\
+
+Traitons maintenant les règle de la forme : $A \rightarrow xy$\\
+
+- pour les règles $X_8 \rightarrow ba$ et $X_9 \rightarrow bb$  :
+\newline $S \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $A \rightarrow X_5X_7|X_5X_8|CX_{13}$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $S_0 \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $X_1 \rightarrow BX_2$
+\newline $X_2 \rightarrow BX_3$
+\newline $X_3 \rightarrow BC$
+\newline $X_5 \rightarrow a$
+\newline $X_6 \rightarrow AB$
+\newline $X_7 \rightarrow AX_5$
+\newline $X_8 \rightarrow X'_1X_5$
+\newline $X_9 \rightarrow X'_1X'_1$
+\newline $X_{10} \rightarrow X_6X_6$
+\newline $X_{11} \rightarrow BA$
+\newline $X'_1 \rightarrow b$
+\\
+\\
+Conclusion :\\
+La grammaire Hors-context :
+\newline $S \rightarrow aBBBCD|BC|A|BAB$
+\newline $A \rightarrow aAa|aba|Cbb$
+\newline $B \rightarrow BB|b|\epsilon$
+\newline $C \rightarrow S|BABAB$
+\newline $E \rightarrow a|b|bb|aa$
+
+peut se réécrire sour la forme normale de Chomsky comme :\\
+\newline $S \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $A \rightarrow X_5X_7|X_5X_8|CX_{13}$
+\newline $B \rightarrow BB|b$
+\newline $C \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $S_0 \rightarrow BC|BX_6|AB|BA|X_5X_7|X_5X_8|CX_{13}|BX_{10}|X_6X_6|X_{11}X_6|X_{11}X_{11}|AX_{11}|X_{11}A|AX_6|AA$
+\newline $X_1 \rightarrow BX_2$
+\newline $X_2 \rightarrow BX_3$
+\newline $X_3 \rightarrow BC$
+
+\newline $X_5 \rightarrow a$
+\newline $X_6 \rightarrow AB$
+\newline $X_7 \rightarrow AX_5$
+\newline $X_8 \rightarrow X'_1X_5$
+\newline $X_9 \rightarrow X'_1X'_1$
+\newline $X_{10} \rightarrow X_6X_6$
+\newline $X_{11} \rightarrow BA$
+\newline $X'_1 \rightarrow b$
+\\
+\\
+{Fin Vanessa}
+\\
+\\
+(Jaydan)
+\\
+\\
+J'ai fais comme vous mais quand on met de de la forme $A \rightarrow u_1...u_k\; pour\; k \geq 3$ j'y suis allé plus direct et j'ai aussi directement fais la supression des formes $A \rightarrow xy$. Je suppose il y a plusieurs possibilités, voici la mienne, très similaire à Vanessa:
+\\
+\newline $S_0$ apres les étapes précédentes
+\begin{align*}
+    S_0 \rightarrow &aBBC | BC | BAB |aBBC | aBC | aC | BA | AB | aAa | aba | Cbb | BABAB | AA | ABA | AAB | BAA \\
+    &| BABA | ABAB | BAAB\\
+\end{align*}
+\begin{align*}
+    S_0 \rightarrow &X5X1|BC|BX_9|X_5X_3|X_5X_4|BA|AB|X_5X_{11}|CX{13}|X_{10}X_{15}|AA|AX{10}|AX_{9}\\
+    &|X_{10}A|X_{15}A|AX_{15}|X_9X_{10}\\
+    S \rightarrow &X5X1|BC|BX_9|X_5X_3|X_5X_4|BA|AB|X_5X_{11}|CX{13}|X_{10}X_{15}|AA|AX{10}|AX_{9}\\
+    &|X_{10}A|X_{15}A|AX_{15}|X_9X_{10}\\
+    A \rightarrow &X_5X_7|X_5X_8|CX_{13}\\
+    B \rightarrow &BB|b\\
+    C \rightarrow &S\quad \mbox{On peut faire ca? Si oui on peut pas faire quelque chose pour les S?}\\
+    \\
+    X_1 \rightarrow &BX_2\quad  (BBBC)\\
+    X_2 \rightarrow &BX_3\quad  (BBC)\\
+    X_3 \rightarrow &BX_4\quad  (BC)\\
+    X_4 \rightarrow &C\\
+    X_5 \rightarrow &a\\
+    X_6 \rightarrow &b\\
+    X_7 \rightarrow &A\\
+    X_8 \rightarrow &B\\
+    X_9 \rightarrow &X_7X_8\quad  (AB)\\
+    X_{10} \rightarrow &X_8X_7\quad  (BA)\\
+    X_{11} \rightarrow &X_7X_5\quad  (Aa)\\
+    X_{12} \rightarrow &X_6X_5\quad  (ba)\\
+    X_{13} \rightarrow &X_6X_6\quad  (bb)\\
+    X_{14} \rightarrow &X_{10}X_8\quad  (BAB)\\
+\end{align*}
+\\
+\\
+Aussi, si vous regardez l'avant derniere démo, Samuel insiste beaucoup sur le fait d'enlever les variables inutile et qu'il faut un peu faire de l'effort pour (hint?)
+\\
+Une question, si on enleve D, ce n'est pas illegal de mettre $X_4 \rightarrow &CD$ par exemple? Vu que bah ca n'existe pas
+\end{document}
+
+

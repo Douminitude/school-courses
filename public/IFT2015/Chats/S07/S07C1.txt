@@ -1,0 +1,61 @@
+Neil Frederick Stewart	08:19 Neil Frederick:
+Oui, je vais vouloir commencer avec une question moi-même!
+Question. Je n'ai jamais répondu à ma propre question: pourquoi N+1 noeuds d'échec. Et dans quel arbre faut-il travailler pour démontrer cela?
+
+Catherine Larivière	08:20 Catherine:
+c'est quoi exactemenr un noeud d'échec?
+
+Olivier Ethier	08:20 Olivier:
+Y a-t-il une différence entre un noeud d'échec et un pointeur nul?
+
+Neil Frederick Stewart	08:21 Neil Frederick:
+Le pointeur nulle est dans l'implantation. Le noeud d'échec est la chose correspondante théorique.
+
+Yutao Zhang	08:21 Yutao:
+Feuilles = Noeuds Internes + 1
+
+Photo de Julien Thibeault	08:21 Julien:
+Réponse : Arbre full, theorème du nombre de feuilles où les feuilles sont des noeuds d'echecs
+
+Man Ping Li	08:22 Man Ping:
+parce que les feuilles est n+1
+
+Neil Frederick Stewart	08:22 Neil Frederick:
+Merci Man Ping! Dans quel arbre travaillez-vous?
+
+Man Ping Li	08:22 Man Ping:
+arbre complet
+
+Neil Frederick Stewart	08:23 Neil Frederick:
+Il y a l'arbre de base. Mais il y a un autre arbre, théorique, dans lequel travaille Man Ping Li. Il a combien de noeuds cet arbre étendu?
+Si vous concevez l'arbre avec les noudes d'échec ajouté comme un nouvel arbre, un arbre étendu, cet arbre a combien de noeuds?
+
+Jeanne Laflamme	08:25 Jeanne:
+C'est l'arbre qui a comme noeuds internes l'arbre de base et comme feuilles les noeuds d'échecs qui a N + N+1 noeuds
+
+Neil Frederick Stewart	08:25 Neil Frederick:
+Le nombre de noeuds ajoutés est égal au nombre de feuilles de l'arbre original. Merci Jeanne.
+L'arbre étendu a évidemment 2N+1 noeuds, ça vient de notre petit théorème. Au total, 2N+1 noeuds.
+Avez-vous des questions. Sinon, j'ai une autre pour vous.
+J'ai dit dans la présentation que le noeud prédécesseur doit avoir un pointeur nul à droite. C'est clair, mais quelle est LA PREUVE?
+
+Man Ping Li	08:28 Man Ping:
+parce qu'on cherche toujour de gauche a droite?
+
+Neil Frederick Stewart	08:28 Neil Frederick:
+Donnez-moi une petite preuve par contradiction.
+
+Photo de Julien Thibeault	08:28 Julien:
+s'il a un noeud a droite il existe une valeur plus grande que le predecesseur et inferieure au noeud initial
+
+Neil Frederick Stewart	08:29 Neil Frederick:
+Supposons que le noeud qui prétend être le prédécesseur à un pointeur à droite. Alors ...
+
+Man Ping Li	08:29 Man Ping:
+si echec est gauche ,on cherche premier a gauche, on a un echec, on n'arrive pas trouve le feuille a droite
+
+Neil Frederick Stewart	08:29 Neil Frederick:
+Man Ping, suivez ma pensée. Supposons que le noeud qui prétend être le prédécesseur à un pointeur à droite. Alors ...
+
+Neil Frederick Stewart	08:31 Neil Frederick:
+Oui Julien merci, je tapais, je ne voyais pas votre réponse!

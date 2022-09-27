@@ -1,0 +1,57 @@
+Avatar Neil Frederick Stewart	08:21 Neil Frederick:
+Je remarque que à 7:00-8:00 sur la vidéo, j'ai mal dessiné les pointeurs au niveau 1. Mais c'est bien fait à 10:50 de la vidéo.
+Y'a-t-il des questions? Vous voyez l'astuce de Pugh?
+Plus tard on verra une version déterministe. (!)
+Sinon, je sais ce qui s'en vient. Je vous parle des Arbres B (paramètre M), et des cas spéciaux, M=3 et M=4.
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:23 Rafael De Jesus:
+je ne comprends encore comment choisir le NIV_MAX de façon aléatoire
+
+Avatar Neil Frederick Stewart	08:23 Neil Frederick:
+Je vous souligner le contexte. Les arbres B avec M général sont introduit dans le contexte des données externes. Ce n'est pas notre sujet. J'introduis cela pour vous expliquer d'où ça vient.
+Rafael, ça s'en vient dans le prochain segment!
+
+Avatar David Whipps	08:24 David:
+En generale combien de memoire d'extra est requis pour un skip-list?
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+David, bonne question. C'est lg N pointeurs par noeud. Pas gratuit en terme d'espace.
+
+Avatar David Whipps	08:25 David:
+Je suppose qu'on peut le calculer facilement.
+
+Photo de Julien Thibeault	08:25 Julien:
+Quand vous parlez de probabilité, c'est la probabilité de quoi?
+
+Avatar David Whipps	08:25 David:
+Right, so N lg (N) increase in memory
+
+Avatar Neil Frederick Stewart	08:25 Neil Frederick:
+Par contre, comme je l'ai dit, peut-être pas la fin du monde. Cela dépend de l'encombrement des données par rapport à la taille des pointeurs.
+Oui David. Mais si vos données prennent plusieurs M octets, c'est peut-être infime que mémoire supplémentaire. Ça dépend.
+
+Avatar David Whipps	08:27 David:
+Je comprends
+
+Avatar Man Ping Li	08:27 Man Ping:
+est-ce que la skip-list est toujour trie?
+
+Avatar Neil Frederick Stewart	08:28 Neil Frederick:
+Julien, vous allez mieux comprendre au début du segment 2. Nous choisissons le nombre de pointeurs avec une certaine probabilité. C'est la probilité que la nouvelle clef est mise dans i listes.
+Oui Man Ping, nous insérons les clefs au fur et à mesure dans l'ordre triée.
+
+Avatar Man Ping Li	08:29 Man Ping:
+merci
+
+Avatar Mahsa Najimoghadam	08:29 Mahsa:
+segment 2 does not play for me!!
+
+Avatar Neil Frederick Stewart	08:29 Neil Frederick:
+C'est comme créer un arbre binaire de recherche en ordre RGD. Nous insérons les clefs de façon à ce que l'ordre soit respecté
+
+Avatar Rafael De Jesus Carrascal Cantillo	08:29 Rafael De Jesus:
+Mahsa, try with Firefox... it always works for me, when I've troubles with Chrome or any other browser
+
+Avatar Neil Frederick Stewart	08:30 Neil Frederick:
+Mahsa, faut télécharger? Je m'excuse, j'ai eu des problèmes, je n'y peux rien. Merci Rafael.
+
